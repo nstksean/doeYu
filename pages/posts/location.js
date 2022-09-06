@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 
 export default function location() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>Location</title>
             </Head>
@@ -16,6 +16,6 @@ export default function location() {
                     <a>Back to home</a>
                 </Link>
             </h2>
-        </Layout>
-    );
+        </ >
+    )
 }
