@@ -203,7 +203,6 @@ footer {
     display: flex;
 
     flex-direction: row;
-    justify-content: space-evenly;
 }
 
 footer .taiwan {
@@ -235,4 +234,43 @@ footer .navBarIcon {
 
 .logoContainer {
     width: 50%;
+}
+
+footer .logoContainer {
+    width: 50%;
+}
+
+footer .listContainer {
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+}
+
+/* slide part css */
+
+.slide {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideBtnPre {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg)
+}
+
+.slideBtnNex {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    padding-top: 560px;
+    box-sizing: border-box;
 }
