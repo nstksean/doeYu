@@ -1,0 +1,101 @@
+/* stackGruop parts */
+
+.stackGruop {
+    width: 85%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.stackBtnContainer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 36px;
+}
+
+.stackBtn {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.stackBtn label {
+    padding: 16px 10px 10px 10px;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #A9D3FF;
+}
+
+
+
+.stackBtn input {
+    appearance: none;
+    background-color: inherit;
+    height: 5px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.stackBtn input:checked {
+    background-color: #392A93;
+}
+
+.stackBtn input:checked~label {
+    color: #392A93;
+
+}
+
+
+
+
+.stackContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.stackSlide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+
+.stackPre {
+    transform: rotate(180deg);
+}
+
+.stackNex,
+.stackPre {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackPre svg,
+.stackNex svg {
+    width: 22px;
+}
+
+.stackItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #392A93;
+    background-image: url("https://via.placeholder.com/300X180");
+
+    background-position: center;
+    /*背景圖片水平位置與垂直位置均置中對齊*/
+}

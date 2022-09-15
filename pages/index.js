@@ -8,11 +8,13 @@ import TravelSpots from '../components/TravelSpots'
 import Stacks from '../components/Stacks'
 import Slides from '../components/Slides'
 
+import style from '../styles/Home.module.css'
+
 
 export default function Home() {
 
   return (
-    <div className="container">
+    <div className={style.container}>
       <Head>
         <title>林宇軒的島遊</title>
         <link rel="icon" href="../public/favicon.ico" />

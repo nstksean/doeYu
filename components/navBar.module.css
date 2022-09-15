@@ -1,0 +1,74 @@
+/* navBar part css */
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #392A93;
+}
+
+.navBarIcon {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 50px; */
+
+}
+
+.wordArts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.taiwan {
+    font-size: 9px;
+    color: #9086CC;
+}
+
+.iconTitle {
+    font-size: 20px;
+}
+
+.serachGroup {
+    width: 316px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.serachInput {
+    width: 270px;
+    border-radius: 16px;
+    border: 1px solid #9086CC;
+    text-align: start;
+    padding: 10px;
+
+}
+
+.serachBtn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.switchLingtGroup {
+    display: flex;
+    align-items: center;
+}
+
+.switchBtn {
+    margin: 0 10px 0 10px;
+}
+
+.lanChangeGroup {
+    display: flex;
+    align-items: center;
+}
+
+.lanTitle {
+    margin: 0 0 0 10px
+}
