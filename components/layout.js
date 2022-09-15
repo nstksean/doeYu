@@ -1,8 +1,16 @@
-import React from 'react';
-import styles from './layout.module.css';
+import React from "react"
+import { Children } from "react"
+import Footer from "./Footer"
+import NavBar from "./NavBar"
 
-export default function Layout({ childern }) {
-    return (<div className={styles.container}>
-        {childern}
-    </div>);
+const Layout = ({ children }) => {
+    return (
+        <div className="viewHight">
+            <NavBar />
+            {children}
+            <Footer />
+        </div>
+    );
 }
+
+export default Layout;

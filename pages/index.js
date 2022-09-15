@@ -18,14 +18,11 @@ export default function Home() {
         <link rel="icon" href="../public/favicon.ico" />
       </Head>
 
-      <NavBar />
       <Slides />
       <Stacks />
       <TravelSpots />
       <GoodFoods />
       <Subscript />
-      <Footer />
-
     </div >
   )
 }
