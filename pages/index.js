@@ -9,6 +9,7 @@ import Stacks from '../components/Stacks'
 import Slides from '../components/Slides'
 
 import style from '../styles/Home.module.css'
+import TrySomeApi from '../api/trysomeapi'
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <TravelSpots />
       <GoodFoods />
       <Subscript />
+      <TrySomeApi />
     </div >
   )
 }
