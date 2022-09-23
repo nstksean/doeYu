@@ -1,17 +1,21 @@
 import { useEffect, useState } from 'react'
+import { getScenicSpotUrl } from "../api/apiClient";
 
 export default function TrySomeApi() {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
-    const tourApi = "https://tdx.transportdata.tw/api/basic/v2/Tourism/ScenicSpot/NewTaipei?%24filter=contains%28Address%2C%27%E4%B8%89%E9%87%8D%27%29&%24top=5&%24format=JSON"
+
+    const query = ({ $filter: `contains(Address,'三重')`, $top: '5', $format: 'JSON' })
+    const scenicSpotUrl = getScenicSpotUrl('NewTaipei', query)
+
 
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
     useEffect(() => {
-        fetch(tourApi)
+        fetch(scenicSpotUrl)
             // .then(  res => res.json() )
             .then(
                 (res) => {
