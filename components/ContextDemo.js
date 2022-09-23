@@ -1,18 +1,18 @@
 import { useContext } from 'react'
-import { ThemeContext } from '../context/themeContext';
+import { DECREMENT, INCREMENT, RootContext } from '../context/RootContext';
 
 
 const ContextDemo = () => {
-    const context = useContext(ThemeContext);
-    console.log(context)
+    const rootContextValue = useContext(RootContext);
+    console.log(rootContextValue)
 
     return (
         <>
-            Count: {context.state.count}
-            <button onClick={() => context.dispatch({ type: 'decrement' })}>-</button>
-            <button onClick={() => context.dispatch({ type: 'increment' })}>+</button>
+            Count: {rootContextValue.state.count}
+            <button onClick={() => rootContextValue.dispatch({ type: DECREMENT, payload: 22 })}>-</button>
+            <button onClick={() => rootContextValue.dispatch({ type: INCREMENT, payload: 11 })}>+</button>
 
-            <div>{JSON.stringify(context)}</div>
+            <div>{JSON.stringify(rootContextValue)}</div>
         </>
     )
 }
