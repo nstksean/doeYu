@@ -9,7 +9,7 @@ import Stacks from '../components/Stacks'
 import Slides from '../components/Slides'
 
 import style from '../styles/Home.module.css'
-import TrySomeApi from '../api/trysomeapi'
+import DemoScenicSpot from '../components/DemoScenicSpot'
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       <TravelSpots />
       <GoodFoods />
       <Subscript />
-      <TrySomeApi />
+      <DemoScenicSpot />
     </div >
   )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getScenicSpotUrl } from "../api/apiClient";
 
-export default function TrySomeApi() {
+export default function DemoScenicSpot() {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
