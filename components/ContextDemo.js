@@ -8,7 +8,6 @@ const ContextDemo = () => {
 
     return (
         <>
-            Count: {rootContextValue.state.count}
             <button onClick={() => rootContextValue.dispatch({ type: DECREMENT, payload: 22 })}>-</button>
             <button onClick={() => rootContextValue.dispatch({ type: INCREMENT, payload: 11 })}>+</button>
 

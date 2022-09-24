@@ -1,6 +1,14 @@
 import style from "./travelspots.module.css"
+import { RootContext } from '../context/RootContext';
+import { useContext } from 'react'
 
 export default function TravelSpots() {
+
+    const rootContextValue = useContext(RootContext);
+    const data = rootContextValue.state.scenicSpotAPI_data
+    const loading = rootContextValue.state.scenicSpotAPI_isLoaded
+
+    console.log({ data, loading });
     return (
         <div className={style.hotSpotGroup}>
             <div className='title'>
@@ -21,7 +29,14 @@ export default function TravelSpots() {
                 </button>
             </div>
             <div className={style.hotSpotStackContainer}>
-                <div className={style.hotSpotStackItem}>
+                {
+                    data.slice(0, 4).map(x => <div className={style.hotSpotStackItem}>
+                        <div className={style.ItemPhoto}></div>
+                        <div className={style.spotTitle}>{x.ScenicSpotName}</div>
+                        <div className={style.spotCity}>{x.City}</div>
+                    </div>)
+                }
+                {/* <div className={style.hotSpotStackItem}>
                     <div className={style.ItemPhoto}></div>
                     <div className={style.spotTitle}>我是景點名稱</div>
                     <div className={style.spotCity}>我是城市</div>
@@ -38,7 +53,7 @@ export default function TravelSpots() {
                     <div className={style.ItemPhoto}></div>
                     <div className={style.spotTitle}>我是景點名稱</div>
                     <div className={style.spotCity}>我是城市</div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
