@@ -1,5 +1,5 @@
-import style from "./travelspots.module.css"
-import { RootContext } from '../context/RootContext';
+import style from "..TravelSpots/travelspots.module.css"
+import { RootContext } from '../../context/RootContext';
 import { useContext } from 'react'
 
 export default function TravelSpots() {

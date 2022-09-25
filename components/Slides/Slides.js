@@ -1,6 +1,7 @@
 import style from './slides.module.css'
 
 
+
 export default function Slides() {
     return (
         <div className={style.slideGroup}>

@@ -28,7 +28,7 @@ export const rust_ERROR = 'rust_ERROR'
 // reducer
 function reducer(state, action) {
     switch (action.type) {
-        case rust_DATA:
+        case rust_DATA:ㄆ
             return { ...state, rustAPI_data: action.payload };
         case rust_LOAD:
             return { ...state, rustAPI_isLoaded: action.payload, };
