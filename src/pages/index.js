@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import React from 'react'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import Subscript from '../components/Subscript'
-import GoodFoods from '../components/GoodFoods'
-import TravelSpots from '../components/TravelSpots'
-import Stacks from '../components/Stacks'
-import Slides from '../components/Slides'
+import Subscript from '../components/Subscript/Subscript'
+import GoodFoods from '../components/GoodFoods/GoodFoods'
+import TravelSpots from '../components/TravelSpots/TravelSpots'
+import Stacks from '../components/Stacks/Stacks'
+import Slides from '../components/Slides/Slides'
 
 import style from '../styles/Home.module.css'
+
 import DemoScenicSpot from '../components/DemoScenicSpot'
 import ContextDemo from '../components/ContextDemo'
 import { RootContextProvider } from "../context/RootContext";
