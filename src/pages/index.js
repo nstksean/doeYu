@@ -22,7 +22,7 @@ export default function Home() {
 
       <div className={style.container}>
         <Head>
-          <title>林宇軒的島遊</title>
+          <title>Sean'sDoeYu</title>
           <link rel="icon" href="../public/favicon.ico" />
         </Head>
 
@@ -31,7 +31,7 @@ export default function Home() {
         <TravelSpots />
         <GoodFoods />
         <Subscript />
-        <DemoScenicSpot />
+        {/* <DemoScenicSpot /> */}
       </div >
 
     </RootContextProvider>

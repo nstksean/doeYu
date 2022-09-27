@@ -1,21 +1,23 @@
 import { useEffect, useState } from 'react'
-import { getRestaurantUrl, getScenicSpotUrl } from "../api/apiClient";
+import { getHotelUrl } from "../api/apiClient";
 
-export default function DemoScenicSpot() {
+
+
+export default function DemoHotel() {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
-    const query = ({ $filter: `contains(Address,'三重')`, $top: '5', $format: 'JSON' })
-    const scenicSpotUrl = getScenicSpotUrl('NewTaipei', query)
+    const query = ({ $top: '5', $format: 'JSON' })
+    const hotelSpotUrl = getHotelUrl('NewTaipei', query)
 
 
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
     useEffect(() => {
-        fetch(scenicSpotUrl)
+        fetch(hotelSpotUrl)
             // .then(  res => res.json() )
             .then(
                 (res) => {
@@ -48,13 +50,12 @@ export default function DemoScenicSpot() {
         return (
             <ul>
                 {items.map(item => (
-                    <li key={item.ScenicSpotID}>
-                        {item.ScenicSpotID}{item.ScenicSpotName}{<br />}{item.DescriptionDetail}
+                    <li key={item.HotelID}>
+                        "ID":{item.HotelID}"Name":{item.HotelName}{<br />}"Adress":{item.Address}
                     </li>
                 ))}
             </ul>
         );
     }
 
-};
-
+}

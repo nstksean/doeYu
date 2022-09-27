@@ -64,7 +64,6 @@
 .hotSpotStackItem {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     /* Neutrals/White */
     align-items: center;
     background: #FEFEFE;
