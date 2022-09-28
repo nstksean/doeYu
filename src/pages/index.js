@@ -18,8 +18,6 @@ import { RootContextProvider } from "../context/RootContext";
 export default function Home() {
   return (
     <RootContextProvider>
-      <ContextDemo />
-
       <div className={style.container}>
         <Head>
           <title>Sean'sDoeYu</title>

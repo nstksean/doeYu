@@ -12,18 +12,37 @@ export default function DemoRestaurantSopt() {
     const query = ({ $top: '5', $format: 'JSON' })
     const restaurantSpotUrl = getRestaurantUrl('NewTaipei', query)
 
+    useEffect(() => {
+        async function asyncFunc() {
+            console.log('async start')
+            async function A() {
+                function timeout(ms) {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                }
+                await timeout(2000)
+                return 'A'
+            };
+            console.log("老闆拿蘋果")
+            await A().then((ansA) => {
+                console.log(ansA)
+            }).catch(() => {
+                console.log('error')
+            })
+            console.log("B")
+        }
+        asyncFunc()
+    }, [])
 
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
     useEffect(() => {
-        fetch(restaurantSpotUrl)
+        fetch(restaurantSpotUrl, {})
             // .then(  res => res.json() )
             .then(
                 (res) => {
                     console.log("res", res)
-                    return res
-                        .json()
+                    return res.json()
                 }
             )
 
@@ -59,3 +78,11 @@ export default function DemoRestaurantSopt() {
     }
 
 }
+[
+    {
+        RestaurantID: '',
+        RestaurantName: '',
+        Address: '',
+        Class: ''
+    }
+]

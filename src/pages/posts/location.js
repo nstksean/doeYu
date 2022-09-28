@@ -16,6 +16,7 @@ export default function location() {
                     <a>Back to home</a>
                 </Link>
                 <DemoHotel />
+                <ContextDemo />
             </h2>
         </ >
     )
