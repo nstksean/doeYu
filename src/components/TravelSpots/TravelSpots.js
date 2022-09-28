@@ -1,14 +1,15 @@
 import style from "./travelspots.module.css"
 import { RootContext } from '../../context/RootContext';
 import { useContext } from 'react'
+import Image from "next/image";
 
 export default function TravelSpots() {
 
     const rootContextValue = useContext(RootContext);
-    const data = rootContextValue.state.scenicSpotAPI_data
+    const datas = rootContextValue.state.scenicSpotAPI_data
     const loading = rootContextValue.state.scenicSpotAPI_isLoaded
 
-    console.log({ data, loading });
+    console.log({ datas, loading });
     return (
         <div className={style.hotSpotGroup}>
             <div className='title'>
@@ -30,31 +31,25 @@ export default function TravelSpots() {
             </div>
             <div className={style.hotSpotStackContainer}>
                 {
-                    data.slice(0, 4).map(x => <div className={style.hotSpotStackItem}>
-                        <div className={style.ItemPhoto}></div>
-                        <div className={style.spotTitle}>{x.ScenicSpotName}</div>
-                        <div className={style.spotCity}>{x.City}</div>
-                    </div>)
+                    datas.slice(0, 4).map(data =>
+                        <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
+                            <div className={style.ItemPhoto}><Image
+                                src={data.Picture.PictureUrl1}
+                                alt="Picture location"
+                                width={270}
+                                height={210}
+                                layout='responsive'
+
+                            ></Image></div>
+                            <div
+                                className={style.spotTitle}>
+                                {data.ScenicSpotName}
+                            </div>
+                            <div className={style.spotCity}>{data.City}</div>
+                        </div>
+                    )
                 }
-                {/* <div className={style.hotSpotStackItem}>
-                    <div className={style.ItemPhoto}></div>
-                    <div className={style.spotTitle}>我是景點名稱</div>
-                    <div className={style.spotCity}>我是城市</div>
-                </div>
-                <div className={style.hotSpotStackItem}>
-                    <div className={style.ItemPhoto}></div>
-                    <div className={style.spotTitle}>我是景點名稱</div>
-                    <div className={style.spotCity}>我是城市</div>
-                </div><div className={style.hotSpotStackItem}>
-                    <div className={style.ItemPhoto}></div>
-                    <div className={style.spotTitle}>我是景點名稱</div>
-                    <div className={style.spotCity}>我是城市</div>
-                </div><div className={style.hotSpotStackItem}>
-                    <div className={style.ItemPhoto}></div>
-                    <div className={style.spotTitle}>我是景點名稱</div>
-                    <div className={style.spotCity}>我是城市</div>
-                </div> */}
             </div>
-        </div>
+        </div >
     );
 }
