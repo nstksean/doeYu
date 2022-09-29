@@ -4,11 +4,11 @@ import NavBar from "../components/NavBar/NavBar"
 
 const Layout = ({ children }) => {
     return (
-        <div className="viewHight">
+        <>
             <NavBar />
-            {children}
+            <div className="viewHight">{children}</div>
             <Footer />
-        </div>
+        </>
     );
 }
 

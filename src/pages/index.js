@@ -18,11 +18,13 @@ import { RootContextProvider } from "../context/RootContext";
 export default function Home() {
   return (
     <RootContextProvider>
+
       <div className={style.container}>
         <Head>
           <title>Sean'sDoeYu</title>
           <link rel="icon" href="../public/favicon.ico" />
         </Head>
+        {/* <ContextDemo /> */}
 
         <Slides />
         <Stacks />

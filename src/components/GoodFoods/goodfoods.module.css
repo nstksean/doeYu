@@ -45,3 +45,12 @@
     color: #FEFEFE;
 
 }
+
+.title {
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 26px;
+
+    color: #392A93;
+    margin: 10px;
+}

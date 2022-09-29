@@ -3,7 +3,7 @@ import style from "./goodfoods.module.css"
 export default function GoodFoods() {
     return (
         <div className={style.hotFoodGroup}>
-            <div className='title'>
+            <div className={style.title}>
                 人氣美食
             </div>
             <div className={style.stackFoodContainer}>

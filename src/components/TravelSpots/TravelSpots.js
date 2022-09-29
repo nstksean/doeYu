@@ -9,10 +9,12 @@ export default function TravelSpots() {
     const datas = rootContextValue.state.scenicSpotAPI_data
     const loading = rootContextValue.state.scenicSpotAPI_isLoaded
 
+
+
     console.log({ datas, loading });
     return (
         <div className={style.hotSpotGroup}>
-            <div className='title'>
+            <div className={style.title}>
                 熱門景點
             </div>
             <div className={style.hotSpotBtnContainer}>
@@ -30,6 +32,7 @@ export default function TravelSpots() {
                 </button>
             </div>
             <div className={style.hotSpotStackContainer}>
+
                 {
                     datas.slice(0, 4).map(data =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>

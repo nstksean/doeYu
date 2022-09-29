@@ -1,6 +1,7 @@
 
 import { createContext, useReducer, useEffect } from 'react'
 // import { getrustUrl } from '../api/apiClient';
+import { getScenicSpotUrl } from "../api/apiClient"
 
 
 
@@ -28,7 +29,7 @@ export const rust_ERROR = 'rust_ERROR'
 // reducer
 function reducer(state, action) {
     switch (action.type) {
-        case rust_DATA:ㄆ
+        case rust_DATA:
             return { ...state, rustAPI_data: action.payload };
         case rust_LOAD:
             return { ...state, rustAPI_isLoaded: action.payload, };
@@ -48,8 +49,12 @@ export function RootContextProvider({ children }) {
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    const query = ({ $filter: `contains(Address,'三重')`, $top: '5', $format: 'JSON' })
-    const rustUrl = getrustUrl('NewTaipei', query)
+    const query = ({
+        // $filter: `contains(Address,'三重')`, 
+        $top: '10',
+        $format: 'JSON'
+    })
+    const rustUrl = getScenicSpotUrl('NewTaipei', query)
 
     // Note: the empty deps array [] means
     // this useEffect will run once
