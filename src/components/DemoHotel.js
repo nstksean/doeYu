@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { getHotelUrl } from "../api/apiClient";
 
 
-
 export default function DemoHotel() {
 
     const [error, setError] = useState(null);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getRestaurantUrl, getScenicSpotUrl } from "../api/apiClient";
+import { getScenicSpotUrl } from "../api/apiClient";
 
 export default function DemoScenicSpot() {
 
