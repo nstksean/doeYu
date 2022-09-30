@@ -2,6 +2,8 @@ import Head from "next/head"
 import Link from "next/link"
 import React from "react";
 import DemoHotel from "../../components/DemoHotel";
+import GoodFoods from "../../components/GoodFoods/GoodFoods";
+import TryContextDemo from "../../components/TryContextDemo";
 import { RootContextProvider } from "../../context/rustContext";
 
 
@@ -9,7 +11,7 @@ import { RootContextProvider } from "../../context/rustContext";
 export default function location() {
     return (
         <>
-            <RootContextProvider >
+            <RootContextProvider  >
                 <Head>
                     <title>Location</title>
                 </Head>
@@ -20,8 +22,11 @@ export default function location() {
                         <a>Back to home</a>
                     </Link>
                     <DemoHotel />
-
+                    
                 </h2> */}
+                <GoodFoods />
+
+                <TryContextDemo />
             </RootContextProvider>
         </ >
 

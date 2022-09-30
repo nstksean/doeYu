@@ -29,7 +29,7 @@ export default function Home() {
         <Slides />
         <Stacks />
         <TravelSpots />
-        <GoodFoods />
+        {/* <GoodFoods /> */}
         <Subscript />
         {/* <DemoScenicSpot /> */}
       </div >

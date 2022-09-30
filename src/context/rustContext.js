@@ -6,8 +6,6 @@ import { getScenicSpotUrl } from "../api/apiClient"
 
 
 const initialState = {
-    count: 0,
-    data: 324,
     rustAPI: {
         data: null,
         isLoaded: false,
@@ -35,7 +33,6 @@ function reducer(state, action) {
             return { ...state, rustAPI_isLoaded: action.payload, };
         case rust_ERROR:
             return { ...state, rustAPI_error: action.payload };
-
         default:
             return state;
     }
