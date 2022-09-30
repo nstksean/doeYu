@@ -34,14 +34,15 @@ export default function TravelSpots() {
                 {
                     datas?.slice(0, 4).map((data) =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
-                            <div className={style.ItemPhoto}><Image
-                                src={data?.Picture.PictureUrl1}
-                                alt="Picture location"
-                                width={270}
-                                height={210}
-                                layout='responsive'
+                            <div className={style.ItemPhoto}>
+                                <Image
+                                    src={data?.Picture.PictureUrl1}
+                                    alt="Picture location"
+                                    width={270}
+                                    height={210}
+                                    layout='responsive'
 
-                            ></Image></div>
+                                ></Image></div>
                             <div
                                 className={style.spotTitle}>
                                 {data.ScenicSpotName}

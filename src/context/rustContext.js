@@ -47,7 +47,7 @@ export function RootContextProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const query = ({
-        // $filter: `contains(Address,'三重')`, 
+        $filter: `contains(Address,'三重')`,
         $top: '10',
         $format: 'JSON'
     })

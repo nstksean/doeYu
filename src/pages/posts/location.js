@@ -3,7 +3,7 @@ import Link from "next/link"
 import React from "react";
 import DemoHotel from "../../api/DemoApi/DemoHotel";
 import GoodFoods from "../../components/GoodFoods/GoodFoods";
-import TryContextDemo from "../../components/TryContextDemo";
+import TryContextDemo from "../../components/ContextDemo/TryContextDemo";
 import { RootContextProvider } from "../../context/rustContext";
 
 

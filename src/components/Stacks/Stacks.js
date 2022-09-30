@@ -2,6 +2,7 @@ import { RootContext } from "../../context/rustContext";
 import { useContext } from "react";
 
 import style from './stacks.module.css'
+import Image from "next/image";
 
 
 export default function Stacks() {
@@ -52,8 +53,18 @@ export default function Stacks() {
                     {
                         datas?.slice(0, 6).map((data) =>
                             <div className={style.stackItems}
-                                key={data.ScenicSpotID}>
-                                <span>{data.ScenicSpotName}111</span>
+                                key={data.ScenicSpotID}
+                            ><div className={style.stackItemsPhoto}>
+                                    <Image
+                                        src={data?.Picture.PictureUrl1}
+                                        alt="Picture location"
+                                        width={300}
+                                        height={180}
+                                        layout='responsive'>
+                                    </Image>
+                                    <span>{data.ScenicSpotName}</span>
+
+                                </div>
                             </div>
                         )
 
