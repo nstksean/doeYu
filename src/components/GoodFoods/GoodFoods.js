@@ -1,19 +1,14 @@
 import { RootContext } from "../../context/rustContext";
-import style from "./goodfoods.module.css"
 import { useContext } from "react";
+
+import style from "./goodfoods.module.css"
+
 
 export default function GoodFoods() {
     const rootContextValue = useContext(RootContext)
-
-    // if (rootContextValue.state.rustAPI_data === null) {
-    //     return datas == []
-    // }
-    // else () => {
-    //     return datas = rootContextValue.state.rustAPI_data
-    // }
-
     const datas = rootContextValue.state.rustAPI_data
     const loading = rootContextValue.state.rustAPI_isLoaded
+
     console.log({ datas, loading });
 
     return (

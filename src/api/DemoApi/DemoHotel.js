@@ -1,48 +1,28 @@
 import { useEffect, useState } from 'react'
-import { getRestaurantUrl } from "../api/apiClient";
+import { getHotelUrl } from "../apiClient";
 
 
-
-export default function DemoRestaurantSopt() {
+export default function DemoHotel() {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
     const query = ({ $top: '5', $format: 'JSON' })
-    const restaurantSpotUrl = getRestaurantUrl('NewTaipei', query)
+    const hotelSpotUrl = getHotelUrl('NewTaipei', query)
 
-    useEffect(() => {
-        async function asyncFunc() {
-            console.log('async start')
-            async function A() {
-                function timeout(ms) {
-                    return new Promise(resolve => setTimeout(resolve, ms));
-                }
-                await timeout(2000)
-                return 'A'
-            };
-            console.log("老闆拿蘋果")
-            await A().then((ansA) => {
-                console.log(ansA)
-            }).catch(() => {
-                console.log('error')
-            })
-            console.log("B")
-        }
-        asyncFunc()
-    }, [])
 
     // Note: the empty deps array [] means
     // this useEffect will run once
     // similar to componentDidMount()
     useEffect(() => {
-        fetch(restaurantSpotUrl, {})
+        fetch(hotelSpotUrl)
             // .then(  res => res.json() )
             .then(
                 (res) => {
                     console.log("res", res)
-                    return res.json()
+                    return res
+                        .json()
                 }
             )
 
@@ -69,8 +49,8 @@ export default function DemoRestaurantSopt() {
         return (
             <ul>
                 {items.map(item => (
-                    <li key={item.RestaurantID}>
-                        {item.RestaurantName}{item.Address}{<br />}{item.Class}
+                    <li key={item.HotelID}>
+                        "ID":{item.HotelID}"Name":{item.HotelName}{<br />}"Adress":{item.Address}
                     </li>
                 ))}
             </ul>
@@ -78,11 +58,3 @@ export default function DemoRestaurantSopt() {
     }
 
 }
-[
-    {
-        RestaurantID: '',
-        RestaurantName: '',
-        Address: '',
-        Class: ''
-    }
-]

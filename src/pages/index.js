@@ -8,9 +8,10 @@ import Slides from '../components/Slides/Slides'
 
 import style from '../styles/Home.module.css'
 
-import DemoScenicSpot from '../components/DemoScenicSpot'
-import ContextDemo from '../components/ContextDemo'
-import { RootContextProvider } from "../context/RootContext";
+import DemoScenicSpot from '../api/DemoApi/DemoScenicSpot'
+import ContextDemo from '../components/ContextDemo/ContextDemo'
+import { RootContextProvider } from "../context/rustContext";
+import TryContextDemo from '../components/ContextDemo/TryContextDemo'
 
 
 
@@ -18,7 +19,7 @@ import { RootContextProvider } from "../context/RootContext";
 export default function Home() {
   return (
     <RootContextProvider>
-
+      <TryContextDemo />
       <div className={style.container}>
         <Head>
           <title>Sean'sDoeYu</title>
@@ -26,12 +27,11 @@ export default function Home() {
         </Head>
         {/* <ContextDemo /> */}
 
-        <Slides />
+        {/* <Slides /> */}
         <Stacks />
         <TravelSpots />
-        {/* <GoodFoods /> */}
+        <GoodFoods />
         <Subscript />
-        {/* <DemoScenicSpot /> */}
       </div >
 
     </RootContextProvider>

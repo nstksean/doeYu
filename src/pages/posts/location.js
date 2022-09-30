@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import React from "react";
-import DemoHotel from "../../components/DemoHotel";
+import DemoHotel from "../../api/DemoApi/DemoHotel";
 import GoodFoods from "../../components/GoodFoods/GoodFoods";
 import TryContextDemo from "../../components/TryContextDemo";
 import { RootContextProvider } from "../../context/rustContext";

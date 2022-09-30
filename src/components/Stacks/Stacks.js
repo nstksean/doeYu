@@ -1,6 +1,18 @@
+import { RootContext } from "../../context/rustContext";
+import { useContext } from "react";
+
 import style from './stacks.module.css'
 
+
 export default function Stacks() {
+
+    const rootContextValue = useContext(RootContext)
+    const datas = rootContextValue.state.rustAPI_data
+    const loading = rootContextValue.state.rustAPI_isLoaded
+
+    console.log({ datas, loading })
+
+
     return (
         <div className={style.stackGruop}>
 
@@ -37,10 +49,17 @@ export default function Stacks() {
                     </svg>
                 </div>
                 <div className={style.stackContainer}>
-                    <div className={style.stackItems}>
-                        <span>A</span>
-                    </div>
-                    <div className={style.stackItems}>
+                    {
+                        datas?.slice(0, 6).map((data) =>
+                            <div className={style.stackItems}
+                                key={data.ScenicSpotID}>
+                                <span>{data.ScenicSpotName}111</span>
+                            </div>
+                        )
+
+                    }
+
+                    {/* <div className={style.stackItems}>
                         <span>B</span>
                     </div>
                     <div className={style.stackItems}>
@@ -54,7 +73,7 @@ export default function Stacks() {
                     </div>
                     <div className={style.stackItems}>
                         <span>F</span>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={style.stackNex}>
                     <svg fill="none" viewBox="0 0 10 14"

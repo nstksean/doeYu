@@ -1,5 +1,6 @@
 import { useContext } from 'react'
-import { RootContext } from '../context/rustContext';
+import { RootContext } from '../../context/rustContext';
+import style from './tryContextDemo.module.css'
 
 
 const TryContextDemo = () => {
@@ -11,7 +12,7 @@ const TryContextDemo = () => {
             {/* <button onClick={() => rootContextValue.dispatch({ type: DECREMENT, payload: 22 })}>-</button>
             <button onClick={() => rootContextValue.dispatch({ type: INCREMENT, payload: 11 })}>+</button> */}
 
-            <div>{JSON.stringify(rootContextValue)}</div>
+            <div className={style.none}>{JSON.stringify(rootContextValue)}</div>
         </>
     )
 }

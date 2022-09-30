@@ -1,6 +1,5 @@
 import { useContext } from 'react'
-import { DECREMENT, INCREMENT, RootContext } from '../context/RootContext';
-
+import { DECREMENT, INCREMENT, RootContext } from '../../context/RootContext';
 
 const ContextDemo = () => {
     const rootContextValue = useContext(RootContext);

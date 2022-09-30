@@ -1,14 +1,13 @@
 import style from "./travelspots.module.css"
-import { RootContext } from '../../context/RootContext';
+import { RootContext } from '../../context/rustContext';
 import { useContext } from 'react'
 import Image from "next/image";
 
 export default function TravelSpots() {
 
     const rootContextValue = useContext(RootContext);
-    const datas = rootContextValue.state.scenicSpotAPI_data
-    const loading = rootContextValue.state.scenicSpotAPI_isLoaded
-
+    const datas = rootContextValue.state.rustAPI_data
+    const loading = rootContextValue.state.rustAPI_isLoaded
 
     console.log({ datas, loading });
     return (
@@ -33,10 +32,10 @@ export default function TravelSpots() {
             <div className={style.hotSpotStackContainer}>
 
                 {
-                    datas.slice(0, 4).map((data) =>
+                    datas?.slice(0, 4).map((data) =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}><Image
-                                src={data.Picture.PictureUrl1}
+                                src={data?.Picture.PictureUrl1}
                                 alt="Picture location"
                                 width={270}
                                 height={210}
