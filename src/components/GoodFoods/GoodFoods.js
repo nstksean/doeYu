@@ -23,7 +23,7 @@ export default function GoodFoods() {
             </div>
             <div className={style.stackFoodContainer}>
                 {
-                    datas.slice(0, 5).map((data) =>
+                    datas?.slice(0, 6).map((data) =>
                         <div key={data.ScenicSpotID}
                             className={style.foodStackItem}>
                             <div className={style.foodType}> {data.ScenicSpotName}</div>

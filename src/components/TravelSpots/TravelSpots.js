@@ -10,7 +10,6 @@ export default function TravelSpots() {
     const loading = rootContextValue.state.scenicSpotAPI_isLoaded
 
 
-
     console.log({ datas, loading });
     return (
         <div className={style.hotSpotGroup}>
@@ -34,7 +33,7 @@ export default function TravelSpots() {
             <div className={style.hotSpotStackContainer}>
 
                 {
-                    datas.slice(0, 4).map(data =>
+                    datas.slice(0, 4).map((data) =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}><Image
                                 src={data.Picture.PictureUrl1}
