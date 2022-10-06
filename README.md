@@ -6,7 +6,6 @@
 ## Built with
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- 
 
 ## API resource
 [Taiwan Transport Data eXchange Service: TDX](https://tdx.transportdata.tw/api-service/swagger)
