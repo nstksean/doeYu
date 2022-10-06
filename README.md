@@ -20,6 +20,12 @@
 ## Features
 - Browse travel attraction with different cities in Taiwan
 
+User story (使用者故事)
+- 我可以篩選縣市地區，瀏覽該市區的景點
+- 我能透過 PC 網站瀏覽，也能透過 Mobile 來瀏覽介面
+
+
+
 ## Built with
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
