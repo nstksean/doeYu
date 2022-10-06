@@ -31,7 +31,7 @@
 ## Authors
 - Website - [Sean Lin](https://github.com/nstksean)
 - UI design - [Zoe Kang](https://www.facebook.com/yenhsin1994/)
-source : https://2021.thef2e.com/news/week1
+- source : https://2021.thef2e.com/news/week1
 
 
 
