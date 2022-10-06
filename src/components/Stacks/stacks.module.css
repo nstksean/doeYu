@@ -11,11 +11,12 @@
 }
 
 .stackBtnContainer {
-    width: 85%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 36px;
+    height: 70px;
 }
 
 .stackBtn {
@@ -25,7 +26,7 @@
 }
 
 .stackBtn label {
-    padding: 16px 10px 10px 10px;
+    padding: 10px 10px 16px 10px;
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -61,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
 }
 
 .stackSlide {
@@ -95,14 +96,19 @@
     border-radius: 30px;
     border: 1px solid #392A93;
     background-image: url("https://via.placeholder.com/300X180");
-
+    width: 300px;
+    height: 180px;
     background-position: center;
+    align-self: auto;
     /*背景圖片水平位置與垂直位置均置中對齊*/
 
 }
 
 .stackItemsPhoto {
+    border-radius: 30px;
+
     width: 100%;
     height: 100%;
-
+    overflow: hidden;
+    display: block;
 }

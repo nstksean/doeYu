@@ -98,8 +98,13 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    height: 100px;
 }
 
+.routeBtnContent {
+    width: 100%;
+    height: 100%
+}
 
 
 /* view height fixed */

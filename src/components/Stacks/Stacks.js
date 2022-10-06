@@ -55,6 +55,7 @@ export default function Stacks() {
                             <div className={style.stackItems}
                                 key={data.ScenicSpotID}
                             ><div className={style.stackItemsPhoto}>
+
                                     <Image
                                         src={data?.Picture.PictureUrl1}
                                         alt="Picture location"
@@ -62,8 +63,6 @@ export default function Stacks() {
                                         height={180}
                                         layout='responsive'>
                                     </Image>
-                                    <span>{data.ScenicSpotName}</span>
-
                                 </div>
                             </div>
                         )
