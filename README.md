@@ -1,5 +1,11 @@
 # Taiwan Tourist Attractions Website 島遊 | [Demo](https://doe-yu-seanlin-h8ffnpqaf-nstksean.vercel.app/)
 
+
+# Contributing guidelines
+follow [angular CONTRIBUTING](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
+
+
+
 ## Features
 - Browse travel attraction with different cities in Taiwan
 
@@ -16,7 +22,7 @@
 - UI design - [Zoe Kang](https://www.facebook.com/yenhsin1994/)
 source : https://2021.thef2e.com/news/week1
 
+
+
 ## Special Thanks to [Ashe](https://github.com/lucifiel0121) 
 
-
-try to make some change
