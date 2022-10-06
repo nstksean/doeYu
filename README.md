@@ -22,6 +22,8 @@
 ## Features
 - Browse travel attraction with different cities in Taiwan
 
+- https://2021.thef2e.com/users/6296432819610583695
+
 User story (使用者故事)
 - 我可以篩選縣市地區，瀏覽該市區的景點
 - 我能透過 PC 網站瀏覽，也能透過 Mobile 來瀏覽介面
@@ -43,7 +45,7 @@ User story (使用者故事)
   <br>
   <i>Frontend engineer</i>
   <br>
-  <i>[Sean Lin](https://github.com/nstksean)</i>
+  <i>Sean Lin</i>
   <br>
 <br>
 <br>
@@ -57,7 +59,7 @@ User story (使用者故事)
   <br>
 
   <br>
-   https://2021.thef2e.com/users/6296432819610583695
+  
 </p>
 
   
