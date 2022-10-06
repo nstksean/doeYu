@@ -37,15 +37,25 @@ User story (使用者故事)
 
 
 ## Authors
-- Website - [Sean Lin](https://github.com/nstksean)
 
 <p align="center">
+  <img src="https://avatars.githubusercontent.com/u/101794104?v=4" alt='f2e-avatar' width="100px" height="100px" />
+  <br>
+  <i>Frontend engineer</i>
+  <br>
+  <i>[Sean Lin](https://github.com/nstksean)</i>
+  <br>
+<br>
+<br>
+
+  
   <img src="https://user-images.githubusercontent.com/13078450/194267581-17e3eff0-961d-40ba-9267-64a90571c1ed.png" alt="design-avatar" width="100px" height="100px"/>
   <br>
   <i>UI design</i>
   <br>
   <i>Zoe Kang</i>
-  
+  <br>
+
   <br>
    https://2021.thef2e.com/users/6296432819610583695
 </p>
