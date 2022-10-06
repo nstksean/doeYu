@@ -1,12 +1,14 @@
-<h1 align="center">Taiwan Tourist Attractions Website 島遊 | 台灣旅遊景點導覽 </h1>
-
+<h1 align="center">Taiwan Tourist Attractions Website | 島遊   </h1>
 
 <p align="center">
-  <img src="https://2021.thef2e.com/_nuxt/img/week1.1822666.png" alt="thef2e-logo" width="316px" height="165px"/>
+  <img src="https://user-images.githubusercontent.com/13078450/194266719-b6e653fb-55f1-46d3-a84e-b8509530d701.jpg" alt="thef2e-logo" width="456px" height="239px"/>
   <br>
-  <i>THE F2E 3rd</i>
+  <i>台灣旅遊景點導覽</i>
+  <br>
+  <i>Taiwan 島遊，一款以地圖為主的台灣旅遊導覽網站，希望帶領人們每個探索台灣的美！</i>
   <br>
 </p>
+
   
 
 <p align="center">
@@ -36,8 +38,9 @@ User story (使用者故事)
 
 ## Authors
 - Website - [Sean Lin](https://github.com/nstksean)
-- UI design - [Zoe Kang](https://www.facebook.com/yenhsin1994/)
-- source : https://2021.thef2e.com/news/week1
+- UI design - Zoe Kang 
+  - source https://2021.thef2e.com/users/6296432819610583695/
+  
 
 
 
