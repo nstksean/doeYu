@@ -27,7 +27,7 @@ export default function Home() {
         </Head>
         {/* <ContextDemo /> */}
 
-        {/* <Slides /> */}
+        <Slides />
         <Stacks />
         <TravelSpots />
         <GoodFoods />

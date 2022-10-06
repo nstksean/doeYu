@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
-import DemoRestaurants from "../../components/DemoRestaurant"
+import DemoRestaurants from "../../api/DemoApi/DemoRestaurant"
 
 export default function location() {
     return (
