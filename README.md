@@ -38,8 +38,18 @@ User story (使用者故事)
 
 ## Authors
 - Website - [Sean Lin](https://github.com/nstksean)
-- UI design - Zoe Kang 
-  - source https://2021.thef2e.com/users/6296432819610583695/
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/13078450/194267581-17e3eff0-961d-40ba-9267-64a90571c1ed.png" alt="design-avatar" width="100px" height="100px"/>
+  <br>
+  <i>UI design</i>
+  <br>
+  <i>Zoe Kang</i>
+  
+  <br>
+   https://2021.thef2e.com/users/6296432819610583695
+</p>
+
   
 
 
