@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 110px;
+    margin-top: 106px;
 }
 
 .subscriptGruop {
@@ -38,6 +38,7 @@
     font-size: 16px;
     line-height: 23px;
     text-align: center;
+    margin-top: 10px;
 
     /* Neutrals/White */
 
@@ -54,6 +55,18 @@
 }
 
 .inputer input {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    /* Primary/Light purple */
+
+    color: #9086CC;
+
     width: 400px;
     height: 50px;
 
@@ -65,6 +78,7 @@
     border: 2px solid #EAEAEA;
     border-radius: 12px;
     margin-right: 14px;
+    padding: 0px 0px 0px 20px;
 
 }
 
