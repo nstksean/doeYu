@@ -80,3 +80,24 @@
     color: #FEFEFE;
     padding: 10px;
 }
+
+@media screen and (max-width:768px) {
+    .subscriptGruop {
+        width: 100%;
+        border-radius: 0;
+
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 118px;
+    }
+
+    .subTitle {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}

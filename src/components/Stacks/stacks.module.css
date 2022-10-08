@@ -112,3 +112,52 @@
     overflow: hidden;
     display: block;
 }
+
+@media screen and (max-width:768px) {
+    .stackGruop {
+        width: 100%;
+        height: 754px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+
+    .stackBtnContainer {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        height: 74px;
+    }
+
+    .stackContainer {
+        width: 83.33%;
+        height: 620px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .stackSlide {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 620px;
+
+    }
+
+
+    .stackNex,
+    .stackPre {
+        display: flex;
+        width: 10%;
+        height: 620px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
