@@ -35,7 +35,7 @@
 
 .footerList {
     color: #FEFEFE;
-    margin-top: 70px;
+    margin: 70px;
 }
 
 .logoContainer {
@@ -57,4 +57,8 @@
     flex-direction: column;
     margin-left: 10px;
     justify-content: center;
+}
+
+.listContainer ul {
+    padding-inline-start: 0px;
 }
