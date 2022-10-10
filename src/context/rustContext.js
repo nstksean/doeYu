@@ -74,7 +74,7 @@ export function RootContextProvider({ children }) {
                     dispatch({ type: rust_ERROR, payload: error })
                 }
             )
-            .then(console.log(rustUrl))
+
     }, [])
 
     return (

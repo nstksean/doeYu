@@ -26,8 +26,13 @@
 }
 
 .taiwan {
-    font-size: 9px;
     color: #9086CC;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 12px;
+    text-size-adjust: none;
 }
 
 .iconTitle {
