@@ -24,7 +24,7 @@
 .hotSpotBtnContainer {
     display: flex;
     align-self: flex-end;
-    gap: 10px;
+    gap: 13px;
     margin-bottom: 20px;
 }
 

@@ -12,6 +12,10 @@
 }
 
 .footer .taiwan {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+
     font-size: 12px;
     color: #9086CC;
     margin-bottom: 13.75px;
@@ -30,13 +34,19 @@
 }
 
 .logoContainer {
-    margin: 99px 394px 0 270px;
+    margin: 99px 394px 0 283px;
     width: 147px;
     height: 98px;
 }
 
 .footerList li {
     margin-bottom: 10px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
 }
 
 .footerList {

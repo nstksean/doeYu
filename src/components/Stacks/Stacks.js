@@ -59,9 +59,9 @@ export default function Stacks() {
                                     <Image
                                         src={data?.Picture.PictureUrl1}
                                         alt="Picture location"
-                                        width={300}
-                                        height={180}
-                                        layout='responsive'>
+                                        width={320}
+                                        height={220}
+                                        layout="intrinsic">
                                     </Image>
                                 </div>
                             </div>

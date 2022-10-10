@@ -59,10 +59,14 @@
 
 .stackContainer {
     width: 940px;
+    height: 390px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }
 
 .stackSlide {
@@ -96,12 +100,14 @@
     justify-content: center;
     border-radius: 30px;
     border: 1px solid #392A93;
-    background-image: url("https://via.placeholder.com/300X180");
-    width: 293px;
-    height: 180px;
+    background: gray;
     background-position: center;
     align-self: auto;
     /*背景圖片水平位置與垂直位置均置中對齊*/
+    width: 293px;
+    height: 180px;
+    overflow: hidden;
+
 
 }
 
@@ -110,6 +116,5 @@
 
     width: 100%;
     height: 100%;
-    overflow: hidden;
     display: block;
 }

@@ -79,6 +79,7 @@
     border-radius: 12px;
     margin-right: 14px;
     padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
 
 }
 
