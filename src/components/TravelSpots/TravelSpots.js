@@ -8,22 +8,22 @@ export default function TravelSpots() {
     const rootContextValue = useContext(RootContext);
     const datas = rootContextValue.state.rustAPI_data
     const loading = rootContextValue.state.rustAPI_isLoaded
-    const [countClick, setCountClick] = useState(0)
+    const [countClick, setCountClick] = useState(400)
 
     const handleBtnPreClick = () => {
-        console.log("click", countClick)
+
         setCountClick(countClick + 1)
     }
 
     const handleBtnNexClick = () => {
-        console.log("click", countClick)
+
         setCountClick(countClick - 1)
     }
     console.log({ datas, loading });
     return (
         <div className={style.hotSpotGroup}>
             <div className={style.title}>
-                熱門景點 {countClick}
+                熱門景點
             </div>
             <div className={style.hotSpotBtnContainer}>
                 <button className={style.hotSpotBtnPre}
@@ -44,15 +44,17 @@ export default function TravelSpots() {
             <div className={style.hotSpotStackContainer}>
 
                 {
-                    datas?.slice(countClick % 10, countClick % 10 + 4).map((data) =>
+                    datas?.slice((0 + (countClick % 4)), (4 + (countClick % 4))).map((data) =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}>
                                 <Image
                                     src={data?.Picture.PictureUrl1}
                                     alt="Picture location"
-                                    width={270}
-                                    height={210}
-                                ></Image></div>
+                                    width={310}
+                                    height={220}
+                                    layout="responsive"
+                                />
+                            </div>
                             <div
                                 className={style.spotTitle}>
                                 {data.ScenicSpotName}

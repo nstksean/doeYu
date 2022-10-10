@@ -2,7 +2,7 @@
 
 .hotSpotGroup {
 
-    width: 85%;
+    width: 83.33%;
     height: 425px;
     display: flex;
     justify-content: flex-start;
@@ -24,7 +24,7 @@
 .hotSpotBtnContainer {
     display: flex;
     align-self: flex-end;
-    gap: 10px;
+    gap: 13px;
     margin-bottom: 20px;
 }
 
@@ -40,6 +40,17 @@
     align-items: center;
 
 
+}
+
+.hotSpotBtnPre:hover,
+.hotSpotBtnPre:focus {
+    background-color: #FA7E;
+
+}
+
+.hotSpotBtnNex:hover,
+.hotSpotBtnNex:focus {
+    background-color: #FA7E;
 }
 
 .hotSpotBtnPre svg,
@@ -68,32 +79,49 @@
     align-items: center;
     background: #FEFEFE;
     /* Neutrals/LIght grey */
-
+    height: 300px;
+    width: 270px;
     border: 1px solid #EAEAEA;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
+    overflow: hidden;
 
 }
 
 .ItemPhoto {
-
     border-radius: 20px 20px 0px 0px;
     margin-bottom: 20px;
+    width: 305px;
+    height: 213px;
     display: block;
     overflow: hidden;
 }
 
 .spotTitle {
-    color: #392A93;
-
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+    /* Primary/Dark purple */
+
+    color: #392A93;
     margin-bottom: 10px;
 
 }
 
 .spotCity {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
     font-size: 16px;
-    color: #A9D3FF;
+    line-height: 23px;
+
+    /* Neutrals/Grey */
+
+    color: #CFCFCF;
 
     margin-bottom: 20px;
 

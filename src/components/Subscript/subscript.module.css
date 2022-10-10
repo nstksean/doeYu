@@ -3,11 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 106px;
 }
 
 .subscriptGruop {
-    width: 85%;
+    width: 83.3%;
     padding: 40px 0 40px 0;
     display: flex;
     flex-direction: column;
@@ -18,11 +18,27 @@
     border-radius: 20px;
 }
 
+.title {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Primary/Dark purple */
+
+    color: #392A93;
+}
+
 .subTitle {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 23px;
     text-align: center;
+    margin-top: 10px;
 
     /* Neutrals/White */
 
@@ -39,6 +55,18 @@
 }
 
 .inputer input {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    /* Primary/Light purple */
+
+    color: #9086CC;
+
     width: 400px;
     height: 50px;
 
@@ -50,6 +78,8 @@
     border: 2px solid #EAEAEA;
     border-radius: 12px;
     margin-right: 14px;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
 
 }
 

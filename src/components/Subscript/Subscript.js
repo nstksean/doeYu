@@ -5,7 +5,7 @@ export default function Subscript() {
         <div className={style.form}>
             <div className={style.subscriptGruop}>
 
-                <div className='title'>
+                <div className={style.title}>
                     訂閱我們，獲得最在地的旅遊資訊！
                 </div>
                 <div className={style.subTitle}>

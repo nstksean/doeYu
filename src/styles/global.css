@@ -400,7 +400,8 @@ button {
 
 button:hover,
 button:focus {
-    background: #0053ba;
+    background: inherit;
+    cursor: pointer;
 }
 
 button:focus {
