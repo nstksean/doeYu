@@ -50,7 +50,7 @@ export default function TravelSpots() {
                                 <Image
                                     src={data?.Picture.PictureUrl1}
                                     alt="Picture location"
-                                    width={310}
+                                    width={320}
                                     height={220}
                                     layout="responsive"
                                 />
