@@ -12,40 +12,51 @@
 }
 
 .footer .taiwan {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+
     font-size: 12px;
     color: #9086CC;
+    margin-bottom: 13.75px;
 }
 
 .footer .iconTitle {
     font-size: 36px;
     color: #FEFEFE;
+    margin-left: 1.7px;
 }
 
 .footer .navBarIcon {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+}
 
+.logoContainer {
+    margin: 99px 394px 0 283px;
+    width: 147px;
+    height: 98px;
 }
 
 .footerList li {
-    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
 }
 
 .footerList {
     color: #FEFEFE;
-    margin: 70px;
+    margin: 82px 78px 0px 0px;
 }
-
-.logoContainer {
-    width: 50%;
-}
-
 
 
 .footer .listContainer {
-    width: 50%;
+
     flex-direction: row;
     display: flex;
 }
@@ -57,9 +68,8 @@
     justify-content: center;
 }
 
-.listContainer ul {
-    padding-inline-start: 0px;
-}
+
+
 
 @media screen and (max-width:768px) {
     .footer {

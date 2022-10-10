@@ -13,8 +13,9 @@
 .navBarIcon {
     display: flex;
     flex-direction: row;
-    width: 160px;
-    padding-left: 50px;
+    width: 110px;
+    padding: 30px 40px 30px 50px;
+    height: 100%;
 }
 
 .wordArts {
@@ -58,10 +59,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    width: 150px;
+    width: 153px;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 22px;
     height: 100px;
 }
 
