@@ -20,23 +20,22 @@ export default function Stacks() {
             <div className={style.stackBtnContainer}>
 
                 <div className={style.stackBtn}>
-                    <input type='radio' name="city" id="北台灣" />
-                    <label className={style.stackBtnLb} htmlFor="北台灣">
-                        北台灣</label>
+                    <input type='radio' name="city" id="熱鬧繁華" />
+                    <label className={style.stackBtnLb} htmlFor="熱鬧繁華">
+                        熱鬧繁華</label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="中台灣" />
-                    <label className={style.stackBtnLb} htmlFor="中台灣">中台灣
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="與自然共舞" />
+                    <label className={style.stackBtnLb} htmlFor="與自然共舞">與自然共舞
                     </label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="南台灣" />
-                    <label className={style.stackBtnLb} htmlFor="南台灣">南台灣</label>
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="純樸人情味" />
+                    <label className={style.stackBtnLb} htmlFor="純樸人情味">純樸人情味</label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="東台灣" />
-                    <label className={style.stackBtnLb} htmlFor="東台灣">東台灣</label>
-
-                </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="離島" />
-                    <label className={style.stackBtnLb} htmlFor="離島">離島</label>
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="南島奔放" />
+                    <label className={style.stackBtnLb} htmlFor="南島奔放">南島奔放</label>
 
                 </div>
 
