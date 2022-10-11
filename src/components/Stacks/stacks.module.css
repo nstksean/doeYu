@@ -113,7 +113,7 @@
 .stackItemsPhoto {
     position: absolute;
     width: 20.3vw;
-    height: 18vh;
+    height: 12.5vw;
     object-fit: cover;
     object-position: center;
     overflow: hidden;
