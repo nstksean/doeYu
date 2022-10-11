@@ -2,6 +2,8 @@ import { RootContext } from "../../context/rustContext";
 import { useContext } from "react";
 import { citys as city } from './CityItems'
 import { useState } from "react";
+import { nanoid } from '@reduxjs/toolkit'
+
 
 import style from './stacks.module.css'
 import Image from "next/image";
