@@ -1,4 +1,5 @@
-import Changhua from '../../../public/images/cities/Changhua.jpg'
+import Changhua from '../../../public/images/cities/ChanghuaCounty.jpg'
+
 import Chiayi from '../../../public/images/cities/Chiayi.jpg'
 import ChiayiCo from '../../../public/images/cities/ChiayiCounty.jpg'
 import Hsinchu from '../../../public/images/cities/Hsinchu.jpg'
@@ -20,117 +21,162 @@ import TaitungCounty from '../../../public/images/cities/TaitungCounty.jpg'
 import Taoyuan from '../../../public/images/cities/Taoyuan.jpg'
 import YilanCounty from '../../../public/images/cities/YilanCounty.jpg'
 import YunlinCounty from '../../../public/images/cities/YunlinCounty.jpg'
+import { nanoid } from '@reduxjs/toolkit'
 
-['熱鬧繁華', '與自然共舞', '純樸人情味', '南島奔放']
-'../../../public/images/cities/'
+
+
 export const citys = [
     {
         name: '彰化縣',
         imageUrl: Changhua,
-        category: '純樸人情味',
+        category: '南島奔放',
+        key: nanoid()
     },
     {
         name: '嘉義市',
         imageUrl: Chiayi,
         category: '南島奔放',
+        key: nanoid()
+
     },
     {
         name: '嘉義縣',
         imageUrl: ChiayiCo,
         category: '南島奔放',
+        key: nanoid()
+
     },
     {
         name: '新竹市',
         imageUrl: Hsinchu,
         category: '純樸人情味',
+        key: nanoid()
+
     },
     {
         name: '新竹縣',
         imageUrl: HsinchuCounty,
         category: '純樸人情味',
-    }, {
+        key: nanoid()
+
+    },
+    {
         name: '花蓮縣',
         imageUrl: HualienCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '高雄',
         imageUrl: Kaohsiung,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '基隆市',
         imageUrl: Keelung,
         category: '純樸人情味',
+        key: nanoid()
+
     },
     {
         name: '金門縣',
         imageUrl: KinmenCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '連江縣',
         imageUrl: LienchiangCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '苗栗縣',
         imageUrl: MiaoliCounty,
         category: '純樸人情味',
+        key: nanoid()
+
     },
     {
         name: '南投縣',
         imageUrl: NantouCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '新北',
         imageUrl: NewTaipei,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '澎湖縣',
         imageUrl: PenghuCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '屏東縣',
         imageUrl: PingtungCounty,
         category: '南島奔放',
+        key: nanoid()
+
     },
     {
         name: '台中',
         imageUrl: Taichung,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '台南',
         imageUrl: Tainan,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '台北',
         imageUrl: Taipei,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '台東縣',
         imageUrl: TaitungCounty,
         category: '與自然共舞',
+        key: nanoid()
+
     },
     {
         name: '桃園',
         imageUrl: Taoyuan,
         category: '熱鬧繁華',
+        key: nanoid()
+
     },
     {
         name: '宜蘭縣',
         imageUrl: YilanCounty,
         category: '純樸人情味',
+        key: nanoid()
+
     },
     {
         name: '雲林縣',
         imageUrl: YunlinCounty,
         category: '純樸人情味',
+        key: nanoid()
+
     },
 ]

@@ -1,25 +1,37 @@
 import { RootContext } from "../../context/rustContext";
 import { useContext } from "react";
+import { citys as city } from './CityItems'
+import { useState } from "react";
 
 import style from './stacks.module.css'
 import Image from "next/image";
 
+// export const filterBtn
 
 export default function Stacks() {
-
-    const rootContextValue = useContext(RootContext)
-    const datas = rootContextValue.state.rustAPI_data
-    const loading = rootContextValue.state.rustAPI_isLoaded
-
-    console.log({ datas, loading })
+    const [filter, setfilter] = useState("熱鬧繁華")
+    const filterBtn = ['熱鬧繁華', '與自然共舞', '純樸人情味', '南島奔放']
 
 
     return (
         <div className={style.stackGruop}>
-
             <div className={style.stackBtnContainer}>
 
-                <div className={style.stackBtn}>
+                {filterBtn.map((item) => (
+                    <div className={style.stackBtn}
+                        onClick={() => setfilter(item)}
+                        key={item}
+                    >
+                        <input type='radio' name="city" id={item} value={item} />
+                        <label className={style.stackBtnLb} htmlFor={item}>
+                            {item}</label>
+                    </div>
+
+                ))
+                }
+
+
+                {/* <div className={style.stackBtn}>
                     <input type='radio' name="city" id="熱鬧繁華" />
                     <label className={style.stackBtnLb} htmlFor="熱鬧繁華">
                         熱鬧繁華</label>
@@ -37,7 +49,7 @@ export default function Stacks() {
                     <input type='radio' name="city" id="南島奔放" />
                     <label className={style.stackBtnLb} htmlFor="南島奔放">南島奔放</label>
 
-                </div>
+                </div> */}
 
 
             </div>
@@ -50,39 +62,32 @@ export default function Stacks() {
                 </div>
                 <div className={style.stackContainer}>
                     {
-                        datas?.slice(0, 6).map((data) =>
-                            <div className={style.stackItems}
-                                key={data.ScenicSpotID}
-                            ><div className={style.stackItemsPhoto}>
+                        city.filter((city) => city.category === filter)
+                            .map((city) =>
+                                <div className={style.stackItems}
+                                    key={city.key}
+                                >
+                                    <div className={style.stackItemsPhoto}>
+                                        <Image
+                                            src={city.imageUrl}
+                                            alt={city.name}
+                                            layout="fill"
+                                            objectFit="cover"
+                                            objectPosition="center"
+                                            priority
+                                        >
 
-                                    <Image
-                                        src={data?.Picture.PictureUrl1}
-                                        alt="Picture location"
-                                        width={320}
-                                        height={220}
-                                        layout="intrinsic">
-                                    </Image>
+                                        </Image>
+                                    </div>
+                                    <p className={style.foodType}>
+                                        {city.name}
+                                    </p>
                                 </div>
-                            </div>
-                        )
+                            )
 
                     }
 
-                    {/* <div className={style.stackItems}>
-                        <span>B</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>C</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>D</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>E</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>F</span>
-                    </div> */}
+
                 </div>
                 <div className={style.stackNex}>
                     <svg fill="none" viewBox="0 0 10 14"
