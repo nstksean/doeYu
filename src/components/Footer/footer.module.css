@@ -2,13 +2,13 @@
 
 .footer {
     width: 100%;
-    height: 337px;
+    height: 23.4vw;
     background-color: #392A93;
     border-top: 1px solid #eaeaea;
     display: flex;
 
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 6.9444vw;
 }
 
 .footer .taiwan {
@@ -16,15 +16,16 @@
     font-style: normal;
     font-weight: 600;
 
-    font-size: 12px;
+    font-size: 16px;
     color: #9086CC;
-    margin-bottom: 13.75px;
+    margin-bottom: 0.8vw;
+    margin-left: 1vw;
 }
 
 .footer .iconTitle {
     font-size: 36px;
     color: #FEFEFE;
-    margin-left: 1.7px;
+    margin-left: 0.96vw;
 }
 
 .footer .navBarIcon {
@@ -34,9 +35,9 @@
 }
 
 .logoContainer {
-    margin: 99px 394px 0 283px;
-    width: 147px;
-    height: 98px;
+    margin: 6.875vw 27.2vw 0 19.652vw;
+    width: 10.3vw;
+    height: 6.8vw;
 }
 
 .footerList li {
@@ -51,7 +52,20 @@
 
 .footerList {
     color: #FEFEFE;
-    margin: 82px 78px 0px 0px;
+    margin: 5.5vw 5.1vw 0px 0px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.12rem;
+}
+
+.footerList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -64,7 +78,7 @@
 .wordArts {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 0.694vw;
     justify-content: center;
 }
 
@@ -75,9 +89,9 @@
     .footer {
         display: flex;
         flex-direction: column;
-        margin-top: 73px;
+        margin-top: 5.069vw;
         width: 100%;
-        height: 535px;
+        height: 37.152vw;
         justify-content: flex-start;
         align-items: center;
     }
@@ -90,7 +104,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 5.55vw;
 
     }
 
@@ -104,15 +118,15 @@
     .footer .taiwan {
         font-size: 16px;
         color: #9086CC;
-        margin-bottom: 13px;
-        margin-left: 21.5px;
+        margin-bottom: 0.9vw;
+        margin-left: 1.493vw;
 
     }
 
     .footer .iconTitle {
         font-size: 36px;
         color: #FEFEFE;
-        margin-left: 23.2px;
+        margin-left: 1.611vw;
 
     }
 
@@ -120,24 +134,24 @@
         width: 82%;
         flex-direction: row;
         display: flex;
-        margin-top: 90px;
-        margin-right: 15px;
+        margin-top: 6.25vw;
+        margin-right: 1.041vw;
         justify-content: center;
     }
 
     .footerList {
         color: #FEFEFE;
-        margin: 0px 39px 0px 39px;
+        margin: 0px 2.7vw 0px 2.7vw;
 
     }
 
     .footerList li {
-        margin-bottom: 10px;
-        margin: 0 0 10px 0;
+        margin-bottom: 0.694vw;
+        margin: 0 0 0.694vw 0;
     }
 
     .listContainer ul {
-        margin-top: 10px;
+        margin-top: 0.694vw;
         padding-inline-start: 0px;
         font-family: 'Noto Sans TC';
         font-style: normal;

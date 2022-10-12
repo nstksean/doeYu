@@ -22,23 +22,20 @@ export default function Stacks() {
                 <div className={style.stackBtn}>
                     <input type='radio' name="city" id="北台灣" />
                     <label className={style.stackBtnLb} htmlFor="北台灣">
-                        北台灣</label>
+                        熱鬧繁華</label>
                 </div>
                 <div className={style.stackBtn}>                    <input type='radio' name="city" id="中台灣" />
-                    <label className={style.stackBtnLb} htmlFor="中台灣">中台灣
+                    <label className={style.stackBtnLb} htmlFor="中台灣">與自然共舞
                     </label>
                 </div>
                 <div className={style.stackBtn}>                    <input type='radio' name="city" id="南台灣" />
-                    <label className={style.stackBtnLb} htmlFor="南台灣">南台灣</label>
+                    <label className={style.stackBtnLb} htmlFor="南台灣">純樸人情味</label>
                 </div>
                 <div className={style.stackBtn}>                    <input type='radio' name="city" id="東台灣" />
-                    <label className={style.stackBtnLb} htmlFor="東台灣">東台灣</label>
+                    <label className={style.stackBtnLb} htmlFor="東台灣">南島奔放</label>
 
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="離島" />
-                    <label className={style.stackBtnLb} htmlFor="離島">離島</label>
 
-                </div>
 
 
             </div>
