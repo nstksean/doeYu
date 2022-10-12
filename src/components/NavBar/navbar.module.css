@@ -72,3 +72,33 @@
     width: 100%;
     height: 100%
 }
+
+@media screen and (max-width:768px) {
+    .navBar {
+        height: 13.02vw;
+
+    }
+
+    .navBarIcon {
+
+        width: 14.32vw;
+        padding: 3.9vw 5.19vw 3.9vw 6.51vw;
+        height: 100%;
+    }
+
+
+
+
+    /* Icon part */
+
+    .routeBtn {
+
+        width: 19.92vw;
+        height: 13.02vw;
+    }
+
+    .routeBtnContent {
+        width: 100%;
+        height: 100%
+    }
+}

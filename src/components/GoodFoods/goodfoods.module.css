@@ -58,7 +58,7 @@
 @media screen and (max-width:768px) {
     .hotFoodGroup {
         width: 83.33%;
-        height: 50vw;
+        height: 93.75vw;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -67,17 +67,24 @@
     }
 
     .title {
-        margin: 0.694vw 0.694vw 4.027vw 0.694vw;
+        margin: 2.5vw 1.3vw 7.1vw 1.3vw;
 
     }
 
     .stackFoodContainer {
         width: 100%;
-        height: 43.055vw;
+        height: 80.73vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 2.77vw;
+        gap: 5.19vw;
         justify-items: center;
+    }
+
+    .foodStackItem {
+        width: 39.06vw;
+        height: 23.44vw;
+        border-radius: 20px;
+
     }
 }

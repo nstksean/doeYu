@@ -89,22 +89,26 @@
     .footer {
         display: flex;
         flex-direction: column;
-        margin-top: 5.069vw;
+        margin-top: 10.4vw;
         width: 100%;
-        height: 37.152vw;
+        height: 69.66vw;
         justify-content: flex-start;
         align-items: center;
     }
 
     .logoContainer {
         width: 100%;
+        margin: 0;
+        width: 19.14vw;
+        height: 12.76vw;
+        margin-top: 10.4vw;
     }
 
     .footer .navBarIcon {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 5.55vw;
+
 
     }
 
@@ -118,15 +122,15 @@
     .footer .taiwan {
         font-size: 16px;
         color: #9086CC;
-        margin-bottom: 0.9vw;
-        margin-left: 1.493vw;
+        margin-bottom: 1vw;
+        margin-left: 2.8vw;
 
     }
 
     .footer .iconTitle {
         font-size: 36px;
         color: #FEFEFE;
-        margin-left: 1.611vw;
+        margin-left: 3.02vw;
 
     }
 
@@ -134,24 +138,24 @@
         width: 82%;
         flex-direction: row;
         display: flex;
-        margin-top: 6.25vw;
-        margin-right: 1.041vw;
+        margin-top: 11.72vw;
+        margin-right: 3vw;
         justify-content: center;
     }
 
     .footerList {
         color: #FEFEFE;
-        margin: 0px 2.7vw 0px 2.7vw;
+        margin: 0px 38px;
 
     }
 
     .footerList li {
-        margin-bottom: 0.694vw;
-        margin: 0 0 0.694vw 0;
+        margin-bottom: 1.3vw;
+        margin: 0 0 1.3vw 0;
     }
 
     .listContainer ul {
-        margin-top: 0.694vw;
+        margin-top: 1.3vw;
         padding-inline-start: 0px;
         font-family: 'Noto Sans TC';
         font-style: normal;

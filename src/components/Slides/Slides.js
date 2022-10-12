@@ -17,12 +17,12 @@ export default function Slides() {
         <div className={style.slideGroup}>
             <div className={style.slideBtnPre}>
                 <Image
-                    src={slideL}
+                    src={slideR}
                     alt={fakeSlide.name}
                     width={104}
                     height={546}
-                    layout="responsive"
-
+                    layout='fixed'
+                    objectFit='cover'
                 ></Image>
                 {/* <svg fill="none" viewBox="0 0 10 14"
                     xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ export default function Slides() {
                             width={1050}
                             height={546}
                             layout="fill"
-                            objectFit="contain"
+                            objectFit='cover'
 
 
                         ></Image>
@@ -62,7 +62,8 @@ export default function Slides() {
                     alt={fakeSlide.name}
                     width={104}
                     height={546}
-                    layout="responsive"
+                    layout="fill"
+                    objectFit='cover'
                 ></Image>
                 {/* <svg fill="none" viewBox="0 0 10 14"
                     xmlns="http://www.w3.org/2000/svg">
