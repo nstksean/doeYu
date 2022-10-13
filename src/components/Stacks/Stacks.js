@@ -1,44 +1,57 @@
 import { RootContext } from "../../context/rustContext";
 import { useContext } from "react";
+import { citys as city } from './CityItems'
+import { useState } from "react";
+import { nanoid } from '@reduxjs/toolkit'
+
 
 import style from './stacks.module.css'
 import Image from "next/image";
 
+// export const filterBtn
 
 export default function Stacks() {
-
-    const rootContextValue = useContext(RootContext)
-    const datas = rootContextValue.state.rustAPI_data
-    const loading = rootContextValue.state.rustAPI_isLoaded
-
-    console.log({ datas, loading })
+    const [filter, setfilter] = useState("熱鬧繁華")
+    const filterBtn = ['熱鬧繁華', '與自然共舞', '純樸人情味', '南島奔放']
 
 
     return (
         <div className={style.stackGruop}>
-
             <div className={style.stackBtnContainer}>
 
-                <div className={style.stackBtn}>
-                    <input type='radio' name="city" id="北台灣" />
-                    <label className={style.stackBtnLb} htmlFor="北台灣">
-                        北台灣</label>
+                {filterBtn.map((item) => (
+                    <div className={style.stackBtn}
+                        onClick={() => setfilter(item)}
+                        key={item}
+                    >
+                        <input type='radio' name="city" id={item} value={item} />
+                        <label className={style.stackBtnLb} htmlFor={item}>
+                            {item}</label>
+                    </div>
+
+                ))
+                }
+
+
+                {/* <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="熱鬧繁華" />
+                    <label className={style.stackBtnLb} htmlFor="熱鬧繁華">
+                        熱鬧繁華</label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="中台灣" />
-                    <label className={style.stackBtnLb} htmlFor="中台灣">中台灣
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="與自然共舞" />
+                    <label className={style.stackBtnLb} htmlFor="與自然共舞">與自然共舞
                     </label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="南台灣" />
-                    <label className={style.stackBtnLb} htmlFor="南台灣">南台灣</label>
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="純樸人情味" />
+                    <label className={style.stackBtnLb} htmlFor="純樸人情味">純樸人情味</label>
                 </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="東台灣" />
-                    <label className={style.stackBtnLb} htmlFor="東台灣">東台灣</label>
+                <div className={style.stackBtn}>
+                    <input type='radio' name="city" id="南島奔放" />
+                    <label className={style.stackBtnLb} htmlFor="南島奔放">南島奔放</label>
 
-                </div>
-                <div className={style.stackBtn}>                    <input type='radio' name="city" id="離島" />
-                    <label className={style.stackBtnLb} htmlFor="離島">離島</label>
-
-                </div>
+                </div> */}
 
 
             </div>
@@ -51,39 +64,32 @@ export default function Stacks() {
                 </div>
                 <div className={style.stackContainer}>
                     {
-                        datas?.slice(0, 6).map((data) =>
-                            <div className={style.stackItems}
-                                key={data.ScenicSpotID}
-                            ><div className={style.stackItemsPhoto}>
+                        city.filter((city) => city.category === filter)
+                            .map((city) =>
+                                <div className={style.stackItems}
+                                    key={city.key}
+                                >
+                                    <div className={style.stackItemsPhoto}>
+                                        <Image
+                                            src={city.imageUrl}
+                                            alt={city.name}
+                                            layout="fill"
+                                            objectFit="cover"
+                                            objectPosition="center"
+                                            priority
+                                        >
 
-                                    <Image
-                                        src={data?.Picture.PictureUrl1}
-                                        alt="Picture location"
-                                        width={320}
-                                        height={220}
-                                        layout="intrinsic">
-                                    </Image>
+                                        </Image>
+                                    </div>
+                                    <p className={style.foodType}>
+                                        {city.name}
+                                    </p>
                                 </div>
-                            </div>
-                        )
+                            )
 
                     }
 
-                    {/* <div className={style.stackItems}>
-                        <span>B</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>C</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>D</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>E</span>
-                    </div>
-                    <div className={style.stackItems}>
-                        <span>F</span>
-                    </div> */}
+
                 </div>
                 <div className={style.stackNex}>
                     <svg fill="none" viewBox="0 0 10 14"

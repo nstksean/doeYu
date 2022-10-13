@@ -23,9 +23,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    border: 1px solid #392A93;
-    background-image: url("https://via.placeholder.com/380X240");
+
     background-position: center;
+    overflow: hidden;
+
 
 }
 
@@ -42,6 +43,22 @@
     /* Neutrals/White */
 
     color: #FEFEFE;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+
+}
+
+.bgWrap {
+    position: absolute;
+    width: 388px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 30px;
+
 
 }
 
