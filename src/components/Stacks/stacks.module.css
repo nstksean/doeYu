@@ -116,7 +116,6 @@
     justify-content: center;
     border-radius: 3rem;
 
-    background: gray;
     background-position: center;
     align-self: auto;
     /*背景圖片水平位置與垂直位置均置中對齊*/
@@ -209,7 +208,6 @@
         justify-content: center;
         border-radius: 3rem;
 
-        background: gray;
         background-position: center;
         align-self: auto;
         /*背景圖片水平位置與垂直位置均置中對齊*/

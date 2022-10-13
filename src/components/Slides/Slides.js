@@ -19,9 +19,8 @@ export default function Slides() {
                 <Image
                     src={slideR}
                     alt={fakeSlide.name}
-                    width={104}
-                    height={546}
-                    layout='fixed'
+
+                    layout='fill'
                     objectFit='cover'
                 ></Image>
                 {/* <svg fill="none" viewBox="0 0 10 14"
@@ -35,8 +34,7 @@ export default function Slides() {
                         <Image
                             src={jufan}
                             alt={fakeSlide.name}
-                            width={1050}
-                            height={546}
+
                             layout="fill"
                             objectFit='cover'
 
@@ -60,8 +58,7 @@ export default function Slides() {
                 <Image
                     src={slideR}
                     alt={fakeSlide.name}
-                    width={104}
-                    height={546}
+
                     layout="fill"
                     objectFit='cover'
                 ></Image>
