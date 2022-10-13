@@ -128,11 +128,33 @@
 }
 
 .stackItemsPhoto {
-    border-radius: 3rem;
+    position: absolute;
+    width: 20.3vw;
+    height: 12.5vw;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 30px;
+}
 
-    width: 100%;
-    height: 100%;
-    display: block;
+.foodType {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Neutrals/White */
+
+    color: #FEFEFE;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+
 }
 
 @media screen and (max-width:768px) {
