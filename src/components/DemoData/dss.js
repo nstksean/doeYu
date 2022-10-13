@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getScenicSpotUrl } from "../../../api/apiClient"
-import { citys as citydata } from '../../../data/CityItems';
+import { getScenicSpotUrl } from "../../api/apiClient"
+import { citys as citydata } from '../../data/CityItems';
 
 
 

@@ -1,7 +1,7 @@
 import style from "./spotcards.module.css"
 import Image from "next/image";
 import Plher from '../../../public/images/placeholders/scenicBig.png'
-import { items } from "../../pages/posts/restaurants/dss";
+import { items } from "../DemoData/dss";
 
 export default function SpotCards(items) {
     console.log(items)

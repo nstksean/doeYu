@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import SpotCards from '../../../components/SpotCards/SpotCards'
-import { DemoScenicSpot } from './dss'
+import { DemoScenicSpot } from '../../../components/DemoData/dss'
 
 
 const Post = () => {
