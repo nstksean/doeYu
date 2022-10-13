@@ -1,9 +1,9 @@
-import ChineseFood from '../../../public/images/food/bun.jpg'
-import PorkRice from '../../../public/images/food/rice.jpg'
-import ExoticFood from '../../../public/images/food/nasilemak.jpg'
-import Ice from '../../../public/images/food/ice.jpg'
-import Cake from '../../../public/images/food/cake.jpg'
-import AllOthers from '../../../public/images/food/other.jpg'
+import ChineseFood from '../../public/images/food/bun.jpg'
+import PorkRice from '../../public/images/food/rice.jpg'
+import ExoticFood from '../../public/images/food/nasilemak.jpg'
+import Ice from '../../public/images/food/ice.jpg'
+import Cake from '../../public/images/food/cake.jpg'
+import AllOthers from '../../public/images/food/other.jpg'
 import { nanoid } from '@reduxjs/toolkit'
 
 

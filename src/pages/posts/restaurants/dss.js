@@ -51,6 +51,7 @@ export function DemoScenicSpot({ restaurants }) {
 
     }, [querycity])
 
+
     if (error) {
         return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -69,3 +70,7 @@ export function DemoScenicSpot({ restaurants }) {
     }
 
 };
+
+export const items = DemoScenicSpot.items
+
+console.log(items)

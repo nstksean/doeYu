@@ -421,6 +421,18 @@ button:active {
 /* view height fixed */
 
 
+html {
+    font-size: 62.5%;
+    /* 62.5% of the base size of 16px = 10px.*/
+
+}
+
+label:hover,
+input:hover,
+label:focus,
+input:focus {
+    cursor: pointer
+}
 
 
 

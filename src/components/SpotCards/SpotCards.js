@@ -1,9 +1,10 @@
 import style from "./spotcards.module.css"
 import Image from "next/image";
 import Plher from '../../../public/images/placeholders/scenicBig.png'
+import { items } from "../../pages/posts/restaurants/dss";
 
-export default function SpotCards() {
-
+export default function SpotCards(items) {
+    console.log(items)
 
     return (
         <div className={style.hotSpotGroup}>
@@ -35,26 +36,27 @@ export default function SpotCards() {
                 熱門景點
             </div>
             <div className={style.hotSpotStackContainer}>
-                <div
-                    // key={data.ScenicSpotID} 
-                    className={style.hotSpotStackItem}>
-                    <div className={style.ItemPhoto}>
-                        <Image
-                            src={Plher}
-                            alt="Picture location"
-                            width={320}
-                            height={220}
-                            layout="responsive"
-                        />
-                    </div>
-                    <div
-                        className={style.spotTitle}>
-                        {/* {data.ScenicSpotName} */}
-                    </div>
-                    <div className={style.spotCity}>
-                        {/* {data.City} */}
-                    </div>
-                </div>
+                {
+                    Array.from(items).map((item) =>
+                        <div className={style.hotSpotStackItem}>
+                            <div className={style.ItemPhoto}>
+                                <Image
+                                    src={Plher}
+                                    alt="Picture location"
+                                    width={320}
+                                    height={220}
+                                    layout="responsive"
+                                />
+                            </div>
+                            <div
+                                className={style.spotTitle}>
+                                {/* {data.ScenicSpotName} */}
+                            </div>
+                            <div className={style.spotCity}>
+                                {/* {data.City} */}
+                            </div>
+                        </div>)
+                }
             </div>
         </div >
     );

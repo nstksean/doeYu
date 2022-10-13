@@ -3,12 +3,12 @@
 .hotSpotGroup {
 
     width: 83.33%;
-    height: 425px;
+    height: 29.51vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 6.35vw;
 
 }
 
@@ -18,20 +18,21 @@
     font-size: 26px;
 
     color: #392A93;
-    margin: 10px;
+    margin: 0.694vw 0.694vw 0.972vw 0.694vw;
 }
 
 .hotSpotBtnContainer {
     display: flex;
     align-self: flex-end;
-    gap: 13px;
-    margin-bottom: 20px;
+    gap: 0.9vw;
+    margin: 0 1px 1.388vw 0;
+
 }
 
 .hotSpotBtnPre,
 .hotSpotBtnNex {
-    width: 44px;
-    height: 44px;
+    width: 3.055vw;
+    height: 3.055vw;
     background-color: #FA7E5F;
     padding: 0;
     border-radius: 12px;
@@ -55,8 +56,8 @@
 
 .hotSpotBtnPre svg,
 .hotSpotBtnNex svg {
-    width: 12px;
-    height: 12px;
+    width: 0.833vw;
+    height: 0.833vw;
 
 }
 
@@ -69,7 +70,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    gap: 40px;
+    gap: 2.6vw;
+    justify-items: center;
 }
 
 .hotSpotStackItem {
@@ -79,22 +81,22 @@
     align-items: center;
     background: #FEFEFE;
     /* Neutrals/LIght grey */
-    height: 300px;
-    width: 270px;
+    height: 21.2vw;
+    width: 18.75vw;
     border: 1px solid #EAEAEA;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     overflow: hidden;
-
 }
 
 .ItemPhoto {
-    border-radius: 20px 20px 0px 0px;
-    margin-bottom: 20px;
-    width: 305px;
-    height: 213px;
+    border-radius: 1.388vw 1.388vw 0px 0px;
+    margin-bottom: 1.388vw;
+    width: 22.22vw;
+    height: 16.04vw;
     display: block;
     overflow: hidden;
+    object-fit: ;
 }
 
 .spotTitle {
@@ -108,8 +110,11 @@
     /* Primary/Dark purple */
 
     color: #392A93;
-    margin-bottom: 10px;
-
+    margin-bottom: 0.8vw;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .spotCity {
@@ -121,9 +126,8 @@
 
     /* Neutrals/Grey */
 
-    color: #CFCFCF;
-
-    margin-bottom: 20px;
+    color: #A9D3FF;
+    margin-bottom: 1.388vw;
 
 }
 
@@ -131,12 +135,17 @@
     .hotSpotGroup {
 
         width: 83.33%;
-        height: 744px;
+        height: 96.86vw;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 120px;
+        margin-bottom: 15.61vw;
+
+    }
+
+    .hotSpotBtnContainer {
+        display: none;
 
     }
 
@@ -146,7 +155,8 @@
         font-size: 26px;
 
         color: #392A93;
-        margin: 10px 10px 0px 10px;
+        margin: 19px;
+
     }
 
     .hotSpotStackContainer {
@@ -154,7 +164,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 40px;
+        gap: 5.2vw;
+        justify-items: center;
+        margin-top: 34px;
     }
 
     .hotSpotStackItem {
@@ -164,8 +176,8 @@
         align-items: center;
         background: #FEFEFE;
         /* Neutrals/LIght grey */
-        height: 300px;
-        width: 300px;
+        height: 39.3vw;
+        width: 39.05vw;
         border: 1px solid #EAEAEA;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
         border-radius: 30px;
@@ -174,11 +186,16 @@
     }
 
     .ItemPhoto {
-        border-radius: 20px 20px 0px 0px;
-        margin-bottom: 20px;
-        width: 320px;
-        height: 220px;
+        border-radius: 20px 20px 0px 20px;
+        margin-bottom: 2.4vw;
+        width: 41.66vw;
+        height: 27.8vw;
         display: block;
         overflow: hidden;
+    }
+
+    .spotTitle {
+        margin-bottom: 1.2vw;
+
     }
 }
