@@ -2,7 +2,7 @@
 
 .navBar {
     width: 100%;
-    height: 100px;
+    height: 6.944vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,15 +13,14 @@
 .navBarIcon {
     display: flex;
     flex-direction: row;
-    width: 110px;
-    padding: 30px 40px 30px 50px;
+    width: 7.638vw;
+    padding: 2.08vw 2.77vw 2.08vw 3.472vw;
     height: 100%;
 }
 
 .wordArts {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
     justify-content: center;
 }
 
@@ -30,13 +29,16 @@
     font-family: 'Avenir Next';
     font-style: normal;
     font-weight: 600;
-    font-size: 9px;
-    line-height: 12px;
+    font-size: 1.2rem;
+    transform: scale(0.75);
+    line-height: 1.2rem;
     text-size-adjust: none;
+    margin-left: 0.5rem;
 }
 
 .iconTitle {
-    font-size: 20px;
+    font-size: 2rem;
+    margin-left: 1rem;
 }
 
 
@@ -44,10 +46,10 @@
 .title {
     font-family: Noto Sans TC;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 2.6rem;
 
     color: #392A93;
-    margin: 10px;
+    margin: 1rem;
 }
 
 /* Icon part */
@@ -57,13 +59,13 @@
     font-family: 'Noto Sans TC';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-    width: 153px;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    width: 10.625vw;
     justify-content: center;
     align-items: center;
-    margin-right: 22px;
-    height: 100px;
+    margin-right: 2.2rem;
+    height: 6.944vw;
 }
 
 .routeBtnContent {
@@ -71,30 +73,32 @@
     height: 100%
 }
 
+@media screen and (max-width:768px) {
+    .navBar {
+        height: 13.02vw;
 
-/* view height fixed */
-.viewHight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
+    }
 
-}
+    .navBarIcon {
 
-
-
-
-
+        width: 14.32vw;
+        padding: 3.9vw 5.19vw 3.9vw 6.51vw;
+        height: 100%;
+    }
 
 
 
-/* common use part */
 
-.title {
-    font-family: Noto Sans TC;
-    font-weight: 700;
-    font-size: 26px;
+    /* Icon part */
 
-    color: #392A93;
-    margin: 10px;
+    .routeBtn {
+
+        width: 19.92vw;
+        height: 13.02vw;
+    }
+
+    .routeBtnContent {
+        width: 100%;
+        height: 100%
+    }
 }
