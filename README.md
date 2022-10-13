@@ -18,24 +18,6 @@
 
 
 
-## Features
-- Browse travel attraction with different cities in Taiwan
-
-- https://2021.thef2e.com/users/6296432819610583695
-
-User story (使用者故事)
-- 我可以篩選縣市地區，瀏覽該市區的景點
-- 我能透過 PC 網站瀏覽，也能透過 Mobile 來瀏覽介面
-
-
-
-## Built with
-- [React](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
-
-## API resource
-[Taiwan Transport Data eXchange Service: TDX](https://tdx.transportdata.tw/api-service/swagger)
-
 
 ## Authors
 
@@ -64,17 +46,36 @@ User story (使用者故事)
   
 
 
+## Features
+- Browse travel attraction with different cities in Taiwan
 
-## Contributing Guidelines
-follow [Angular Contributing Guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
+- [The F2E 3rd - 全台公車動態時刻查詢應用服務](https://2021.thef2e.com/users/6296432819610583695)
+
+User story (使用者故事)
+- 我可以篩選縣市地區，瀏覽該市區的景點
+- 我能透過 PC 網站瀏覽，也能透過 Mobile 來瀏覽介面
 
 
 
-## Development Setup
+
+
+## Development 
 
 ### Contributing Guidelines
 follow [Angular Contributing Guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md)
 
+
+### API resource
+[Taiwan Transport Data eXchange Service: TDX](https://tdx.transportdata.tw/api-service/swagger)
+
+
+### Built with
+- [React](https://reactjs.org/)
+  - ...
+  - ...
+- [Next.js](https://nextjs.org/)
+  - Routes
+  - Image Component  
 
 
 First, run the development server:
