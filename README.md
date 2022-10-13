@@ -9,13 +9,12 @@
   <br>
 </p>
 
-  
+
 
 <p align="center">
-  <a href="https://www.angular.io](https://doe-yu-seanlin-h8ffnpqaf-nstksean.vercel.app"><strong>Demo</strong></a>
+  <a href="https://doe-yu-seanlin.vercel.app/" target="_blank"  ><strong>Website</strong></a>
   <br>
 </p>
-
 
 
 
