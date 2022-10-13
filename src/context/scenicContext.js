@@ -3,6 +3,7 @@ import { createContext, useReducer, useEffect } from 'react'
 // import { getrustUrl } from '../api/apiClient';
 import { getScenicSpotUrl } from "../api/apiClient"
 
+
 const initialState = {
     rustAPI: {
         data: null,
@@ -45,7 +46,6 @@ export function RootContextProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const query = ({
-        // $filter: `contains(Address,'三重')`,
         $top: '12',
         $format: 'JSON'
     })
