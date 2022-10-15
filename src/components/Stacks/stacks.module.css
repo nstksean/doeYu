@@ -248,9 +248,10 @@
 
     .stackItemsPhoto {
         border-radius: 3rem;
+        width: 39.06vw;
+        height: 23.43vw;
 
-        width: 100%;
-        height: 100%;
+
         display: block;
     }
 

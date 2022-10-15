@@ -109,4 +109,9 @@
         border-radius: 20px;
 
     }
+
+    .bgWrap {
+        width: 39.06vw;
+        height: 23.44vw;
+    }
 }
