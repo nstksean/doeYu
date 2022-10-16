@@ -428,9 +428,7 @@ html {
 }
 
 label:hover,
-input:hover,
-label:focus,
-input:focus {
+label:focus {
     cursor: pointer
 }
 

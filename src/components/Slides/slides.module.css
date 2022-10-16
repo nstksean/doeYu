@@ -71,6 +71,7 @@
     width: 72.916vw;
     height: 37.916vw;
     border-radius: 4rem;
+    cursor: pointer;
 
 }
 
@@ -112,6 +113,10 @@
     /* Neutrals/White */
 
     color: #FEFEFE;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
 }
 
 .city {
@@ -141,6 +146,7 @@
     /* reset origin style */
     appearance: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .slideBtns:checked {

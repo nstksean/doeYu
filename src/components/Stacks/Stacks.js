@@ -1,8 +1,5 @@
-import { RootContext } from "../../context/rustContext";
-import { useContext, useEffect } from "react";
 import { citys as city } from '../../data/CityItems'
-import { useState } from "react";
-import { nanoid } from '@reduxjs/toolkit'
+import { useState, useEffect } from "react";
 
 
 import style from './stacks.module.css'
@@ -23,7 +20,7 @@ export default function Stacks() {
     const handleTabChange = (filterBtn) => {
         return filterBtn?.filter((filterBtn) => filterBtn.tab === Tab)
     }
-    const handleCityBtnClick = (item) => {
+    const handleCityGroupBtnClick = (item) => {
         setfilter(item)
         setTab(item.tab)
     }
@@ -47,7 +44,7 @@ export default function Stacks() {
 
                 {filterBtn.map((item) => (
                     <div className={style.stackBtn}
-                        onClick={() => handleCityBtnClick(item)}
+                        onChange={() => handleCityGroupBtnClick(item)}
                         key={item.tab}
 
                     >
