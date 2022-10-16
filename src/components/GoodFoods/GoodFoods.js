@@ -1,8 +1,7 @@
-import { RootContext } from "../../context/rustContext";
-import { useContext } from "react";
+
 import { foodTypes } from "../../data/FoodItems";
 import Image from "next/image";
-import { nanoid } from '@reduxjs/toolkit'
+
 
 
 import style from "./goodfoods.module.css"

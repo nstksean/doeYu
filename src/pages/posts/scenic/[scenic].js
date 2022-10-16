@@ -1,15 +1,17 @@
 import { useRouter } from 'next/router'
+import SpotCards from '../../../components/SpotCards/SpotCards'
+
 
 const Post = () => {
-    console.log('router:', useRouter().query)
+    // console.log('router:', useRouter().query)
     const router = useRouter()
     const { scenic } = router.query
-    console.log('router:', scenic, typeof scenic)
+    // console.log('router:', scenic, typeof scenic)
 
     return <>
-        {/* Optional chaining (?.) */}
-        {scenic?.includes('ddd') && 'Shows'}
-        <p>Post: {scenic}</p>
+
+        <SpotCards urlQuery={scenic} pageType={useRouter().query} />
+
     </>
 
 }

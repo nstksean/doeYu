@@ -1,10 +1,54 @@
 import style from "./spotcards.module.css"
 import Image from "next/image";
-import Plher from '../../../public/images/placeholders/scenicBig.png'
-import { items } from "../DemoData/dss";
+import { useEffect, useState } from "react";
+import { getScenicSpotUrl } from '../../api/apiClient'
+import { citys } from "../../data/CityItems";
 
-export default function SpotCards(items) {
-    console.log(items)
+export default function SpotCards({ urlQuery, pageType }) {
+
+    const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [items, setItems] = useState([]);
+    const [querycity, setquerycity] = useState('')
+
+    const query = ({
+        $top: '12',
+        $format: 'JSON'
+    })
+    const scenicSpotUrl = getScenicSpotUrl(querycity, query)
+
+
+    useEffect(() => {
+        setquerycity(urlQuery)
+
+    })
+    // Note: the empty deps array [] means
+    // this useEffect will run once
+    // similar to componentDidMount()
+    useEffect(() => {
+        fetch(scenicSpotUrl)
+            // .then(  res => res.json() )
+            .then(
+                (res) => {
+                    return res.json()
+                }
+            )
+
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setItems(result);
+                },
+                // Note: it's important to handle errors here
+                // instead of a catch() block so that we don't swallow
+                // exceptions from actual bugs in components.
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            )
+
+    }, [querycity])
 
     return (
         <div className={style.hotSpotGroup}>
@@ -19,7 +63,8 @@ export default function SpotCards(items) {
                     </svg>
                 </div>
                 <div className={style.spotorfood}>
-                    旅遊景點
+                    {pageType.key === 'scenic' ? "旅遊景點" : "美食餐廳"}
+
                 </div>
                 <div className={style.morethan}>
                     <svg fill="none" viewBox="0 0 10 14"
@@ -28,12 +73,12 @@ export default function SpotCards(items) {
                     </svg>
                 </div>
                 <div className={style.cityorkind}>
-                    新北市
+                    {urlQuery}
                 </div>
             </div>
 
             <div className={style.title}>
-                熱門景點
+                {pageType.key === 'scenic' ? "旅遊景點" : "美食餐廳"}
             </div>
             <div className={style.hotSpotStackContainer}>
                 {
@@ -41,8 +86,8 @@ export default function SpotCards(items) {
                         <div className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}>
                                 <Image
-                                    src={Plher}
-                                    alt="Picture location"
+                                    src={item.Picture.PictureUrl1}
+                                    alt={item.ScenicSpotName}
                                     width={320}
                                     height={220}
                                     layout="responsive"
@@ -50,10 +95,10 @@ export default function SpotCards(items) {
                             </div>
                             <div
                                 className={style.spotTitle}>
-                                {/* {data.ScenicSpotName} */}
+                                {item.ScenicSpotName}
                             </div>
                             <div className={style.spotCity}>
-                                {/* {data.City} */}
+                                {item.City}
                             </div>
                         </div>)
                 }

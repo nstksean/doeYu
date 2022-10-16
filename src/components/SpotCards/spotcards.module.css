@@ -8,6 +8,7 @@
     flex-direction: column;
     margin-bottom: 90px;
     margin-left: 0rem;
+    margin: 3rem 0 12rem 6rem
 }
 
 .title {
@@ -80,7 +81,6 @@
     color: #CFCFCF;
     margin-bottom: 20px;
     display: flex;
-    margin: 4rem 0 4rem 12rem;
 
 }
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 import style from './stacks.module.css'
 import Image from "next/image";
+import Link from 'next/link';
 
 // export const filterBtn
 
@@ -73,25 +74,26 @@ export default function Stacks() {
                     {
                         city.filter((city) => city.category === filter.name)
                             .map((city) =>
-                                <div className={style.stackItems}
-                                    key={city.key}
-                                >
-                                    <div className={style.stackItemsPhoto}>
-                                        <Image
-                                            src={city.imageUrl}
-                                            alt={city.name}
-                                            layout="fill"
-                                            objectFit="cover"
-                                            objectPosition="center"
-                                            priority
-                                        >
+                                <Link href={`/posts/scenic/${city.inEnglish}`}>
+                                    <div className={style.stackItems}
+                                        key={city.key}
+                                    >
+                                        <div className={style.stackItemsPhoto}>
+                                            <Image
+                                                src={city.imageUrl}
+                                                alt={city.name}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                                priority
+                                            >
 
-                                        </Image>
-                                    </div>
-                                    <p className={style.foodType}>
-                                        {city.name}
-                                    </p>
-                                </div>
+                                            </Image>
+                                        </div>
+                                        <p className={style.foodType}>
+                                            {city.name}
+                                        </p>
+                                    </div></Link>
                             )
 
                     }
