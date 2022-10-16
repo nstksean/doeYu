@@ -1,53 +1,47 @@
-import style from "./spotcards.module.css"
+import style from "./foodcards.module.css"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { getScenicSpotUrl } from '../../api/apiClient'
 import { citys } from "../../data/CityItems";
+import { nightMarket20, chineseFood20, exoticFood20, ice20, gift20, else20, restaurant50 } from '../../data/mockAPI'
 
-export default function SpotCards({ urlQuery, pageType }) {
+export default function FoodCards({
+    urlQuery,
+    pageType,
+}) {
 
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
-    const [querycity, setquerycity] = useState('')
+    const [datas, setDatas] = useState([])
 
-    const query = ({
-        $top: '12',
-        $format: 'JSON'
-    })
-    const scenicSpotUrl = getScenicSpotUrl(querycity, query)
+    console.log(nightMarket20, chineseFood20, exoticFood20, ice20, gift20, else20, restaurant50)
+
+    const urlSwitch = (urlQuery) => {
+        switch (urlQuery) {
+            case 'Gift':
+                return setDatas(ice20);
+            case 'ChineseFood':
+                return setDatas(chineseFood20);
+            case 'NightMarket':
+
+                return setDatas(nightMarket20);
+            case 'ExoticFood':
+
+                return setDatas(exoticFood20);
+            case 'Ice':
+
+                return setDatas(ice20);
+            case 'Other':
+
+                return setDatas(else20);
+            default:
+                return setDatas(else20);
+        }
+    }
+
 
     useEffect(() => {
-        setquerycity(urlQuery)
+        urlSwitch(urlQuery)
+    }, [urlQuery, datas])
 
-    })
-    // Note: the empty deps array [] means
-    // this useEffect will run once
-    // similar to componentDidMount()
-    useEffect(() => {
-        fetch(scenicSpotUrl)
-            // .then(  res => res.json() )
-            .then(
-                (res) => {
-                    return res.json()
-                }
-            )
-
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setItems(result);
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            )
-
-    }, [querycity])
 
     return (
         <div className={style.hotSpotGroup}>
@@ -62,8 +56,7 @@ export default function SpotCards({ urlQuery, pageType }) {
                     </svg>
                 </div>
                 <div className={style.spotorfood}>
-                    旅遊景點
-
+                    美食餐廳
                 </div>
                 <div className={style.morethan}>
                     <svg fill="none" viewBox="0 0 10 14"
@@ -77,16 +70,18 @@ export default function SpotCards({ urlQuery, pageType }) {
             </div>
 
             <div className={style.title}>
-                {/* {pageType.key === 'scenic' ? "旅遊景點" : "美食餐廳"} */}
+                {pageType.key === 'scenic' ? "旅遊景點" : "美食餐廳"}
             </div>
+
             <div className={style.hotSpotStackContainer}>
+
                 {
-                    Array.from(items).map((item) =>
+                    datas?.slice(0, 12).map((data) =>
                         <div className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}>
                                 <Image
-                                    src={item.Picture.PictureUrl1}
-                                    alt={item.ScenicSpotName}
+                                    src={data.Picture.PictureUrl1}
+                                    alt={data.RestaurantName}
                                     width={320}
                                     height={220}
                                     layout="responsive"
@@ -94,10 +89,10 @@ export default function SpotCards({ urlQuery, pageType }) {
                             </div>
                             <div
                                 className={style.spotTitle}>
-                                {item.ScenicSpotName}
+                                {data.RestaurantName}
                             </div>
                             <div className={style.spotCity}>
-                                {item.City}
+                                {data.Class}
                             </div>
                         </div>)
                 }

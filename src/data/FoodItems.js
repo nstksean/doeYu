@@ -13,30 +13,36 @@ export const foodTypes = [
         name: '中式美食',
         imageUrl: ChineseFood,
         key: nanoid()
+        , inEnglish: "ChineseFood"
     },
     {
         name: '夜市小吃',
         imageUrl: PorkRice,
-        key: nanoid()
+        key: nanoid(),
+        inEnglish: "NightMarket"
     },
     {
         name: '異國美食',
         imageUrl: ExoticFood,
-        key: nanoid()
+        key: nanoid(),
+        inEnglish: "ExoticFood"
     },
     {
         name: '甜點冰品',
         imageUrl: Ice,
-        key: nanoid()
+        key: nanoid(),
+        inEnglish: "Ice"
     },
     {
         name: '伴手禮',
         imageUrl: Cake,
-        key: nanoid()
+        key: nanoid(),
+        inEnglish: "Gift"
     },
     {
-        name: '全部種類',
+        name: '其他種類',
         imageUrl: AllOthers,
-        key: nanoid()
+        key: nanoid(),
+        inEnglish: "Other"
     },
 ]

@@ -22,11 +22,10 @@ export default function NavBar() {
 
 
             <div className={style.routeBtn}>
-                <Link href="/posts/location" className={style.routeBtnContent}>旅遊景點</Link>
+                <Link href="/posts/scenic/Taipei" className={style.routeBtnContent}>旅遊景點</Link>
             </div>
-
             <div className={style.routeBtn} >
-                <Link href="/posts/restaurant" className={style.routeBtnContent}>美食餐廳</Link>
+                <Link href="/posts/restaurants/Taipei" className={style.routeBtnContent}>美食餐廳</Link>
             </div>
 
             {/* <div className={style.serachGroup}>

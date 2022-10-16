@@ -1,5 +1,5 @@
 
-const taipei12 = [
+export const taipei12 = [
     {
         "ScenicSpotID": "C1_379000000A_000001",
         "ScenicSpotName": "大稻埕碼頭_大稻埕碼頭貨櫃市集",
@@ -294,7 +294,7 @@ const taipei12 = [
 ]
 
 
-const restaurant50 = [
+export const restaurant50 = [
     {
         "RestaurantID": "C3_315081000H_020111",
         "RestaurantName": "友誼山莊簡餐",
@@ -1386,7 +1386,7 @@ const restaurant50 = [
     }
 ]
 
-const nightMarket20 = [
+export const nightMarket20 = [
     {
         "RestaurantID": "C3_376480000A_000386",
         "RestaurantName": "古早味碗粿",
@@ -1796,7 +1796,7 @@ const nightMarket20 = [
     }
 ]
 
-const chineseFood20 = [
+export const chineseFood20 = [
     {
         "RestaurantID": "C3_376480000A_000295",
         "RestaurantName": "明山大飯店",
@@ -2311,7 +2311,7 @@ const chineseFood20 = [
     }
 ]
 
-const exoticFood20 = [
+export const exoticFood20 = [
     {
         "RestaurantID": "C3_315081000H_020304",
         "RestaurantName": "一起@驛站",
@@ -2809,7 +2809,7 @@ const exoticFood20 = [
     }
 ]
 
-const ice20 = [
+export const ice20 = [
     {
         "RestaurantID": "C3_376480000A_000448",
         "RestaurantName": "二坪枝仔冰",
@@ -3301,7 +3301,7 @@ const ice20 = [
     }
 ]
 
-const gift20 = [
+export const gift20 = [
     {
         "RestaurantID": "C3_376480000A_000625",
         "RestaurantName": "香蕉蛋捲",
@@ -3764,7 +3764,7 @@ const gift20 = [
         "UpdateTime": "2022-10-16T02:34:46+08:00"
     }
 ]
-const else20 = [
+export const else20 = [
     {
         "RestaurantID": "C3_315081100H_000001",
         "RestaurantName": "Hugosum和菓森林紅茶莊園",

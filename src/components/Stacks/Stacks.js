@@ -51,6 +51,8 @@ export default function Stacks() {
                     >
                         <input type='radio' name="city" id={item.tab} value={item.name}
                             checked={Tab === item.tab}
+                            onChange={() => handleCityGroupBtnClick(item)}
+
                         />
                         <label className={style.stackBtnLb} htmlFor={item.tab}>
                             {item.name}</label>
