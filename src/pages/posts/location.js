@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import React from "react";
-import SpotCards from "../../components/SpotCards/SpotCards";
+import SlideItem from "../../components/SlideItem/SlideItem";
 import { RootContextProvider } from "../../context/rustContext";
 import style from '../../styles/Home.module.css'
 
@@ -14,7 +14,7 @@ export default function location() {
                     <Head>
                         <title>Location</title>
                     </Head>
-                    <SpotCards />
+                    <SlideItem />
                 </div>
             </RootContextProvider>
         </ >

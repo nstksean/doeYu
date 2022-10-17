@@ -11,9 +11,6 @@ export default function FoodCards({
 }) {
 
     const [datas, setDatas] = useState([])
-
-    console.log(nightMarket20, chineseFood20, exoticFood20, ice20, gift20, else20, restaurant50)
-
     const urlSwitch = (urlQuery) => {
         switch (urlQuery) {
             case 'Gift':
