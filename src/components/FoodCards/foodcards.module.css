@@ -1,0 +1,182 @@
+/* HotSpot part*/
+
+.hotSpotGroup {
+    margin: 0 12rem 0 12rem;
+}
+
+.slideItem {
+
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 90px;
+    margin-left: 0rem;
+    margin: 3rem 0 12rem 6rem
+}
+
+.title {
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 26px;
+
+    color: #392A93;
+    margin: 10px;
+}
+
+
+.hotSpotStackContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.hotSpotStackItem {
+    display: flex;
+    flex-direction: column;
+    /* Neutrals/White */
+    align-items: center;
+    background: #FEFEFE;
+    /* Neutrals/LIght grey */
+    height: 300px;
+    width: 270px;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+.ItemPhoto {
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 20px;
+    width: 305px;
+    height: 213px;
+    display: block;
+    overflow: hidden;
+}
+
+.spotTitle {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+    /* Primary/Dark purple */
+
+    color: #392A93;
+    margin-bottom: 10px;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.spotCity {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Neutrals/Grey */
+
+    color: #CFCFCF;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.signpost {
+    display: flex;
+    margin: 4rem 0 4rem 0rem;
+}
+
+.signpost div {
+    padding: 0 16px 0 0;
+}
+
+.signpost,
+.spotorfood,
+.cityorkind {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Complementary/Baby blue */
+
+    color: #A9D3FF;
+
+}
+
+.morethan svg {
+    width: 1vw;
+    height: 0.7vw;
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .hotSpotGroup {
+
+        width: 83.33%;
+        height: 744px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+
+    }
+
+    .title {
+        font-family: Noto Sans TC;
+        font-weight: 700;
+        font-size: 26px;
+
+        color: #392A93;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .hotSpotStackContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .hotSpotStackItem {
+        display: flex;
+        flex-direction: column;
+        /* Neutrals/White */
+        align-items: center;
+        background: #FEFEFE;
+        /* Neutrals/LIght grey */
+        height: 300px;
+        width: 300px;
+        border: 1px solid #EAEAEA;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 30px;
+        overflow: hidden;
+
+    }
+
+    .ItemPhoto {
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 20px;
+        width: 320px;
+        height: 220px;
+        display: block;
+        overflow: hidden;
+    }
+}

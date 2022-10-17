@@ -18,14 +18,22 @@
     margin-bottom: 2.778vw;
     height: 4.861vw;
     margin-left: 1.597vw;
+    cursor: pointer;
 
 }
+
 
 .stackBtn {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     margin-right: 4.166vw;
+    cursor: pointer;
+}
+
+.stackBtn:hover,
+.stackBtn:focus {
+    cursor: pointer;
 }
 
 .stackBtn label {
@@ -36,7 +44,15 @@
     align-items: center;
     justify-content: center;
     color: #A9D3FF;
+
 }
+
+.stackBtn label:active {
+    filter: grayscale(70%);
+    transform: scale(0.98);
+
+}
+
 
 
 
@@ -91,13 +107,20 @@
     width: 10%;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.stackNex:active,
+.stackPre:active {
+    background-color: #FA7E;
+    ;
 }
 
 .stackPre svg,
 .stackNex svg {
     width: 1.527vw;
     height: 1.09vw;
-
+    pointer-events: inherit;
 }
 
 .stackPre svg {
@@ -122,8 +145,13 @@
     width: 20.347vw;
     height: 12.5vw;
     overflow: hidden;
+    cursor: pointer;
 
+}
 
+.stackItems:active {
+    filter: grayscale(70%);
+    transform: scale(0.98);
 }
 
 .stackItemsPhoto {
@@ -220,9 +248,10 @@
 
     .stackItemsPhoto {
         border-radius: 3rem;
+        width: 39.06vw;
+        height: 23.43vw;
 
-        width: 100%;
-        height: 100%;
+
         display: block;
     }
 

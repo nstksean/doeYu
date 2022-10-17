@@ -1,0 +1,183 @@
+/* slide part css */
+
+.slideItem {
+    width: 83.33vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 90px;
+    margin: 4rem 12rem 4rem 12rem;
+}
+
+.spotCity {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Neutrals/Grey */
+
+    color: #CFCFCF;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.signpost {
+    display: flex;
+    margin-bottom: 4rem;
+
+}
+
+.signpost div {
+    padding: 0 16px 0 0;
+}
+
+.signpost,
+.spotorfood,
+.cityorkind {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Complementary/Baby blue */
+
+    color: #A9D3FF;
+
+}
+
+.morethan svg {
+    width: 1vw;
+    height: 0.7vw;
+
+}
+
+.secnicCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.secnicCardPhoto {
+
+    width: 42vw;
+    height: 27.77vw;
+    margin-right: 2.36vw;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+
+.secnicWordsGroup {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.secnicSpotCity {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Complementary/Orange */
+
+    color: #FA7E5F;
+    margin-bottom: 2rem;
+
+}
+
+.secnicSpotFeatures {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+
+}
+
+.secnicSpotFeatures div {
+    margin-right: 1.875vw;
+
+}
+
+.secnicSpotFeaturesTag {
+    padding: 8px;
+    background: #9086CC;
+    border-radius: 12px;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Neutrals/White */
+
+    color: #FEFEFE;
+
+}
+
+.secnicSpotTitle {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    /* Primary/Dark purple */
+
+    color: #392A93;
+    margin-bottom: 4rem;
+}
+
+.secnicSpotOpen,
+.secnicSpotPhone,
+.secnicSpotLocation,
+.secnicSpotWeb {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    /* Neutrals/Black */
+
+    color: #1D1D1D;
+    margin-bottom: 2rem;
+}
+
+.secnicCardKnows {
+    display: flex;
+    flex-direction: row;
+}
+
+.secnicDeatil {
+    margin: 6rem 0 0 0;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    /* or 200% */
+
+    letter-spacing: 0.02em;
+
+    /* Neutrals/Black */
+
+    color: #1D1D1D;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (max-width:768px) {}

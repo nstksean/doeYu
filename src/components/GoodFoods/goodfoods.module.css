@@ -26,7 +26,14 @@
     background-position: center;
     width: 26.38vw;
     height: 16.66vw;
+    cursor: pointer;
 
+
+}
+
+.foodStackItem:active {
+    filter: grayscale(70%);
+    transform: scale(0.98);
 }
 
 .foodType {
@@ -37,7 +44,7 @@
     line-height: 38px;
     /* identical to box height */
 
-    text-align: center;
+
 
     /* Neutrals/White */
 
@@ -101,5 +108,10 @@
         height: 23.44vw;
         border-radius: 20px;
 
+    }
+
+    .bgWrap {
+        width: 39.06vw;
+        height: 23.44vw;
     }
 }

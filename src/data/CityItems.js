@@ -1,26 +1,26 @@
-import Changhua from '../../../public/images/cities/ChanghuaCounty.jpg'
+import ChanghuaCounty from '../../public/images/cities/ChanghuaCounty.jpg'
 
-import Chiayi from '../../../public/images/cities/Chiayi.jpg'
-import ChiayiCo from '../../../public/images/cities/ChiayiCounty.jpg'
-import Hsinchu from '../../../public/images/cities/Hsinchu.jpg'
-import HsinchuCounty from '../../../public/images/cities/HsinchuCounty.jpg'
-import HualienCounty from '../../../public/images/cities/HualienCounty.jpg'
-import Kaohsiung from '../../../public/images/cities/Kaohsiung.jpg'
-import Keelung from '../../../public/images/cities/Keelung.jpg'
-import KinmenCounty from '../../../public/images/cities/KinmenCounty.jpg'
-import LienchiangCounty from '../../../public/images/cities/LienchiangCounty.jpg'
-import MiaoliCounty from '../../../public/images/cities/MiaoliCounty.jpg'
-import NantouCounty from '../../../public/images/cities/NantouCounty.jpg'
-import NewTaipei from '../../../public/images/cities/NewTaipei.jpg'
-import PenghuCounty from '../../../public/images/cities/PenghuCounty.jpg'
-import PingtungCounty from '../../../public/images/cities/PingtungCounty.jpg'
-import Taichung from '../../../public/images/cities/Taichung.jpg'
-import Tainan from '../../../public/images/cities/Tainan.jpg'
-import Taipei from '../../../public/images/cities/Taipei.jpg'
-import TaitungCounty from '../../../public/images/cities/TaitungCounty.jpg'
-import Taoyuan from '../../../public/images/cities/Taoyuan.jpg'
-import YilanCounty from '../../../public/images/cities/YilanCounty.jpg'
-import YunlinCounty from '../../../public/images/cities/YunlinCounty.jpg'
+import Chiayi from '../../public/images/cities/Chiayi.jpg'
+import ChiayiCounty from '../../public/images/cities/ChiayiCounty.jpg'
+import Hsinchu from '../../public/images/cities/Hsinchu.jpg'
+import HsinchuCounty from '../../public/images/cities/HsinchuCounty.jpg'
+import HualienCounty from '../../public/images/cities/HualienCounty.jpg'
+import Kaohsiung from '../../public/images/cities/Kaohsiung.jpg'
+import Keelung from '../../public/images/cities/Keelung.jpg'
+import KinmenCounty from '../../public/images/cities/KinmenCounty.jpg'
+import LienchiangCounty from '../../public/images/cities/LienchiangCounty.jpg'
+import MiaoliCounty from '../../public/images/cities/MiaoliCounty.jpg'
+import NantouCounty from '../../public/images/cities/NantouCounty.jpg'
+import NewTaipei from '../../public/images/cities/NewTaipei.jpg'
+import PenghuCounty from '../../public/images/cities/PenghuCounty.jpg'
+import PingtungCounty from '../../public/images/cities/PingtungCounty.jpg'
+import Taichung from '../../public/images/cities/Taichung.jpg'
+import Tainan from '../../public/images/cities/Tainan.jpg'
+import Taipei from '../../public/images/cities/Taipei.jpg'
+import TaitungCounty from '../../public/images/cities/TaitungCounty.jpg'
+import Taoyuan from '../../public/images/cities/Taoyuan.jpg'
+import YilanCounty from '../../public/images/cities/YilanCounty.jpg'
+import YunlinCounty from '../../public/images/cities/YunlinCounty.jpg'
 import { nanoid } from '@reduxjs/toolkit'
 
 
@@ -28,22 +28,26 @@ import { nanoid } from '@reduxjs/toolkit'
 export const citys = [
     {
         name: '彰化縣',
-        imageUrl: Changhua,
+        imageUrl: ChanghuaCounty,
         category: '南島奔放',
         key: nanoid()
+        , inEnglish: 'ChanghuaCounty'
     },
     {
         name: '嘉義市',
         imageUrl: Chiayi,
         category: '南島奔放',
         key: nanoid()
+        , inEnglish: 'Chiayi'
 
     },
     {
         name: '嘉義縣',
-        imageUrl: ChiayiCo,
+        imageUrl: ChiayiCounty,
         category: '南島奔放',
         key: nanoid()
+        , inEnglish: 'ChiayiCounty'
+
 
     },
     {
@@ -51,6 +55,8 @@ export const citys = [
         imageUrl: Hsinchu,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: 'Hsinchu'
+
 
     },
     {
@@ -58,6 +64,8 @@ export const citys = [
         imageUrl: HsinchuCounty,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: 'HsinchuCounty'
+
 
     },
     {
@@ -65,6 +73,8 @@ export const citys = [
         imageUrl: HualienCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'HualienCounty'
+
 
     },
     {
@@ -72,6 +82,8 @@ export const citys = [
         imageUrl: Kaohsiung,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'Kaohsiung'
+
 
     },
     {
@@ -79,6 +91,8 @@ export const citys = [
         imageUrl: Keelung,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: 'Keelung'
+
 
     },
     {
@@ -86,6 +100,8 @@ export const citys = [
         imageUrl: KinmenCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'KinmenCounty'
+
 
     },
     {
@@ -93,6 +109,8 @@ export const citys = [
         imageUrl: LienchiangCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'LienchiangCounty'
+
 
     },
     {
@@ -100,6 +118,7 @@ export const citys = [
         imageUrl: MiaoliCounty,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: ''
 
     },
     {
@@ -107,6 +126,7 @@ export const citys = [
         imageUrl: NantouCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'NantouCounty'
 
     },
     {
@@ -114,6 +134,7 @@ export const citys = [
         imageUrl: NewTaipei,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'NewTaipei'
 
     },
     {
@@ -121,6 +142,7 @@ export const citys = [
         imageUrl: PenghuCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'PenghuCounty'
 
     },
     {
@@ -128,6 +150,7 @@ export const citys = [
         imageUrl: PingtungCounty,
         category: '南島奔放',
         key: nanoid()
+        , inEnglish: 'PingtungCounty'
 
     },
     {
@@ -135,6 +158,7 @@ export const citys = [
         imageUrl: Taichung,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'Taichung'
 
     },
     {
@@ -142,6 +166,7 @@ export const citys = [
         imageUrl: Tainan,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'Tainan'
 
     },
     {
@@ -149,6 +174,7 @@ export const citys = [
         imageUrl: Taipei,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'Taipei'
 
     },
     {
@@ -156,6 +182,7 @@ export const citys = [
         imageUrl: TaitungCounty,
         category: '與自然共舞',
         key: nanoid()
+        , inEnglish: 'TaitungCounty'
 
     },
     {
@@ -163,6 +190,7 @@ export const citys = [
         imageUrl: Taoyuan,
         category: '熱鬧繁華',
         key: nanoid()
+        , inEnglish: 'Taoyuan'
 
     },
     {
@@ -170,6 +198,7 @@ export const citys = [
         imageUrl: YilanCounty,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: 'YilanCounty'
 
     },
     {
@@ -177,6 +206,7 @@ export const citys = [
         imageUrl: YunlinCounty,
         category: '純樸人情味',
         key: nanoid()
+        , inEnglish: 'YunlinCounty'
 
     },
 ]

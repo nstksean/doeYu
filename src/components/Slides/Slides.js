@@ -1,17 +1,24 @@
 import Image from 'next/image';
+import { useContext, useState, useEffect } from 'react';
+import { RootContext } from '../../context/rustContext';
+
 import style from './slides.module.css'
 
 import jufan from '../../../public/images/fakeSlide/slideM.png'
 import slideL from '../../../public/images/fakeSlide/Slide.png'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
+import { fakeSlide } from '../../data/mockAPI';
+import Link from 'next/link';
 
 export default function Slides() {
+    const [Tab, setTab] = useState(0)
 
-    const fakeSlide = [{
-        name: '九份老街',
-        location: '新北',
-        imageUrl: jufan
-    }]
+    const targetItem = fakeSlide.at(Tab)
+
+
+    const rootContextValue = useContext(RootContext);
+    const datas = rootContextValue.state.rustAPI_data
+    const loading = rootContextValue.state.rustAPI_isLoaded
 
     return (
         <div className={style.slideGroup}>
@@ -29,29 +36,33 @@ export default function Slides() {
                 </svg> */}
             </div>
             <div className={style.slider}>
-                <div className={style.slideItem}>
-                    <div className={style.bgwrap}>
-                        <Image
-                            src={jufan}
-                            alt={fakeSlide.name}
+                <Link href={`/posts/locations/` + `${fakeSlide.at(Tab).ScenicSpotID}`}>
+                    <div className={style.slideItem}>
+                        <div className={style.bgwrap}>
+                            <Image
+                                src={targetItem.Picture.PictureUrl1}
+                                alt={targetItem.ScenicSpotName}
+                                layout="fill"
+                                objectFit='cover'
 
-                            layout="fill"
-                            objectFit='cover'
+                            ></Image>
+                        </div>
+                        <div className={style.wordArtcontainer}>
 
-
-                        ></Image>
+                            <div className={style.title}>{targetItem.ScenicSpotName}</div>
+                            <div className={style.city}>{targetItem.City}</div>
+                        </div>
                     </div>
-                    <div className={style.wordArtcontainer}>
-
-                        <div className={style.title}>九份老街</div>
-                        <div className={style.city}>新北</div>
-                    </div>
-                </div>
+                </Link>
                 <div className={style.slideBtnsContainer}>
-                    <input className={style.slideBtns} type='radio' name="slide"></input>
-                    <input className={style.slideBtns} type='radio' name="slide"></input>
-                    <input className={style.slideBtns} type='radio' name="slide"></input>
-                    <input className={style.slideBtns} type='radio' name="slide"></input>
+                    <input className={style.slideBtns} type='radio' name="slide" value={0}
+                        onClick={(e) => setTab(e.target.value)}></input>
+                    <input className={style.slideBtns} type='radio' name="slide" value={1}
+                        onClick={(e) => setTab(e.target.value)}></input>
+                    <input className={style.slideBtns} type='radio' name="slide" value={2}
+                        onClick={(e) => setTab(e.target.value)}></input>
+                    <input className={style.slideBtns} type='radio' name="slide" value={3}
+                        onClick={(e) => setTab(e.target.value)}></input>
                 </div>
             </div>
             <div className={style.slideBtnNex}>

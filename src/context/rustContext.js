@@ -45,11 +45,11 @@ export function RootContextProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const query = ({
-        $filter: `contains(Address,'三重')`,
+        // $filter: `contains(Address,'三重')`,
         $top: '12',
         $format: 'JSON'
     })
-    const rustUrl = getScenicSpotUrl('NewTaipei', query)
+    const rustUrl = getScenicSpotUrl('Taipei', query)
 
     // Note: the empty deps array [] means
     // this useEffect will run once
