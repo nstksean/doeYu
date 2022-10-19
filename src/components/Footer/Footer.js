@@ -21,49 +21,49 @@ export default function Footer() {
             <div className={style.listContainer}>
                 <div className={style.footerList}>
                     <ul>
-                        <a href="/#"><li>
+                        <li>
                             關於 Taiwan 台灣
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             我們是誰
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             加入我們
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             聯繫我們
-                        </li></a>
+                        </li>
                     </ul>
                 </div>
 
                 <div className={style.footerList}>
                     <ul>
-                        <a href="/#"><li>
+                        <li>
                             服務條款
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             隱私權政策
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             ＦＡＱ
-                        </li></a>
+                        </li>
                     </ul>
                 </div>
 
                 <div className={style.footerList}>
                     <ul>
-                        <a><li>
+                        <li>
                             追蹤我們
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             Facebook
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             Instgram
-                        </li></a>
-                        <a href="/#"><li>
+                        </li>
+                        <li>
                             Line
-                        </li></a>
+                        </li>
                     </ul>
                 </div>
             </div>

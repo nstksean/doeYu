@@ -92,9 +92,10 @@ export default function Stacks() {
 
                                             </Image>
                                         </div>
-                                        <p className={style.foodType}>
-                                            {city.name}
-                                        </p>
+                                        <div className={style.wordArt}>
+                                            <p className={style.foodType}>
+                                                {city.name}
+                                            </p></div>
                                     </div></Link>
                             )
 
