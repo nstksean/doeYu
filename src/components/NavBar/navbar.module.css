@@ -18,28 +18,6 @@
     height: 100%;
 }
 
-.wordArts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.taiwan {
-    color: #9086CC;
-    font-family: 'Avenir Next';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.2rem;
-    transform: scale(0.75);
-    line-height: 1.2rem;
-    text-size-adjust: none;
-    margin-left: 0.5rem;
-}
-
-.iconTitle {
-    font-size: 2rem;
-    margin-left: 1rem;
-}
 
 
 
