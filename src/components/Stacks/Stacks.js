@@ -75,7 +75,7 @@ export default function Stacks() {
                 <div className={style.stackContainer}>
                     {
                         city.filter((city) => city.category === filter.name)
-                            .map((city) =>
+                            .map((city) => <div key={city.key}>
                                 <Link href={`/posts/scenic/${city.inEnglish}`}>
                                     <div className={style.stackItems}
                                         key={city.key}
@@ -96,7 +96,7 @@ export default function Stacks() {
                                             <p className={style.foodType}>
                                                 {city.name}
                                             </p></div>
-                                    </div></Link>
+                                    </div></Link></div>
                             )
 
                     }
