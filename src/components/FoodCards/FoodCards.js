@@ -14,7 +14,7 @@ export default function FoodCards({
     const urlSwitch = (urlQuery) => {
         switch (urlQuery) {
             case 'Gift':
-                return setDatas(ice20);
+                return setDatas(gift20);
             case 'ChineseFood':
                 return setDatas(chineseFood20);
             case 'NightMarket':

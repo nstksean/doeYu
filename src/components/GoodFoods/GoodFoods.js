@@ -27,9 +27,11 @@ export default function GoodFoods() {
                                 objectPosition="center"
                             />
                         </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(0).name}
-                        </p>
+                        <div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(0).name}
+                            </p>
+                        </div>
                     </div>
                 </Link>
                 <Link href={`/posts/restaurants/${foodTypes.at(1).inEnglish}`}>
@@ -43,9 +45,11 @@ export default function GoodFoods() {
                                 objectPosition="center"
                             />
                         </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(1).name}
-                        </p>
+                        <div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(1).name}
+                            </p>
+                        </div>
                     </div>
                 </Link>
                 <Link href={`/posts/restaurants/${foodTypes.at(2).inEnglish}`}>
@@ -59,9 +63,11 @@ export default function GoodFoods() {
                                 objectPosition="center"
                             />
                         </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(2).name}
-                        </p>
+                        <div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(2).name}
+                            </p>
+                        </div>
                     </div>
                 </Link>
                 <Link href={`/posts/restaurants/${foodTypes.at(3).inEnglish}`}>
@@ -76,9 +82,11 @@ export default function GoodFoods() {
                                 objectPosition="center"
                             />
                         </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(3).name}
-                        </p>
+                        <div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(3).name}
+                            </p>
+                        </div>
                     </div>
                 </Link>
                 <Link href={`/posts/restaurants/${foodTypes.at(4).inEnglish}`}>
@@ -93,9 +101,11 @@ export default function GoodFoods() {
                                 objectPosition="center"
                             />
                         </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(4).name}
-                        </p>
+                        <div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(4).name}
+                            </p>
+                        </div>
                     </div>
                 </Link>
                 <Link href={`/posts/restaurants/${foodTypes.at(5).inEnglish}`}>
@@ -109,10 +119,10 @@ export default function GoodFoods() {
                                 objectFit="cover"
                                 objectPosition="center"
                             />
-                        </div>
-                        <p className={style.foodType}>
-                            {foodTypes.at(5).name}
-                        </p>
+                        </div><div className={style.wordArt}>
+                            <p className={style.foodType}>
+                                {foodTypes.at(5).name}
+                            </p></div>
 
                     </div>
                 </Link>
