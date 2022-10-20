@@ -11,6 +11,17 @@
     margin-top: 6.9444vw;
 }
 
+.logoContainer {
+    width: 10.208vw;
+    height: 6.8vw;
+    margin: 6.875vw 27.36vw 0 19.72vw;
+}
+
+.logoContainer svg {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 .footer .navBarIcon {
@@ -55,6 +66,11 @@
 
     flex-direction: row;
     display: flex;
+
+}
+
+.line375 {
+    display: none;
 }
 
 
@@ -80,6 +96,10 @@
         margin-top: 10.4vw;
     }
 
+    .logoContainer svg {
+        width: 100%;
+        height: 100%;
+    }
 
     .footer .listContainer {
         width: 100%;
@@ -110,5 +130,74 @@
         font-size: 16px;
         line-height: 23px;
         letter-spacing: 0.12em;
+    }
+
+    .line375 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .footer {
+
+        margin-top: 8vw;
+        height: 133.3333vw;
+
+    }
+
+    .logoContainer {
+        margin: 0;
+        width: 16.8vw;
+        height: 11.2vw;
+        margin: 12vw 0 0vw 2vw;
+    }
+
+    .logoContainer svg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .footer .listContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 90%;
+
+        margin-top: 10.66vw;
+        margin-left: 13vw;
+
+    }
+
+    .footerList {
+
+        margin: 0px 0 0 0;
+
+    }
+
+    .line375 {
+        display: block;
+        width: 51.73vw;
+        margin-bottom: 3vw;
+        height: 0px;
+        border: 1px solid #9086CC;
+    }
+
+    .footerList li {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        margin-bottom: 3.733vw;
+    }
+
+    .listContainer ul {
+        margin-top: 0vw;
+        padding-inline-start: 0px;
+
     }
 }

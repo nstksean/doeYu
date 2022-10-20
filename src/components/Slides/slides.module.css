@@ -288,3 +288,135 @@
 
 
 }
+
+@media screen and (max-width:640px) {
+    .slideGroup {
+        width: 100%;
+        height: 78.4vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11.733vw;
+        margin-top: 8vw;
+
+    }
+
+    .slideBtnPre {
+
+        width: 3.7333vw;
+        margin-left: 0;
+        height: 66.666vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .slideBtnNex {
+
+        width: 3.7333vw;
+        margin-left: 0;
+        height: 66.666vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    .slideBtnPre svg {
+        display: none;
+
+    }
+
+    .slideBtnNex svg {
+        display: none;
+    }
+
+    .slider {
+        width: 84%;
+        height: 66.666vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-start;
+    }
+
+    .slideItem {
+
+        width: 100%;
+        height: 66.666vw;
+        border-radius: 2rem;
+    }
+
+    .bgwrap {
+        width: 84vw;
+        height: 66.666vw;
+        border-radius: 2rem;
+
+    }
+
+    .wordArtcontainer {
+        width: 100%;
+        height: 14.933vw;
+        margin: 41.06vw 0 10.666vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: rgba(0, 0, 0, 0.2);
+
+    }
+
+    .title {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38px;
+        margin: 0 5.333vw 0 4.33vw;
+
+
+        /* Neutrals/White */
+
+        color: #FEFEFE;
+        max-width: 60%;
+    }
+
+    .city {
+
+        border-radius: 12px;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 23px;
+        padding: 1.733vw 3.73vw;
+
+        /* Neutrals/White */
+
+        color: #FEFEFE;
+
+    }
+
+    .slideBtnsContainer {
+        box-sizing: border-box;
+        width: 26.666vw;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8vw;
+    }
+
+    .slideBtns {
+        width: 2.66vw;
+        height: 2.66vw;
+        background-color: #EAEAEA;
+        /* reset origin style */
+        appearance: none;
+        border-radius: 50%;
+    }
+}

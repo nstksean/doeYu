@@ -4,8 +4,7 @@ import { RootContext } from '../../context/rustContext';
 
 import style from './slides.module.css'
 
-import jufan from '../../../public/images/fakeSlide/slideM.png'
-import slideL from '../../../public/images/fakeSlide/Slide.png'
+
 import slideR from '../../../public/images/fakeSlide/slideR.png'
 import { fakeSlide } from '../../data/mockAPI';
 import Link from 'next/link';
