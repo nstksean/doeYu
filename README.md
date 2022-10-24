@@ -64,8 +64,8 @@ follow [Angular Contributing Guidelines](https://github.com/angular/angular/blob
 
 ### Built with
 - [React](https://reactjs.org/)
-  - ...
-  - ..
+  - useState
+  - useEffect
 - [Next.js](https://nextjs.org/)
   - Routes
   - Image Component  
