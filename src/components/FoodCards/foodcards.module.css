@@ -172,3 +172,82 @@
 
     }
 }
+
+@media screen and (max-width:640px) {
+    .hotSpotGroup {
+        margin: 0;
+    }
+
+    .hotSpotStackContainer {
+        width: 84.27vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5.067vw;
+
+    }
+
+    .hotSpotStackItem {
+
+        /* Neutrals/LIght grey */
+        width: 39.467vw;
+        height: 56.2vw;
+        border: 1px solid #EAEAEA;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        overflow: hidden;
+
+    }
+
+    .ItemPhoto {
+        width: 43.5vw;
+        height: 33.67vw;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 2.8vw;
+    }
+
+    .signpost {
+        display: flex;
+        margin: 7.2vw 0 5.333vw 8vw;
+
+    }
+
+    .signpost div {
+        padding: 0 3.2vw 0 0;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .morethan svg {
+        width: 3.733vw;
+        height: 2.66vw;
+
+    }
+
+    .title {
+        margin: 0vw 0 5.333vw 8vw;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+
+    }
+
+    .spotTitle {
+        max-width: 85%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .spotCity {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

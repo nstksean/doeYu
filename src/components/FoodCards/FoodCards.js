@@ -79,8 +79,8 @@ export default function FoodCards({
                                 <Image
                                     src={data.Picture.PictureUrl1}
                                     alt={data.RestaurantName}
-                                    width={320}
-                                    height={220}
+                                    width={330}
+                                    height={230}
                                     layout="responsive"
                                 />
                             </div>
