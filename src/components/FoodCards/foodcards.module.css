@@ -2,7 +2,7 @@
 
 .hotSpotGroup {
     margin: 0;
-    width: 83.2vw;
+    width: 100%;
 }
 
 .title {
@@ -17,7 +17,7 @@
 
 
 .hotSpotStackContainer {
-    width: 100%;
+    width: calc(100%-8.333vw);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -120,124 +120,55 @@
 
 @media screen and (max-width:768px) {
     .hotSpotGroup {
-        margin: 0 12rem 0 12rem;
+        margin: 0;
     }
-
-    .slideItem {
-
-        width: 90%;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        margin-bottom: 90px;
-        margin-left: 0rem;
-        margin: 3rem 0 12rem 6rem
-    }
-
-    .title {
-        font-family: Noto Sans TC;
-        font-weight: 700;
-        font-size: 26px;
-
-        color: #392A93;
-        margin: 10px;
-    }
-
 
     .hotSpotStackContainer {
-        width: 100%;
+        width: 83.333vw;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5.2vw;
+
     }
 
     .hotSpotStackItem {
-        display: flex;
-        flex-direction: column;
-        /* Neutrals/White */
-        align-items: center;
-        background: #FEFEFE;
+
         /* Neutrals/LIght grey */
-        height: 300px;
-        width: 270px;
+        width: 39.0625vw;
+        height: 34.50vw;
         border: 1px solid #EAEAEA;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-        border-radius: 30px;
+        border-radius: 20px;
         overflow: hidden;
 
     }
 
     .ItemPhoto {
-        border-radius: 20px 20px 0px 0px;
-        margin-bottom: 20px;
-        width: 305px;
-        height: 213px;
+        width: 39.0625vw;
+        height: 21.875vw;
         display: block;
         overflow: hidden;
-    }
-
-    .spotTitle {
-        font-family: 'Noto Sans TC';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 23px;
-        text-align: center;
-
-        /* Primary/Dark purple */
-
-        color: #392A93;
-        margin-bottom: 10px;
-        max-width: 80%;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-
-    }
-
-    .spotCity {
-        font-family: 'Noto Sans TC';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 23px;
-
-        /* Neutrals/Grey */
-
-        color: #CFCFCF;
-        margin-bottom: 20px;
-        display: flex;
-
+        margin-bottom: 2.8vw;
     }
 
     .signpost {
         display: flex;
-        margin: 5.21vw 0 5.21vw 15.755vw;
+        margin: 5.5vw 0 6.1vw 15.9vw;
     }
 
     .signpost div {
-        padding: 0 16px 0 0;
-    }
-
-    .signpost,
-    .spotorfood,
-    .cityorkind {
-        font-family: 'Noto Sans TC';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
-
-        /* Complementary/Baby blue */
-
-        color: #A9D3FF;
-
+        padding: 0 2.08vw 0 0;
     }
 
     .morethan svg {
-        width: 1vw;
-        height: 0.7vw;
+        width: 1.823vw;
+        height: 1.3vw;
+
+    }
+
+    .title {
+        margin: 1.2vw 0 5.2vw 15.9vw;
 
     }
 }
