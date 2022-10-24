@@ -8,7 +8,7 @@
     flex-direction: column;
     margin-bottom: 90px;
     margin-left: 0rem;
-    margin: 3rem 0 12rem 6rem
+    margin: 0
 }
 
 .title {
@@ -17,16 +17,18 @@
     font-size: 26px;
 
     color: #392A93;
-    margin: 10px;
+    margin: 2.78vw 0 2.78vw 8.333vw;
 }
 
 
 .hotSpotStackContainer {
-    width: 100%;
+    width: calc(100vw - 8.333vw);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 40px;
+    gap: 2.778vw;
+    margin-left: 8.333vw;
+
 }
 
 .hotSpotStackItem {
@@ -36,8 +38,8 @@
     align-items: center;
     background: #FEFEFE;
     /* Neutrals/LIght grey */
-    height: 300px;
-    width: 270px;
+    height: 20.83vw;
+    width: 18.75vw;
     border: 1px solid #EAEAEA;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
@@ -48,8 +50,8 @@
 .ItemPhoto {
     border-radius: 20px 20px 0px 0px;
     margin-bottom: 20px;
-    width: 305px;
-    height: 213px;
+    height: 21vw;
+    width: 19vw;
     display: block;
     overflow: hidden;
 }
@@ -90,11 +92,11 @@
 
 .signpost {
     display: flex;
-    margin: 4rem 0 4rem 0rem;
+    margin: 2.78vw 0 0 8.4vw;
 }
 
 .signpost div {
-    padding: 0 16px 0 0;
+    padding: 0 1.111vw 0 0;
 }
 
 .signpost,
@@ -111,6 +113,7 @@
     color: #A9D3FF;
 
 }
+
 
 .morethan svg {
     width: 1vw;
