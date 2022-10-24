@@ -1,23 +1,24 @@
-import style from "./travelspots.module.css"
-import { RootContext } from '../../context/rustContext';
 import { useContext, useState } from 'react'
 import Image from "next/image";
+
+import style from "./travelspots.module.css"
+import { RootContext } from '../../context/rustContext';
 
 export default function TravelSpots() {
 
     const rootContextValue = useContext(RootContext);
     const datas = rootContextValue.state.rustAPI_data
     const loading = rootContextValue.state.rustAPI_isLoaded
-    const [countClick, setCountClick] = useState(400)
+    const [countClick, setCountClick] = useState(396)
 
     const handleBtnPreClick = () => {
 
-        setCountClick(countClick + 1)
+        setCountClick(countClick - 1)
     }
 
     const handleBtnNexClick = () => {
 
-        setCountClick(countClick - 1)
+        setCountClick(countClick + 1)
     }
 
     return (
@@ -44,7 +45,7 @@ export default function TravelSpots() {
             <div className={style.hotSpotStackContainer}>
 
                 {
-                    datas?.slice((0 + (countClick % 4)), (4 + (countClick % 4))).map((data) =>
+                    datas?.slice((0 + (countClick % 9)), (4 + (countClick % 9))).map((data) =>
                         <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
                             <div className={style.ItemPhoto}>
                                 <Image
