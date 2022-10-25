@@ -1,5 +1,7 @@
 import style from "./foodcards.module.css"
 import Image from "next/image";
+import foodholder from '../../../public/images/placeholders/food.png'
+
 
 export default function ResturantCard({ datas }) {
     const data = datas
@@ -12,6 +14,7 @@ export default function ResturantCard({ datas }) {
                     width={330}
                     height={230}
                     layout="responsive"
+                    blurDataURL={foodholder}
                 />
             </div>
             <div
