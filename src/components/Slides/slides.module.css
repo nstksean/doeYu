@@ -252,8 +252,8 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 52px;
-        margin-right: 6rem;
-
+        margin-right: 7.8125vw;
+        max-width: 74%;
 
         /* Neutrals/White */
 
