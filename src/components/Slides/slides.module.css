@@ -312,7 +312,7 @@
 
     .slideBtnPre {
 
-        width: 3.7333vw;
+        width: 8vw;
         height: 66.666vw;
         justify-content: center;
         align-items: center;
@@ -327,7 +327,7 @@
 
     .slideBtnNex {
 
-        width: 3.7333vw;
+        width: 8vw;
         height: 66.666vw;
         justify-content: center;
         align-items: center;
@@ -350,7 +350,7 @@
     }
 
     .slider {
-        width: 84%;
+        width: 76vw;
         height: 66.666vw;
         display: flex;
         flex-direction: column;
@@ -366,7 +366,7 @@
     }
 
     .bgwrap {
-        width: 84vw;
+        width: 76vw;
         height: 66.666vw;
         border-radius: 2rem;
 
