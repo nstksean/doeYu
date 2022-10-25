@@ -5,8 +5,7 @@ import Link from 'next/link';
 
 import { citys as city } from '../../data/CityItems'
 import style from './stacks.module.css'
-import Image from "next/image";
-import Link from 'next/link';
+
 // export const filterBtn
 
 export default function Stacks() {

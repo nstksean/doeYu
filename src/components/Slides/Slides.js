@@ -5,7 +5,6 @@ import Link from 'next/link';
 import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
 import { fakeSlide } from '../../data/mockAPI';
-import Link from 'next/link';
 
 export default function Slides({ data }) {
     const [currentTab, setCurrentTab] = useState(0)
