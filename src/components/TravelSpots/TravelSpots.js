@@ -19,7 +19,7 @@ export default function TravelSpots() {
 
         setCountClick(countClick - 1)
     }
-    console.log({ datas, loading });
+
     return (
         <div className={style.hotSpotGroup}>
             <div className={style.title}>

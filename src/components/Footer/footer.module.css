@@ -11,34 +11,8 @@
     margin-top: 6.9444vw;
 }
 
-.footer .taiwan {
-    font-family: 'Avenir Next';
-    font-style: normal;
-    font-weight: 600;
 
-    font-size: 16px;
-    color: #9086CC;
-    margin-bottom: 0.8vw;
-    margin-left: 1vw;
-}
 
-.footer .iconTitle {
-    font-size: 36px;
-    color: #FEFEFE;
-    margin-left: 0.96vw;
-}
-
-.footer .navBarIcon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logoContainer {
-    margin: 6.875vw 27.2vw 0 19.652vw;
-    width: 10.3vw;
-    height: 6.8vw;
-}
 
 .footerList li {
     margin-bottom: 10px;
@@ -68,6 +42,10 @@
 
 }
 
+.logoContainer {
+    margin: 6.875vw 27.26vw 0 19.65vw;
+}
+
 
 .footer .listContainer {
 
@@ -75,12 +53,7 @@
     display: flex;
 }
 
-.wordArts {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.694vw;
-    justify-content: center;
-}
+
 
 
 
@@ -97,45 +70,15 @@
     }
 
     .logoContainer {
-        width: 100%;
         margin: 0;
         width: 19.14vw;
         height: 12.76vw;
         margin-top: 10.4vw;
     }
 
-    .footer .navBarIcon {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-
-    }
-
-    .wordArts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 0px;
-    }
-
-    .footer .taiwan {
-        font-size: 16px;
-        color: #9086CC;
-        margin-bottom: 1vw;
-        margin-left: 2.8vw;
-
-    }
-
-    .footer .iconTitle {
-        font-size: 36px;
-        color: #FEFEFE;
-        margin-left: 3.02vw;
-
-    }
 
     .footer .listContainer {
-        width: 82%;
+        width: 100%;
         flex-direction: row;
         display: flex;
         margin-top: 11.72vw;
@@ -145,7 +88,7 @@
 
     .footerList {
         color: #FEFEFE;
-        margin: 0px 38px;
+        margin: 0px 4.94vw;
 
     }
 
