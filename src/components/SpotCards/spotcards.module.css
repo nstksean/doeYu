@@ -49,11 +49,11 @@
 
 .ItemPhoto {
     border-radius: 20px 20px 0px 0px;
-    margin-bottom: 20px;
-    height: 21vw;
+    height: 13.333vw;
     width: 19vw;
     display: block;
     overflow: hidden;
+    margin-bottom: 1.38vw;
 }
 
 .spotTitle {
