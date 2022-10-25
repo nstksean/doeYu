@@ -21,7 +21,7 @@ export default function SpotCard({ datas }) {
                 {item?.ScenicSpotName}
             </div>
             <div className={style.spotCity}>
-                {item?.City}
+                {item?.City ? `${item.City}` : `${item.Address}`}
             </div>
         </div>
     );

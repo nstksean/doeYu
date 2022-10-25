@@ -2,8 +2,8 @@ import style from "./trailandtitle.module.css"
 
 export default function TrailAndTitle({ signpostData }) {
 
-    const data = signpostData?.at(0)
-
+    const data = Array.from(signpostData).at(0)
+    console.log(data);
     return (<>
         <div className={style.signpost}>
             <div className={style.home}>首頁</div>
@@ -23,7 +23,7 @@ export default function TrailAndTitle({ signpostData }) {
                 </svg>
             </div>
             <div className={style.cityorkind}>
-                {data?.City ? `${data.City}` : ''}
+                {data?.City ? `${data.City}` : `台灣`}
             </div>
         </div>
 

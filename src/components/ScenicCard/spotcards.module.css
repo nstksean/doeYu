@@ -87,6 +87,10 @@
     color: #CFCFCF;
     margin-bottom: 20px;
     display: flex;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
