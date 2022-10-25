@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import SpotCards from '../../../components/SpotCards/SpotCards'
+import ScenicContainer from '../../../Container/ScenicContainer'
 
 
 const Post = () => {
@@ -10,8 +10,7 @@ const Post = () => {
 
     return <>
 
-        <SpotCards urlQuery={scenic} pageType={useRouter().query} />
-
+        <ScenicContainer urlQuery={scenic} pageType={useRouter().query} />
     </>
 
 }

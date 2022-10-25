@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import { citys as city } from '../../data/CityItems'
 import style from './stacks.module.css'
+import CityBtn from "./CityBtn";
 
 // export const filterBtn
 
@@ -70,27 +71,7 @@ export default function Stacks() {
                 <div className={style.stackContainer}>
                     {
                         city.filter((city) => city.category === filter.name)
-                            .map((city) => <div key={city.key}>
-                                <Link href={`/posts/scenic/${city.inEnglish}`}>
-                                    <div className={style.stackItems}
-                                        key={city.key}>
-                                        <div className={style.stackItemsPhoto}>
-                                            <Image
-                                                src={city.imageUrl}
-                                                alt={city.name}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                objectPosition="center"
-                                                priority />
-                                        </div>
-                                        <div className={style.wordArt}>
-                                            <p className={style.foodType}>
-                                                {city.name}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
+                            .map((city) => <CityBtn acceptDatas={city} key={city.key} />
                             )
 
                     }

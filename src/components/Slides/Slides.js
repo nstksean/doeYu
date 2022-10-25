@@ -14,10 +14,6 @@ export default function Slides({ data }) {
     const len = fakeSlide.length - 1
 
 
-
-
-
-
     return (
         <div className={style.slideGroup}>
             <div onClick={() => setCurrentTab(currentTab < 1 ? len : currentTab - 1)}>

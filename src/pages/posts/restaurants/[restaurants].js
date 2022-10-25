@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { DemoScenicSpot, items } from '../../../components/DemoData/dss'
-import FoodCards from '../../../components/FoodCards/FoodCards'
+import ResturantContainer from '../../../Container/ResturantContainer'
 
 
 const Post = () => {
@@ -12,7 +12,7 @@ const Post = () => {
     // console.log('router:', restaurants, typeof restaurants)
 
     return <>
-        <FoodCards urlQuery={restaurants} pageType={useRouter().query} />
+        <ResturantContainer urlQuery={restaurants} pageType={useRouter().query} />
     </>
 
 }
