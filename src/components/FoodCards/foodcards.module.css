@@ -169,6 +169,11 @@
         margin: 1.2vw 0 5.2vw 15.9vw;
 
     }
+
+    .spotTitle {
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width:640px) {
@@ -247,5 +252,9 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .spotTitle {
+        text-align: center;
     }
 }
