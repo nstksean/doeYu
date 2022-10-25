@@ -27,6 +27,7 @@
     width: 26.38vw;
     height: 16.66vw;
     cursor: pointer;
+    overflow: hidden;
 
 
 }
@@ -123,5 +124,59 @@
     .bgWrap {
         width: 39.06vw;
         height: 23.44vw;
+        border-radius: 20px;
+
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 2.6667vw;
+        margin-bottom: 10.5vw;
+    }
+
+    .hotFoodGroup {
+        width: 84%;
+        height: 343.46vw;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .stackFoodContainer {
+        width: 100%;
+        height: 321.33vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 6.6667vw;
+        justify-items: center;
+    }
+
+    .foodStackItem {
+        width: 84vw;
+        height: 48vw;
+        border-radius: 20px;
+
+    }
+
+    .bgWrap {
+        width: 84vw;
+        height: 48vw;
+        border-radius: 20px;
+
+    }
+
+    .foodType {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
     }
 }

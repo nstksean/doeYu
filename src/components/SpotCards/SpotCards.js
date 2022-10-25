@@ -77,7 +77,7 @@ export default function SpotCards({ urlQuery, pageType }) {
             </div>
 
             <div className={style.title}>
-                {/* {pageType.key === 'scenic' ? "旅遊景點" : "美食餐廳"} */}
+                {pageType.key === 'scenic' ? "美食餐廳" : "旅遊景點"}
             </div>
             <div className={style.hotSpotStackContainer}>
                 {

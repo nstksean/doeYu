@@ -1,7 +1,9 @@
-import { citys as city } from '../../data/CityItems'
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from 'next/link';
 
 
+import { citys as city } from '../../data/CityItems'
 import style from './stacks.module.css'
 import Image from "next/image";
 import Link from 'next/link';
@@ -29,8 +31,6 @@ export default function Stacks() {
 
     const resultObj = handleTabChange(filterBtn)
 
-
-
     useEffect(() => {
         setfilter(resultObj.at(0))
 
@@ -45,18 +45,15 @@ export default function Stacks() {
                 {filterBtn.map((item) => (
                     <div className={style.stackBtn}
                         onChange={() => handleCityGroupBtnClick(item)}
-                        key={item.tab}
-
-                    >
+                        key={item.tab} >
                         <input type='radio' name="city" id={item.tab} value={item.name}
                             checked={activeTab === item.tab}
                             onChange={() => handleCityGroupBtnClick(item)}
-
                         />
                         <label className={style.stackBtnLb} htmlFor={item.tab}>
-                            {item.name}</label>
+                            {item.name}
+                        </label>
                     </div>
-
                 ))
                 }
 
@@ -77,8 +74,7 @@ export default function Stacks() {
                             .map((city) => <div key={city.key}>
                                 <Link href={`/posts/scenic/${city.inEnglish}`}>
                                     <div className={style.stackItems}
-                                        key={city.key}
-                                    >
+                                        key={city.key}>
                                         <div className={style.stackItemsPhoto}>
                                             <Image
                                                 src={city.imageUrl}
@@ -86,16 +82,16 @@ export default function Stacks() {
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
-                                                priority
-                                            >
-
-                                            </Image>
+                                                priority />
                                         </div>
                                         <div className={style.wordArt}>
                                             <p className={style.foodType}>
                                                 {city.name}
-                                            </p></div>
-                                    </div></Link></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                             )
 
                     }

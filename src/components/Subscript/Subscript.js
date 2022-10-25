@@ -6,7 +6,7 @@ export default function Subscript() {
             <div className={style.subscriptGruop}>
 
                 <div className={style.title}>
-                    訂閱我們，獲得最在地的旅遊資訊！
+                    訂閱我們，<br />獲得最在地的旅遊資訊！
                 </div>
                 <div className={style.subTitle}>
                     每週六一封，不隨意打擾，且隨時可以取消

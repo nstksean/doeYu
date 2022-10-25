@@ -143,3 +143,74 @@
         padding: 14px 10PX 10PX 10PX
     }
 }
+
+@media screen and (max-width:640px) {
+    .subscriptGruop {
+        width: 100%;
+        border-radius: 0;
+        padding: 13.333vw 0 13.333vw 0;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 21.866vw;
+    }
+
+    .subTitle {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 3.2vw;
+        margin-top: 1.6vw;
+    }
+
+
+    .inputer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputer input {
+
+        width: 84vw;
+        height: 10.666vw;
+
+
+        border-radius: 12px;
+        margin-right: 0px;
+        padding: 1.866vw 0 1.8666vw 5.333vw;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .inputer button {
+        width: 39.466vw;
+        height: 10.667vw;
+        padding: 2.266vw 0;
+        margin-top: 3.7333vw;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+    }
+}

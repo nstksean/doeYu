@@ -1,23 +1,18 @@
+import { useState } from 'react';
 import Image from 'next/image';
-import { useContext, useState, useEffect } from 'react';
-import { RootContext } from '../../context/rustContext';
+import Link from 'next/link';
 
 import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
 import { fakeSlide } from '../../data/mockAPI';
 import Link from 'next/link';
 
-export default function Slides() {
+export default function Slides({ data }) {
     const [currentTab, setCurrentTab] = useState(0)
 
-    const targetItem = fakeSlide.at(currentTab)
+    const targetItem = data.at(currentTab)
 
     const len = fakeSlide.length - 1
-
-
-    const rootContextValue = useContext(RootContext);
-    const datas = rootContextValue.state.rustAPI_data
-    const loading = rootContextValue.state.rustAPI_isLoaded
 
 
 
@@ -30,26 +25,23 @@ export default function Slides() {
                 <div className={style.slideBtnPre}>
                     <Image
                         src={slideR}
-                        alt={fakeSlide.name}
+                        alt={data.name}
                         layout='fill'
                         objectFit='cover'
                     ></Image>
                 </div>
             </div>
             <div className={style.slider}>
-                <Link href={`/posts/locations/` + `${fakeSlide.at(currentTab).ScenicSpotID}`}>
+                <Link href={`/posts/locations/` + `${data.at(currentTab).ScenicSpotID}`}>
                     <div className={style.slideItem}>
                         <div className={style.bgwrap}>
                             <Image
                                 src={targetItem.Picture.PictureUrl1}
                                 alt={targetItem.ScenicSpotName}
                                 layout="fill"
-                                objectFit='cover'
-
-                            ></Image>
+                                objectFit='cover' />
                         </div>
                         <div className={style.wordArtcontainer}>
-
                             <div className={style.title}>{targetItem.ScenicSpotName}</div>
                             <div className={style.city}>{targetItem.City}</div>
                         </div>
@@ -81,7 +73,7 @@ export default function Slides() {
 
                     <Image
                         src={slideR}
-                        alt={fakeSlide.name}
+                        alt={data.name}
                         layout="fill"
                         objectFit='cover'
                     ></Image>
