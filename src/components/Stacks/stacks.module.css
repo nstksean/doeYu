@@ -44,6 +44,8 @@
     align-items: center;
     justify-content: center;
     color: #A9D3FF;
+    display: inline-block;
+    text-align: center;
 
 }
 
@@ -350,6 +352,36 @@
 
 
         display: block;
+    }
+
+    .stackBtn label {
+        padding: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        display: inline-block;
+        text-align: center;
+        color: #A9D3FF;
+        min-width: 21.33vw;
+        max-width: 26.66vw;
+        text-overflow: calc(24vw);
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+
+    .stackBtn input:checked~label {
+        color: #392A93;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+
+    }
+
+
+    .stackBtn {
+        margin-right: 0px;
+
     }
 
 

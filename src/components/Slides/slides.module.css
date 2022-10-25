@@ -1,4 +1,7 @@
 /* slide part css */
+.SlideContainer {
+    width: 100%;
+}
 
 .slideGroup {
     width: 100%;
