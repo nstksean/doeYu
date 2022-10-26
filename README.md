@@ -9,15 +9,10 @@
   <br>
 </p>
 
-
-
 <p align="center">
   <a href="https://doe-yu-seanlin.vercel.app/" target="_blank"  ><strong>Website</strong></a>
   <br>
 </p>
-
-
-
 
 ## Authors
 
@@ -57,8 +52,6 @@ User story (使用者故事)
 
 
 
-
-
 ## Development 
 
 ### Contributing Guidelines
@@ -71,8 +64,8 @@ follow [Angular Contributing Guidelines](https://github.com/angular/angular/blob
 
 ### Built with
 - [React](https://reactjs.org/)
-  - ...
-  - ...
+  - useState
+  - useEffect
 - [Next.js](https://nextjs.org/)
   - Routes
   - Image Component  
