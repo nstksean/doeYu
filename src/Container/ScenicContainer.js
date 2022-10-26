@@ -1,10 +1,10 @@
-import style from "../components/ScenicCard/spotcards.module.css"
-import Image from "next/image";
 import { useEffect, useState } from "react";
+
 import { getScenicSpotUrl } from '../api/apiClient'
-import { citys } from "../data/CityItems";
+
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
-import SpotCard from "../components/ScenicCard/SpotCard";
+import ScenicCard from "../components/ScenicCard/ScenicCard";
+import style from "../components/ScenicCard/sceniccard.module.css"
 
 
 export default function ScenicContainer({ urlQuery, pageType }) {
@@ -104,7 +104,7 @@ export default function ScenicContainer({ urlQuery, pageType }) {
             <TrailAndTitle signpostData={items} />
             <div className={style.hotSpotStackContainer}>
                 {
-                    Array.from(items).map((item) => <SpotCard datas={item} key={item.ScenicSpotID} />
+                    Array.from(items).map((item) => <ScenicCard scenicDataToRender={item} key={item?.ScenicSpotID} />
                     )
                 }
             </div>

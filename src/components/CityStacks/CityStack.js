@@ -1,15 +1,12 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import Link from 'next/link';
 
 
 import { citys as city } from '../../data/CityItems'
-import style from './stacks.module.css'
-import CityBtn from "./CityBtn";
+import style from './citystack.module.css'
+import CityCard from "./CityCard";
 
-// export const filterBtn
 
-export default function Stacks() {
+export default function CityStack() {
     const [filter, setfilter] = useState({ name: '熱鬧繁華', tab: 0 })
     const [activeTab, setActiveTab] = useState(0)
     const filterBtn = [
@@ -20,11 +17,11 @@ export default function Stacks() {
     ]
 
     const handleTabChange = (filterBtn) => {
-        return filterBtn?.filter((filterBtn) => filterBtn.tab === activeTab)
+        return filterBtn?.filter((filterBtn) => filterBtn?.tab === activeTab)
     }
     const handleCityGroupBtnClick = (item) => {
         setfilter(item)
-        setActiveTab(item.tab)
+        setActiveTab(item?.tab)
     }
 
     const len = filterBtn.length - 1
@@ -32,7 +29,7 @@ export default function Stacks() {
     const resultObj = handleTabChange(filterBtn)
 
     useEffect(() => {
-        setfilter(resultObj.at(0))
+        setfilter(resultObj?.at(0))
 
     }, [activeTab])
 
@@ -45,13 +42,13 @@ export default function Stacks() {
                 {filterBtn.map((item) => (
                     <div className={style.stackBtn}
                         onChange={() => handleCityGroupBtnClick(item)}
-                        key={item.tab} >
-                        <input type='radio' name="city" id={item.tab} value={item.name}
-                            checked={activeTab === item.tab}
+                        key={item?.tab} >
+                        <input type='radio' name="city" id={`${item?.tab}`} value={item?.name}
+                            checked={activeTab === item?.tab}
                             onChange={() => handleCityGroupBtnClick(item)}
                         />
-                        <label className={style.stackBtnLb} htmlFor={item.tab}>
-                            {item.name}
+                        <label className={style.stackBtnLb} htmlFor={`${item?.tab}`}>
+                            {item?.name}
                         </label>
                     </div>
                 ))
@@ -71,7 +68,7 @@ export default function Stacks() {
                 <div className={style.stackContainer}>
                     {
                         city.filter((city) => city.category === filter.name)
-                            .map((city) => <CityBtn acceptDatas={city} key={city.key} />
+                            .map((city) => <CityCard cityDataToRender={city} key={city?.key} />
                             )
 
                     }

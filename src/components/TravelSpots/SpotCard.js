@@ -2,11 +2,11 @@ import Image from "next/image";
 import style from "./travelspots.module.css"
 
 
-export default function SpotCard({ acceptdata }) {
-    const data = acceptdata
+export default function SpotCard({ spotDataToRender: data }) {
+
     return (
         <>
-            <div key={data.ScenicSpotID}
+            <div key={data?.ScenicSpotID}
                 className={style.hotSpotStackItem}>
                 <div className={style.ItemPhoto}>
                     <Image
@@ -19,9 +19,9 @@ export default function SpotCard({ acceptdata }) {
                 </div>
                 <div
                     className={style.spotTitle}>
-                    {data.ScenicSpotName}
+                    {data?.ScenicSpotName}
                 </div>
-                <div className={style.spotCity}>{data.City}</div>
+                <div className={style.spotCity}>{data?.City}</div>
             </div>
         </>
 

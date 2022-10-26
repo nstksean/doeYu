@@ -1,11 +1,9 @@
-import style from "../components/ResturantCard//foodcards.module.css"
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { getScenicSpotUrl } from '../api/apiClient'
-import { citys } from "../data/CityItems";
+
 import { nightMarket20, chineseFood20, exoticFood20, ice20, gift20, else20, restaurant50 } from '../data/mockAPI'
 import ResturantCard from "../components/ResturantCard/ResturantCard";
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
+import style from "../components/ResturantCard/resturantcard.module.css"
 
 export default function ResturantContainer({
     urlQuery,
@@ -51,7 +49,7 @@ export default function ResturantContainer({
             <div className={style.hotSpotStackContainer}>
                 {
                     datas?.slice(0, 12).map((data) =>
-                        <ResturantCard datas={data} key={data.RestaurantID} />)
+                        <ResturantCard resturantDataToRender={data} key={data?.RestaurantID} />)
                 }
             </div>
         </div >

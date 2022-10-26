@@ -4,7 +4,7 @@ import SpotCard from './SpotCard'
 import style from "./travelspots.module.css"
 
 
-export default function TravelSpots({ datas }) {
+export default function TravelSpots({ contextData: datas }) {
 
     const [countClick, setCountClick] = useState(396)
 
@@ -41,8 +41,9 @@ export default function TravelSpots({ datas }) {
             </div>
             <div className={style.hotSpotStackContainer}>
                 {
-                    datas?.slice((0 + (countClick % 9)), (4 + (countClick % 9))).map((data) => <SpotCard acceptdata={data} key={data.ScenicSpotID} />
-                    )
+                    datas?.slice((0 + (countClick % 9)), (4 + (countClick % 9)))
+                        .map((data) => <SpotCard spotDataToRender={data} key={data.ScenicSpotID} />
+                        )
                 }
             </div>
         </div >

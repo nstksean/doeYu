@@ -3,7 +3,7 @@ import style from "./trailandtitle.module.css"
 export default function TrailAndTitle({ signpostData }) {
 
     const data = Array.from(signpostData).at(0)
-    console.log(data);
+
     return (<>
         <div className={style.signpost}>
             <div className={style.home}>首頁</div>

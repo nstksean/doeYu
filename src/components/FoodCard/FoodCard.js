@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import style from "./goodfoods.module.css"
+import style from "./foodcard.module.css"
 
 
 
-export default function FoodCard({ foods }) {
-    const food = foods
+export default function FoodCard({ foodDataToRender: food }) {
+
     return (
-        <Link href={`/posts/restaurants/${food.inEnglish}`}>
+        <Link href={`/posts/restaurants/${food?.inEnglish}`}>
             <div className={style.foodStackItem}>
                 <div className={style.bgWrap}>
                     <Image
-                        alt={food.name}
-                        src={food.imageUrl}
+                        alt={food?.name}
+                        src={food?.imageUrl}
                         layout="fill"
                         objectFit="cover"
                         objectPosition="center"
@@ -21,7 +21,7 @@ export default function FoodCard({ foods }) {
                 </div>
                 <div className={style.wordArt}>
                     <p className={style.foodType}>
-                        {food.name}
+                        {food?.name}
                     </p>
                 </div>
             </div>

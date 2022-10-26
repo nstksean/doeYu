@@ -94,7 +94,7 @@
     overflow: hidden;
     z-index: -1;
     border-radius: 4rem;
-    filter: opacity(80%)
+    filter: brightness(0.7);
 }
 
 .wordArtcontainer {

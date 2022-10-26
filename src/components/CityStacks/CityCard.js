@@ -1,20 +1,20 @@
 import Image from "next/image";
 import Link from 'next/link';
 
-import style from './stacks.module.css'
+import style from './citystack.module.css'
 
 
-export default function CityBtn({ acceptDatas }) {
-    const city = acceptDatas
+export default function CityCard({ cityDataToRender: city }) {
+
     return (
         <div>
-            <Link href={`/posts/scenic/${city.inEnglish}`}>
+            <Link href={`/posts/scenic/${city?.inEnglish}`}>
                 <div className={style.stackItems}
-                    key={city.key}>
+                    key={city?.key}>
                     <div className={style.stackItemsPhoto}>
                         <Image
-                            src={city.imageUrl}
-                            alt={city.name}
+                            src={city?.imageUrl}
+                            alt={city?.name}
                             layout="fill"
                             objectFit="cover"
                             objectPosition="center"
@@ -22,7 +22,7 @@ export default function CityBtn({ acceptDatas }) {
                     </div>
                     <div className={style.wordArt}>
                         <p className={style.foodType}>
-                            {city.name}
+                            {city?.name}
                         </p>
                     </div>
                 </div>

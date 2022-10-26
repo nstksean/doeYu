@@ -9,7 +9,7 @@ import SlideContainer from '../Container/SlideContainer'
 import TravelSpotContainer from '../Container/TravelSpotContainer'
 import GoodFoodContainer from '../Container/GoodFoodContainer'
 import Subscript from '../components/Subscript/Subscript'
-import Stacks from '../components/Stacks/Stacks'
+import CityStack from '../components/CityStacks/CityStack';
 
 
 
@@ -24,7 +24,7 @@ export default function Home() {
         </Head>
 
         <SlideContainer />
-        <Stacks />
+        <CityStack />
         <TravelSpotContainer />
         <GoodFoodContainer />
         <Subscript />

@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { DemoScenicSpot, items } from '../../../components/DemoData/dss'
 import ResturantContainer from '../../../Container/ResturantContainer'
 
 
