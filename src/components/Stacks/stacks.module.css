@@ -110,6 +110,10 @@
     cursor: pointer;
 }
 
+.stackNex:focus,
+.stackPre:focus {
+    background-color: #FEFEFE;
+}
 
 
 .stackPre svg,
