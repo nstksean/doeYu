@@ -14,8 +14,9 @@ export default function ResturantCard({ data: data }) {
                         alt={data?.RestaurantName}
                         width={330}
                         height={230}
-                        layout="responsive"
                         blurDataURL={foodholder}
+                        layout='intrinsic'
+                        objectFit='cover'
                     />
                 </div>
                 <div
