@@ -79,8 +79,8 @@ export default function SlideItem({ slideDatas }) {
                             <Image
                                 src={datas.at(0).Picture.PictureUrl1}
                                 alt={datas.at(0)?.ScenicSpotName}
-                                width={615}
-                                height={410}
+                                width={630}
+                                height={440}
                                 layout='responsive'>
 
                             </Image>

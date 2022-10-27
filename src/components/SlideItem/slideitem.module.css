@@ -180,4 +180,380 @@
     display: none;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .slideItem {
+        width: 83.33vw;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 0vw;
+
+    }
+
+    .spotCity {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+
+        /* Neutrals/Grey */
+
+        color: #CFCFCF;
+        margin-bottom: 20px;
+        display: flex;
+
+    }
+
+    .signpost {
+        display: flex;
+        margin: 5.2vw 0 5.2vw 0;
+    }
+
+    .signpost div {
+        padding: 0 16px 0 0;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .signpost,
+    .spotorfood,
+    .cityorkind {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+
+    }
+
+    .morethan svg {
+        width: 1.302vw;
+        height: 1.82vw;
+
+    }
+
+    .secnicCard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .secnicCardPhoto {
+
+        width: 84vw;
+        height: 52.34vw;
+        margin-right: 0;
+        border-radius: 2rem;
+        overflow: hidden;
+
+    }
+
+    .secnicWordsGroup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+
+    }
+
+    .secnicSpotCity {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+
+
+        /* Complementary/Orange */
+
+        color: #FA7E5F;
+        margin: 2.6vw 0;
+
+
+    }
+
+    .secnicSpotFeatures {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0rem;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+
+    }
+
+    .secnicSpotFeatures div {
+        margin-right: 3.516vw;
+
+    }
+
+    .secnicSpotFeaturesTag {
+        padding: 8px;
+        background: #9086CC;
+        border-radius: 12px;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+
+        /* Neutrals/White */
+
+        color: #FEFEFE;
+
+    }
+
+    .secnicSpotTitle {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38px;
+        /* identical to box height */
+
+
+        /* Primary/Dark purple */
+
+        color: #392A93;
+        margin-bottom: 1rem;
+        margin: 2.6vw 0;
+
+    }
+
+    .secnicSpotOpen,
+    .secnicSpotPhone,
+    .secnicSpotLocation,
+    .secnicSpotWeb {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+        /* Neutrals/Black */
+
+        color: #1D1D1D;
+        margin-bottom: 0;
+        padding: 1.3vw 0;
+    }
+
+    .secnicSpotLocation {
+        padding: 1.3vw 0;
+    }
+
+    .secnicCardKnows {
+        flex-direction: column;
+    }
+
+    .secnicDeatil {
+        margin: 3.9vw 0 7.8125vw 0;
+        padding: 1.3vw;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+
+        letter-spacing: 0.02em;
+
+        /* Neutrals/Black */
+
+        color: #1D1D1D;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .slideItem {
+        width: 84vw;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 6.66vw;
+
+    }
+
+    .spotCity {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+
+        /* Neutrals/Grey */
+
+        color: #CFCFCF;
+        margin-bottom: 20px;
+        display: flex;
+
+    }
+
+    .signpost {
+        display: flex;
+        margin-bottom: 6.4vw;
+    }
+
+    .signpost div {
+        padding: 0 12px 0 0;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .signpost,
+    .spotorfood,
+    .cityorkind {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .morethan svg {
+        width: 2.506vw;
+        height: 3.733vw;
+
+    }
+
+    .secnicCard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .secnicCardPhoto {
+
+        width: 84vw;
+        height: 58.133vw;
+        margin-right: 0;
+        border-radius: 2rem;
+        overflow: hidden;
+
+    }
+
+    .secnicWordsGroup {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.2vw;
+
+    }
+
+    .secnicSpotCity {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        /* Complementary/Orange */
+
+        color: #FA7E5F;
+        margin-bottom: 1rem;
+
+    }
+
+    .secnicSpotFeatures {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+
+    }
+
+    .secnicSpotFeatures div {
+        margin-right: 4.266vw;
+
+    }
+
+    .secnicSpotFeaturesTag {
+        padding: 4px 8px;
+        background: #9086CC;
+        border-radius: 12px;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        /* Neutrals/White */
+
+        color: #FEFEFE;
+
+    }
+
+    .secnicSpotTitle {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        /* identical to box height */
+
+
+        /* Primary/Dark purple */
+
+        color: #392A93;
+        margin-bottom: 1rem;
+    }
+
+    .secnicSpotOpen,
+    .secnicSpotPhone,
+    .secnicSpotLocation,
+    .secnicSpotWeb {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        /* identical to box height */
+
+        letter-spacing: 0.02em;
+
+        /* Neutrals/Black */
+
+        color: #1D1D1D;
+        margin-bottom: 0;
+        padding: 1.6vw 0;
+    }
+
+    .secnicSpotLocation {
+        padding: 1.7333vw 0;
+    }
+
+    .secnicCardKnows {
+        flex-direction: column;
+    }
+
+    .secnicDeatil {
+        margin: 6.666vw 0 16vw 0;
+        padding: 2.66vw 0;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        /* or 214% */
+
+        letter-spacing: 0.02em;
+
+        /* Neutrals/Black */
+
+        color: #1D1D1D;
+    }
+}
