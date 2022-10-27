@@ -176,25 +176,27 @@
     .slideBtnPre {
 
         width: 5.46vw;
-        margin-left: 0;
         height: 58.63vw;
         justify-content: center;
         align-items: center;
         margin: 0;
         display: block;
         overflow: hidden;
+        margin-right: 5vw;
+
     }
 
     .slideBtnNex {
 
         width: 5.46vw;
-        margin-left: 0;
         height: 58.63vw;
         justify-content: center;
         align-items: center;
         margin: 0;
         display: block;
         overflow: hidden;
+        margin-left: 5vw;
+
     }
 
     .slideBtnPre svg {
@@ -250,8 +252,8 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 52px;
-        margin-right: 6rem;
-
+        margin-right: 7.8125vw;
+        max-width: 74%;
 
         /* Neutrals/White */
 
@@ -310,8 +312,7 @@
 
     .slideBtnPre {
 
-        width: 3.7333vw;
-        margin-left: 0;
+        width: 8vw;
         height: 66.666vw;
         justify-content: center;
         align-items: center;
@@ -320,12 +321,13 @@
         overflow: hidden;
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
+        margin-right: 4vw;
+
     }
 
     .slideBtnNex {
 
-        width: 3.7333vw;
-        margin-left: 0;
+        width: 8vw;
         height: 66.666vw;
         justify-content: center;
         align-items: center;
@@ -334,6 +336,8 @@
         overflow: hidden;
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
+        margin-left: 4vw;
+
     }
 
     .slideBtnPre svg {
@@ -346,7 +350,7 @@
     }
 
     .slider {
-        width: 84%;
+        width: 76vw;
         height: 66.666vw;
         display: flex;
         flex-direction: column;
@@ -362,7 +366,7 @@
     }
 
     .bgwrap {
-        width: 84vw;
+        width: 76vw;
         height: 66.666vw;
         border-radius: 2rem;
 
