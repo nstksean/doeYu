@@ -65,9 +65,6 @@ export default function ScenicContainer({ urlQuery, pageType }) {
     })
     const scenicSpotUrl = getScenicSpotUrl(querycity, query)
 
-    useEffect(() => {
-        setquerycity(urlQuery)
-    })
 
     useEffect(() => {
         fetch(scenicSpotUrl)
@@ -96,12 +93,17 @@ export default function ScenicContainer({ urlQuery, pageType }) {
 
     }, [querycity])
 
+    useEffect(() => {
+        setquerycity(urlQuery)
+    })
+
+
 
 
     return (
         <div className={style.hotSpotGroup}>
 
-            <TrailAndTitle signpostData={items} />
+            <TrailAndTitle signpostData={items} urlQuery={urlQuery} />
             <div className={style.hotSpotStackContainer}>
                 {
                     Array.from(items).map((item) => <ScenicCard item={item} key={item?.ScenicSpotID} />

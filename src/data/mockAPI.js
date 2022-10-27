@@ -3546,6 +3546,7 @@ export const v2_Tourism_Restaurant_else_top20 = [
         "UpdateTime": "2022-10-16T02:34:46+08:00"
     }
 ]
+export const v2_Tourism_Restaurant_error = [{ "Message": "What you try to find is not accepted but Gift, ChineseFood, NightMarket, ExoticFood, Ice, Other" }]
 
 export const v2_Tourism_Scenic_fakeslide_top4 = [
     {

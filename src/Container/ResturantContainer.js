@@ -7,7 +7,8 @@ import {
     v2_Tourism_Restaurant_ice_top20,
     v2_Tourism_Restaurant_gift_top20,
     v2_Tourism_Restaurant_else_top20,
-    v2_Tourism_Restaurant_top20
+    v2_Tourism_Restaurant_top20,
+    v2_Tourism_Restaurant_error
 } from '../data/mockAPI'
 import ResturantCard from "../components/ResturantCard/ResturantCard";
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
@@ -38,7 +39,7 @@ export default function ResturantContainer({
 
                 return setDatas(v2_Tourism_Restaurant_else_top20);
             default:
-                return setDatas(v2_Tourism_Restaurant_top20);
+                return setDatas(v2_Tourism_Restaurant_error);
         }
     }
 
@@ -53,10 +54,10 @@ export default function ResturantContainer({
         <div className={style.hotSpotGroup}>
 
 
-            <TrailAndTitle signpostData={datas} />
+            <TrailAndTitle signpostData={datas} urlQuery={urlQuery} />
             <div className={style.hotSpotStackContainer}>
                 {
-                    datas?.map((data) =>
+                    Array.from(datas).map((data) =>
                         <ResturantCard data={data} key={data?.RestaurantID} />)
                 }
             </div>

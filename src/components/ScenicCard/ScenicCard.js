@@ -8,7 +8,7 @@ export default function ScenicCard({ item: item }) {
         <div className={style.hotSpotStackItem}>
             <div className={style.ItemPhoto}>
                 <Image
-                    src={item?.Picture.PictureUrl1}
+                    src={item?.Picture.PictureUrl1 ? item?.Picture.PictureUrl1 : scenicholder}
                     alt={item?.ScenicSpotName}
                     width={320}
                     height={220}

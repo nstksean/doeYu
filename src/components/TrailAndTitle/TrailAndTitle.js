@@ -1,6 +1,7 @@
 import style from "./trailandtitle.module.css"
 
-export default function TrailAndTitle({ signpostData }) {
+export default function TrailAndTitle({ signpostData, urlQuery }) {
+
 
     const data = Array.from(signpostData).at(0)
 
@@ -28,7 +29,11 @@ export default function TrailAndTitle({ signpostData }) {
         </div>
 
         <div className={style.title}>
-            {data?.RestaurantID ? '美食餐廳' : '旅行景點'}
+            {data?.RestaurantID ? '美食餐廳' : ''}{data?.ScenicSpotName ? '旅行景點' : ''}
+            {!(data?.RestaurantID) && !(data?.ScenicSpotName) ? "找不到你輸入的內容：" + `${urlQuery}` : ''}
+        </div>
+        <div className={signpostData?.Message ? `${style.nofound}` : `${style.none}`}>
+            {signpostData?.Message}
         </div>
     </>
     );
