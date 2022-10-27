@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 
-import { nightMarket20, chineseFood20, exoticFood20, ice20, gift20, else20, restaurant50 } from '../data/mockAPI'
+import {
+    v2_Tourism_Restaurant_nightMarket_top20,
+    v2_Tourism_Restaurant_chineseFood_top20,
+    v2_Tourism_Restaurant_exoticFood_top20,
+    v2_Tourism_Restaurant_ice_top20,
+    v2_Tourism_Restaurant_gift_top20,
+    v2_Tourism_Restaurant_else_top20,
+    v2_Tourism_Restaurant_top20
+} from '../data/mockAPI'
 import ResturantCard from "../components/ResturantCard/ResturantCard";
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
 import style from "../components/ResturantCard/resturantcard.module.css"
@@ -14,23 +22,23 @@ export default function ResturantContainer({
     const urlSwitch = (urlQuery) => {
         switch (urlQuery) {
             case 'Gift':
-                return setDatas(gift20);
+                return setDatas(v2_Tourism_Restaurant_gift_top20);
             case 'ChineseFood':
-                return setDatas(chineseFood20);
+                return setDatas(v2_Tourism_Restaurant_chineseFood_top20);
             case 'NightMarket':
 
-                return setDatas(nightMarket20);
+                return setDatas(v2_Tourism_Restaurant_nightMarket_top20);
             case 'ExoticFood':
 
-                return setDatas(exoticFood20);
+                return setDatas(v2_Tourism_Restaurant_exoticFood_top20);
             case 'Ice':
 
-                return setDatas(ice20);
+                return setDatas(v2_Tourism_Restaurant_ice_top20);
             case 'Other':
 
-                return setDatas(else20);
+                return setDatas(v2_Tourism_Restaurant_else_top20);
             default:
-                return setDatas(else20);
+                return setDatas(v2_Tourism_Restaurant_top20);
         }
     }
 
@@ -48,7 +56,7 @@ export default function ResturantContainer({
             <TrailAndTitle signpostData={datas} />
             <div className={style.hotSpotStackContainer}>
                 {
-                    datas?.slice(0, 12).map((data) =>
+                    datas?.map((data) =>
                         <ResturantCard data={data} key={data?.RestaurantID} />)
                 }
             </div>
