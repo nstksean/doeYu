@@ -29,7 +29,7 @@
 
 .hotSpotBtnContainer {
     display: flex;
-    align-self: flex-end;
+    justify-content: flex-end;
     gap: 0.9vw;
     margin: 0 1px 1.388vw 0;
 
@@ -137,6 +137,18 @@
 
 }
 
+.revertfor375 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotSpotStackContainer375 {
+    display: none;
+}
+
 @media screen and (max-width:768px) {
     .hotSpotGroup {
 
@@ -151,7 +163,32 @@
     }
 
     .hotSpotBtnContainer {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2vw;
+        margin: 0 1px 0vw 0;
+
+
+    }
+
+    .hotSpotBtnPre,
+    .hotSpotBtnNex {
+        width: 5.73vw;
+        height: 5.73vw;
+        background-color: #FA7E5F;
+        padding: 0;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .hotSpotBtnPre svg,
+    .hotSpotBtnNex svg {
+        width: 1.57vw;
+        height: 1.57vw;
 
     }
 
@@ -172,7 +209,7 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 5.2vw;
         justify-items: center;
-        margin-top: 34px;
+        margin-top: 12px;
     }
 
     .hotSpotStackItem {
@@ -202,7 +239,10 @@
 
     .spotTitle {
         margin-bottom: 1.2vw;
+    }
 
+    .hotSpotStackContainer375 {
+        display: none;
     }
 }
 
@@ -217,7 +257,7 @@
     .hotSpotGroup {
 
         width: 84%;
-        height: 306.93vw;
+        height: 161vw;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -226,23 +266,21 @@
 
     }
 
-    .hotSpotBtnContainer {
-        display: none;
-        width: 100%;
 
-    }
 
 
 
     .hotSpotStackContainer {
         width: 100%;
-        display: grid;
+        display: none;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 5.33vw;
         justify-items: center;
         margin-top: 6.66vw;
     }
+
+
 
     .hotSpotStackItem {
 
@@ -272,5 +310,53 @@
     .spotCity {
         margin-bottom: 3vw;
 
+    }
+
+    .hotSpotBtnContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 4vw;
+        margin: 3vw 1px 0vw 0;
+
+
+    }
+
+    .hotSpotBtnPre,
+    .hotSpotBtnNex {
+        width: 11.73vw;
+        height: 11.73vw;
+        background-color: #FA7E5F;
+        padding: 0;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .hotSpotBtnPre svg,
+    .hotSpotBtnNex svg {
+        width: 3.2vw;
+        height: 3.2vw;
+
+    }
+
+    .reversefor375 {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hotSpotStackContainer375 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5.33vw;
+        justify-items: center;
+        margin-top: 6.66vw;
     }
 }
