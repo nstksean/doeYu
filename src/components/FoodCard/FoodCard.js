@@ -5,7 +5,7 @@ import style from "./foodcard.module.css"
 
 
 
-export default function FoodCard({ food: food }) {
+export default function FoodCard({ foodDataToRender: food }) {
 
     return (
         <Link href={`/posts/restaurants/${food?.inEnglish}`}>

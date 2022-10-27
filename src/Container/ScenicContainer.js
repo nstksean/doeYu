@@ -104,7 +104,7 @@ export default function ScenicContainer({ urlQuery, pageType }) {
             <TrailAndTitle signpostData={items} />
             <div className={style.hotSpotStackContainer}>
                 {
-                    Array.from(items).map((item) => <ScenicCard item={item} key={item?.ScenicSpotID} />
+                    Array.from(items).map((item) => <ScenicCard spotDataToRender={item} key={item?.ScenicSpotID} />
                     )
                 }
             </div>

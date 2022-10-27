@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-import { citys as citys } from '../../data/CityItems'
+import { citys } from '../../data/CityItems'
 import style from './citystack.module.css'
 import CityCard from "./CityCard";
 
@@ -68,7 +68,7 @@ export default function CityStack() {
                 <div className={style.stackContainer}>
                     {
                         citys.filter((city) => city.category === filter.name)
-                            .map((city) => <CityCard city={city} key={city?.key} />
+                            .map((city) => <CityCard cityDataToRender={city} key={city?.key} />
                             )
 
                     }

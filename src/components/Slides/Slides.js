@@ -6,10 +6,10 @@ import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
 import { fakeSlide } from '../../data/mockAPI';
 
-export default function Slides({ slide: slide }) {
+export default function Slides({ slide: slideDatas }) {
     const [currentTab, setCurrentTab] = useState(0)
 
-    const targetItem = slide?.at(currentTab)
+    const targetItem = slideDatas?.at(currentTab)
 
     const len = fakeSlide.length - 1
 
@@ -20,14 +20,14 @@ export default function Slides({ slide: slide }) {
                 <div className={style.slideBtnPre}>
                     <Image
                         src={slideR}
-                        alt={slide?.name}
+                        alt={slideDatas?.name}
                         layout='fill'
                         objectFit='cover'
                     ></Image>
                 </div>
             </div>
             <div className={style.slider}>
-                <Link href={`/posts/locations/` + `${slide?.at(currentTab).ScenicSpotID}`}>
+                <Link href={`/posts/locations/` + `${slideDatas?.at(currentTab).ScenicSpotID}`}>
                     <div className={style.slideItem}>
                         <div className={style.bgwrap}>
                             <Image
@@ -68,7 +68,7 @@ export default function Slides({ slide: slide }) {
 
                     <Image
                         src={slideR}
-                        alt={slide?.name}
+                        alt={slideDatas?.name}
                         layout="fill"
                         objectFit='cover'
                     ></Image>

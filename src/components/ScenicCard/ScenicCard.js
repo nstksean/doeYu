@@ -2,7 +2,7 @@ import style from "./sceniccard.module.css"
 import Image from "next/image";
 import scenicholder from '../../../public/images/placeholders/scenic.png'
 
-export default function ScenicCard({ item: item }) {
+export default function ScenicCard({ spotDataToRender: item }) {
 
     return (
         <div className={style.hotSpotStackItem}>
