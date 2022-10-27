@@ -6,6 +6,7 @@ import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
 import { fakeSlide } from '../../data/mockAPI';
 
+
 export default function Slides({ data }) {
     const [currentTab, setCurrentTab] = useState(0)
 
@@ -35,14 +36,14 @@ export default function Slides({ data }) {
                     <div className={style.slideItem}>
                         <div className={style.bgwrap}>
                             <Image
-                                src={targetItem.Picture.PictureUrl1}
-                                alt={targetItem.ScenicSpotName}
+                                src={targetItem?.Picture.PictureUrl1}
+                                alt={targetItem?.ScenicSpotName}
                                 layout="fill"
                                 objectFit='cover' />
                         </div>
                         <div className={style.wordArtcontainer}>
-                            <div className={style.title}>{targetItem.ScenicSpotName}</div>
-                            <div className={style.city}>{targetItem.City}</div>
+                            <div className={style.title}>{targetItem?.ScenicSpotName}</div>
+                            <div className={style.city}>{targetItem?.City}</div>
                         </div>
                     </div>
                 </Link>
