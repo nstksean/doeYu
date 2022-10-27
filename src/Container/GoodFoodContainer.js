@@ -16,7 +16,7 @@ export default function GoodFoodContainer() {
 
             <div className={style.stackFoodContainer}>
 
-                {foods.map((food) => <FoodCard foodDataToRender={food} key={food?.key} />
+                {foods.map((food) => <FoodCard food={food} key={food?.key} />
                 )}
 
             </div >

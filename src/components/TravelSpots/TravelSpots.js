@@ -5,7 +5,7 @@ import style from "./travelspots.module.css"
 
 
 
-export default function TravelSpots({ contextData: datas }) {
+export default function TravelSpots({ travelspots: datas }) {
 
     const [countClick, setCountClick] = useState(396)
 
@@ -45,7 +45,7 @@ export default function TravelSpots({ contextData: datas }) {
 
                     {
                         datas?.slice((0 + (countClick % 9)), (4 + (countClick % 9))).map((data) =>
-                            <SpotCard spotDataToRender={data} key={data.ScenicSpotID} />
+                            <SpotCard data={data} key={data.ScenicSpotID} />
                         )
                     }
                 </div>
@@ -53,7 +53,7 @@ export default function TravelSpots({ contextData: datas }) {
 
                     {
                         datas?.slice((0 + (countClick % 9)), (2 + (countClick % 9))).map((data) =>
-                            <SpotCard spotDataToRender={data} key={data.ScenicSpotID} />
+                            <SpotCard data={data} key={data.ScenicSpotID} />
 
                         )
                     }

@@ -3,7 +3,7 @@ import foodholder from '../../../public/images/placeholders/food.png'
 import style from "./resturantcard.module.css"
 
 
-export default function ResturantCard({ resturantDataToRender: data }) {
+export default function ResturantCard({ data: data }) {
 
     return (
         <div className={style.hotSpotStackItem}>
