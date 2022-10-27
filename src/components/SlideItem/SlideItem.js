@@ -95,7 +95,7 @@ export default function SlideItem({ slideDatas }) {
                                     {datas?.[0].Class1 ? datas?.[0].Class1 : " "}
                                 </div>
                                 <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Level ? ' ' : style.none}`}>
-                                    {datas?.[0].Level ? datas.[0].Level : " "}
+                                    {datas?.[0].Level ? datas?.[0].Level : " "}
                                 </div>
                                 <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Class2 ? ' ' : style.none}`}>
                                     {datas?.[0].Class2 ? datas?.[0].Class2 : " "}
