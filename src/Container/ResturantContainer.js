@@ -49,7 +49,7 @@ export default function ResturantContainer({
             <div className={style.hotSpotStackContainer}>
                 {
                     datas?.slice(0, 12).map((data) =>
-                        <ResturantCard foodDataToRender={data} key={data?.RestaurantID} />)
+                        <ResturantCard data={data} key={data?.RestaurantID} />)
                 }
             </div>
         </div >

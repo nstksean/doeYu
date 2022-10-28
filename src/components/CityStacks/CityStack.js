@@ -68,7 +68,7 @@ export default function CityStack() {
                 <div className={style.stackContainer}>
                     {
                         citys.filter((city) => city.category === filter.name)
-                            .map((city) => <CityCard cityDataToRender={city} key={city?.key} />
+                            .map((city) => <CityCard city={city} key={city?.key} />
                             )
 
                     }

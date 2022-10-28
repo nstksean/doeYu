@@ -2,14 +2,14 @@ import style from "./sceniccard.module.css"
 import Image from "next/image";
 import scenicholder from '../../../public/images/placeholders/scenic.png'
 
-export default function ScenicCard({ spotDataToRender: item }) {
+export default function ScenicCard({ data }) {
 
     return (
         <div className={style.hotSpotStackItem}>
             <div className={style.ItemPhoto}>
                 <Image
-                    src={item?.Picture.PictureUrl1}
-                    alt={item?.ScenicSpotName}
+                    src={data?.Picture.PictureUrl1}
+                    alt={data?.ScenicSpotName}
                     width={320}
                     height={220}
                     layout="responsive"
@@ -19,10 +19,10 @@ export default function ScenicCard({ spotDataToRender: item }) {
             </div>
             <div
                 className={style.spotTitle}>
-                {item?.ScenicSpotName}
+                {data?.ScenicSpotName}
             </div>
             <div className={style.spotCity}>
-                {item?.City ? `${item?.City}` : `${item?.Address}`}
+                {data?.City ? `${data?.City}` : `${data?.Address}`}
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import style from './citystack.module.css'
 
 
-export default function CityCard({ cityDataToRender: city }) {
+export default function CityCard({ city }) {
 
     return (
         <div>

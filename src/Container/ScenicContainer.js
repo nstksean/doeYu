@@ -11,7 +11,7 @@ export default function ScenicContainer({ urlQuery, pageType }) {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([{
+    const [datas, setDatas] = useState([{
         "ScenicSpotID": "C1_379000000A_000001",
         "ScenicSpotName": "大稻埕碼頭_大稻埕碼頭貨櫃市集",
         "DescriptionDetail": "大稻埕原是平埔族的居住地，因萬華（艋舺）同安人發生激烈的械鬥，造成族人移至大稻埕定居，開始大稻埕淡水河旁商店和房屋的興建，淡水港開放後，大稻埕在劉銘傳的治理下成為臺北城最繁華的物資集散中心，當中以茶葉、布料為主要貿易交易，當時的延平北路及貴德街一帶便是商業活動的重心，也讓大稻埕早年的歷史多采多姿、令人回味。",
@@ -81,7 +81,7 @@ export default function ScenicContainer({ urlQuery, pageType }) {
             .then(
                 (result) => {
                     setIsLoaded(true);
-                    setItems(result);
+                    setDatas(result);
                 },
                 // Note: it's important to handle errors here
                 // instead of a catch() block so that we don't swallow
@@ -101,10 +101,10 @@ export default function ScenicContainer({ urlQuery, pageType }) {
     return (
         <div className={style.hotSpotGroup}>
 
-            <TrailAndTitle signpostData={items} />
+            <TrailAndTitle signpostData={datas} />
             <div className={style.hotSpotStackContainer}>
                 {
-                    Array.from(items).map((item) => <ScenicCard spotDataToRender={item} key={item?.ScenicSpotID} />
+                    Array.from(datas).map((data) => <ScenicCard data={data} key={data?.ScenicSpotID} />
                     )
                 }
             </div>

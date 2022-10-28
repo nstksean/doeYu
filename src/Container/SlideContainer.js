@@ -9,7 +9,7 @@ export default function SlideContainer() {
 
     return (
         <div className={style.SlideContainer}>
-            <Slides slide={datum} />
+            <Slides datum={datum} />
         </div>
     );
 }
