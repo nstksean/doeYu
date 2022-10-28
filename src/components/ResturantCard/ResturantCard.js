@@ -3,7 +3,7 @@ import foodholder from '../../../public/images/placeholders/foodBig.png'
 import style from "./resturantcard.module.css"
 
 
-export default function ResturantCard({ data: data }) {
+export default function ResturantCard({ data }) {
 
     return (<>
         <div className={data?.Message ? `${style.none}` : ``}>

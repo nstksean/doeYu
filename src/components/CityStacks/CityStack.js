@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-import { citys as citys } from '../../data/CityItems'
+import { citys } from '../../data/CityItems'
 import style from './citystack.module.css'
 import CityCard from "./CityCard";
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./travelspots.module.css"
 
 
-export default function SpotCard({ data: data }) {
+export default function SpotCard({ data }) {
 
     return (
         <>

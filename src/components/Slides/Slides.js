@@ -4,14 +4,13 @@ import Link from 'next/link';
 
 import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
-import { v2_Tourism_Scenic_fakeslide_top4 as fakeSlide } from '../../data/mockAPI';
 
-export default function Slides({ fakeSlide: slide }) {
+export default function Slides({ datum }) {
     const [currentTab, setCurrentTab] = useState(0)
 
-    const targetItem = fakeSlide?.at(currentTab)
+    const targetItem = datum?.at(currentTab)
 
-    const len = fakeSlide.length - 1
+    const len = datum.length - 1
 
 
     return (

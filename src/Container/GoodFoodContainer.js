@@ -1,13 +1,11 @@
 
 import { foodTypes } from "../data/FoodItems";
-import Image from "next/image";
 
 import style from "../components/FoodCard/foodcard.module.css"
 import FoodCard from "../components/FoodCard/FoodCard";
 
 
 export default function GoodFoodContainer() {
-    const foods = foodTypes
     return (
         <div className={style.hotFoodGroup}>
             <div className={style.title}>
@@ -16,7 +14,7 @@ export default function GoodFoodContainer() {
 
             <div className={style.stackFoodContainer}>
 
-                {foods.map((food) => <FoodCard food={food} key={food?.key} />
+                {foodTypes.map((food) => <FoodCard food={food} key={food?.key} />
                 )}
 
             </div >

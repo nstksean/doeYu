@@ -13,7 +13,7 @@ export default function TravelSpotContainer() {
 
     return (
         <div className={style.SpotContainer}>
-            <TravelSpots travelspots={datas} loading={loading} />
+            <TravelSpots datas={datas} loading={loading} />
         </div>
     );
 }

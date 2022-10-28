@@ -5,7 +5,7 @@ import style from "./travelspots.module.css"
 
 
 
-export default function TravelSpots({ travelspots: datas }) {
+export default function TravelSpots({ datas }) {
 
     const [countClick, setCountClick] = useState(396)
 
