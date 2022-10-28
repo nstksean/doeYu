@@ -32,9 +32,6 @@ export default function TrailAndTitle({ signpostData, urlQuery }) {
             {data?.RestaurantID ? '美食餐廳' : ''}{data?.ScenicSpotName ? '旅行景點' : ''}
             {!(data?.RestaurantID) && !(data?.ScenicSpotName) ? "找不到你輸入的內容：" + `${urlQuery}` : ''}
         </div>
-        <div className={signpostData?.Message ? `${style.nofound}` : `${style.none}`}>
-            {signpostData?.Message}
-        </div>
     </>
     );
 }

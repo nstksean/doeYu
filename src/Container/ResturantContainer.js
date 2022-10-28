@@ -13,6 +13,7 @@ import {
 import ResturantCard from "../components/ResturantCard/ResturantCard";
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
 import style from "../components/ResturantCard/resturantcard.module.css"
+import NoFound from "../components/Nofound/NoFound";
 
 export default function ResturantContainer({
     urlQuery,
@@ -55,10 +56,13 @@ export default function ResturantContainer({
 
 
             <TrailAndTitle signpostData={datas} urlQuery={urlQuery} />
+            {datas?.length === 1 ? datas.map((data) =>
+                <NoFound data={data} />) : <></>}
             <div className={style.hotSpotStackContainer}>
-                {
-                    Array.from(datas).map((data) =>
-                        <ResturantCard data={data} key={data?.RestaurantID} />)
+                {datas?.length > 1 ?
+                    (Array.from(datas).map((data) =>
+                        <ResturantCard data={data} key={data?.RestaurantID} />)) :
+                    ("")
                 }
             </div>
         </div >

@@ -5,7 +5,7 @@ import { getScenicSpotUrl } from '../api/apiClient'
 import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
 import ScenicCard from "../components/ScenicCard/ScenicCard";
 import style from "../components/ScenicCard/sceniccard.module.css"
-
+import NoFound from "../components/Nofound/NoFound";
 
 export default function ScenicContainer({ urlQuery, pageType }) {
 
@@ -104,10 +104,14 @@ export default function ScenicContainer({ urlQuery, pageType }) {
         <div className={style.hotSpotGroup}>
 
             <TrailAndTitle signpostData={datas} urlQuery={urlQuery} />
+            {datas?.message != undefined ?
+                (<NoFound data={datas} />)
+                : ('')}
+
             <div className={style.hotSpotStackContainer}>
-                {
-                    Array.from(datas).map((data) => <ScenicCard data={data} key={data?.ScenicSpotID} />
-                    )
+                {datas?.message === undefined ? (Array.from(datas).map((data) => <ScenicCard data={data} key={data?.ScenicSpotID} />
+                ))
+                    : ('')
                 }
             </div>
         </div >
