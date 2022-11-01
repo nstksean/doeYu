@@ -1,0 +1,100 @@
+.signpost {
+    display: flex;
+    margin: 2.78vw 0 2.78vw 8.4vw;
+}
+
+.signpost div {
+    padding: 0 1.111vw 0 0;
+}
+
+.signpost,
+.spotorfood,
+.cityorkind {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* Complementary/Baby blue */
+
+    color: #A9D3FF;
+
+}
+
+.morethan svg {
+    width: 1vw;
+    height: 0.7vw;
+
+}
+
+.title {
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 26px;
+
+    color: #392A93;
+    margin: 2.78vw 0 2.78vw 8.333vw;
+}
+
+.title {
+    margin: 1.2vw 0 5.2vw 15.9vw;
+
+}
+
+@media screen and (max-width:768px) {
+    .signpost {
+        display: flex;
+        margin: 5.5vw 0 6.1vw 15.9vw;
+    }
+
+    .signpost div {
+        padding: 0 2.08vw 0 0;
+    }
+
+    .morethan svg {
+        width: 1.823vw;
+        height: 1.3vw;
+
+    }
+
+    .title {
+        margin: 1.2vw 0 5.2vw 15.9vw;
+
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .signpost {
+        display: flex;
+        margin: 7.2vw 0 5.333vw 8vw;
+
+    }
+
+    .signpost div {
+        padding: 0 3.2vw 0 0;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .morethan svg {
+        width: 3.733vw;
+        height: 2.66vw;
+
+    }
+
+    .title {
+        margin: 0vw 0 5.333vw 8vw;
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+
+    }
+
+}

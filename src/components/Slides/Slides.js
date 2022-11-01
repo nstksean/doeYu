@@ -4,19 +4,13 @@ import Link from 'next/link';
 
 import style from './slides.module.css'
 import slideR from '../../../public/images/fakeSlide/slideR.png'
-import { fakeSlide } from '../../data/mockAPI';
 
-
-export default function Slides({ data }) {
+export default function Slides({ datum }) {
     const [currentTab, setCurrentTab] = useState(0)
 
-    const targetItem = data.at(currentTab)
+    const targetItem = datum?.at(currentTab)
 
-    const len = fakeSlide.length - 1
-
-
-
-
+    const len = datum.length - 1
 
 
     return (
@@ -25,14 +19,14 @@ export default function Slides({ data }) {
                 <div className={style.slideBtnPre}>
                     <Image
                         src={slideR}
-                        alt={data.name}
+                        alt={datum?.name}
                         layout='fill'
                         objectFit='cover'
                     ></Image>
                 </div>
             </div>
             <div className={style.slider}>
-                <Link href={`/posts/locations/` + `${data.at(currentTab).ScenicSpotID}`}>
+                <Link href={`/posts/locations/` + `${datum?.at(currentTab).ScenicSpotID}`}>
                     <div className={style.slideItem}>
                         <div className={style.bgwrap}>
                             <Image
@@ -73,7 +67,7 @@ export default function Slides({ data }) {
 
                     <Image
                         src={slideR}
-                        alt={data.name}
+                        alt={datum?.name}
                         layout="fill"
                         objectFit='cover'
                     ></Image>

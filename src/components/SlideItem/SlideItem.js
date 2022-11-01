@@ -32,7 +32,7 @@ export default function SlideItem({ slideDatas }) {
     }])
     useEffect(() => {
         setdatas(slideDatas)
-        console.log(datas, datas.at(0).Picture)
+
     }, [slideDatas])
 
 
@@ -58,7 +58,7 @@ export default function SlideItem({ slideDatas }) {
                         </svg>
                     </div>
                     <div className={style.cityorkind}>
-                        {datas.at(0).City}
+                        {datas?.[0].City}
                     </div>
                     <div className={style.morethan}>
                         <svg fill="none" viewBox="0 0 10 14"
@@ -67,7 +67,7 @@ export default function SlideItem({ slideDatas }) {
                         </svg>
                     </div>
                     <div className={style.cityorkind}>
-                        {datas.at(0).ScenicSpotName}
+                        {datas?.[0].ScenicSpotName}
                     </div>
 
 
@@ -77,8 +77,8 @@ export default function SlideItem({ slideDatas }) {
                     <div className={style.secnicCardKnows}>
                         <div className={style.secnicCardPhoto}>
                             <Image
-                                src={datas.at(0).Picture.PictureUrl1}
-                                alt={datas.at(0)?.ScenicSpotName}
+                                src={datas?.[0].Picture.PictureUrl1}
+                                alt={datas?.[0]?.ScenicSpotName}
                                 width={630}
                                 height={440}
                                 layout='responsive'>
@@ -88,33 +88,33 @@ export default function SlideItem({ slideDatas }) {
                         </div>
                         <div className={style.secnicWordsGroup}>
                             <div className={style.secnicSpotCity}>
-                                {datas.at(0).City}
+                                {datas?.[0].City}
                             </div>
                             <div className={style.secnicSpotFeatures}>
-                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas.at(0).Class1 ? ' ' : style.none}`}>
-                                    {datas.at(0).Class1 ? datas.at(0).Class1 : " "}
+                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Class1 ? ' ' : style.none}`}>
+                                    {datas?.[0].Class1 ? datas?.[0].Class1 : " "}
                                 </div>
-                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas.at(0).Level ? ' ' : style.none}`}>
-                                    {datas.at(0).Level ? datas.at(0).Level : " "}
+                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Level ? ' ' : style.none}`}>
+                                    {datas?.[0].Level ? datas?.[0].Level : " "}
                                 </div>
-                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas.at(0).Class2 ? ' ' : style.none}`}>
-                                    {datas.at(0).Class2 ? datas.at(0).Class2 : " "}
+                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Class2 ? ' ' : style.none}`}>
+                                    {datas?.[0].Class2 ? datas?.[0].Class2 : " "}
                                 </div>
-                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas.at(0).Class3 ? ' ' : style.none}`}>
-                                    {datas.at(0).Class3 ? datas.at(0).Class3 : " "}
+                                <div className={style.secnicSpotFeaturesTag + ` ` + `${datas?.[0].Class3 ? ' ' : style.none}`}>
+                                    {datas?.[0].Class3 ? datas?.[0].Class3 : " "}
                                 </div>
                             </div>
                             <div className={style.secnicSpotTitle}>
-                                {datas.at(0).ScenicSpotName}
+                                {datas?.[0].ScenicSpotName}
                             </div>
                             <div className={style.secnicSpotOpen}>
-                                開放時間：{datas.at(0).OpenTime}
+                                開放時間：{datas?.[0].OpenTime}
                             </div>
                             <div className={style.secnicSpotPhone}>
-                                電話：{datas.at(0).Phone ? datas.at(0).Phone : ""}
+                                電話：{datas?.[0].Phone ? datas?.[0].Phone : ""}
                             </div>
                             <div className={style.secnicSpotLocation}>
-                                地址：{datas.at(0).Address}
+                                地址：{datas?.[0].Address}
                             </div>
                             <div className={style.secnicSpotWeb}>
                                 網頁："no"
@@ -122,7 +122,7 @@ export default function SlideItem({ slideDatas }) {
                         </div>
                     </div>
                     <div className={style.secnicDeatil}>
-                        {datas.at(0).DescriptionDetail}
+                        {datas?.[0].DescriptionDetail}
                     </div>
 
                 </div></>)

@@ -1,14 +1,12 @@
 import { useContext, useState } from 'react'
-import Image from "next/image";
 
+import SpotCard from './SpotCard'
 import style from "./travelspots.module.css"
-import { RootContext } from '../../context/rustContext';
 
-export default function TravelSpots() {
 
-    const rootContextValue = useContext(RootContext);
-    const datas = rootContextValue.state.rustAPI_data
-    const loading = rootContextValue.state.rustAPI_isLoaded
+
+export default function TravelSpots({ datas }) {
+
     const [countClick, setCountClick] = useState(396)
 
     const handleBtnPreClick = () => {
@@ -47,22 +45,7 @@ export default function TravelSpots() {
 
                     {
                         datas?.slice((0 + (countClick % 9)), (4 + (countClick % 9))).map((data) =>
-                            <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
-                                <div className={style.ItemPhoto}>
-                                    <Image
-                                        src={data?.Picture.PictureUrl1}
-                                        alt="Picture location"
-                                        width={320}
-                                        height={220}
-                                        layout="responsive"
-                                    />
-                                </div>
-                                <div
-                                    className={style.spotTitle}>
-                                    {data.ScenicSpotName}
-                                </div>
-                                <div className={style.spotCity}>{data.City}</div>
-                            </div>
+                            <SpotCard data={data} key={data.ScenicSpotID} />
                         )
                     }
                 </div>
@@ -70,22 +53,8 @@ export default function TravelSpots() {
 
                     {
                         datas?.slice((0 + (countClick % 9)), (2 + (countClick % 9))).map((data) =>
-                            <div key={data.ScenicSpotID} className={style.hotSpotStackItem}>
-                                <div className={style.ItemPhoto}>
-                                    <Image
-                                        src={data?.Picture.PictureUrl1}
-                                        alt="Picture location"
-                                        width={320}
-                                        height={220}
-                                        layout="responsive"
-                                    />
-                                </div>
-                                <div
-                                    className={style.spotTitle}>
-                                    {data.ScenicSpotName}
-                                </div>
-                                <div className={style.spotCity}>{data.City}</div>
-                            </div>
+                            <SpotCard data={data} key={data.ScenicSpotID} />
+
                         )
                     }
                 </div>
@@ -93,3 +62,4 @@ export default function TravelSpots() {
         </div >
     );
 }
+
