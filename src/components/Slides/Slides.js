@@ -19,14 +19,14 @@ export default function Slides({ datum }) {
                 <div className={style.slideBtnPre}>
                     <Image
                         src={slideR}
-                        alt={targetItem?.ScenicSpotName}
+                        alt={datum?.name}
                         layout='fill'
                         objectFit='cover'
                     ></Image>
                 </div>
             </div>
             <div className={style.slider}>
-                <Link href={`/posts/locations/` + `${targetItem?.ScenicSpotID}`}>
+                <Link href={`/posts/locations/` + `${datum?.at(currentTab).ScenicSpotID}`}>
                     <div className={style.slideItem}>
                         <div className={style.bgwrap}>
                             <Image
@@ -67,7 +67,7 @@ export default function Slides({ datum }) {
 
                     <Image
                         src={slideR}
-                        alt={targetItem?.ScenicSpotName}
+                        alt={datum?.name}
                         layout="fill"
                         objectFit='cover'
                     ></Image>
