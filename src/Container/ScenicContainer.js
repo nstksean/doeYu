@@ -87,15 +87,16 @@ export default function ScenicContainer({ urlQuery, pageType }) {
                     setIsLoaded(true);
                     setError(error);
                 }
-            ).then((result) => {
-                setSignpostData(result)
+            ).then(() => {
+                setSignpostData(datas)
             })
 
     }, [querycity])
 
     useEffect(() => {
         setquerycity(urlQuery)
-    })
+
+    }, [datas])
 
 
 
@@ -104,14 +105,15 @@ export default function ScenicContainer({ urlQuery, pageType }) {
         <div className={style.hotSpotGroup}>
 
             <Breadcrumb signpostData={datas} urlQuery={urlQuery} />
-            {datas?.message != undefined ?
-                (<NoFound data={datas} />)
-                : ('')}
+            {datas?.length === 1 && datas.map((data) =>
+                <NoFound data={data} />)}
 
             <div className={style.hotSpotStackContainer}>
-                {datas?.message === undefined ? (Array.from(datas).map((data) => <ScenicCard data={data} key={data?.ScenicSpotID} />
-                ))
-                    : ('')
+                {datas?.length > 1 &&
+                    (Array.from(datas)
+                        .map((data) => <ScenicCard data={data} key={data?.ScenicSpotID} />
+                        ))
+
                 }
             </div>
         </div >
