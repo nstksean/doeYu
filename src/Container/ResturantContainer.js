@@ -11,7 +11,7 @@ import {
     v2_Tourism_Restaurant_error
 } from '../data/mockAPI'
 import ResturantCard from "../components/ResturantCard/ResturantCard";
-import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
+import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 import style from "../components/ResturantCard/resturantcard.module.css"
 import NoFound from "../components/Nofound/NoFound";
 
@@ -55,9 +55,9 @@ export default function ResturantContainer({
         <div className={style.hotSpotGroup}>
 
 
-            <TrailAndTitle signpostData={datas} urlQuery={urlQuery} />
-            {datas?.length === 1 ? datas.map((data) =>
-                <NoFound data={data} />) : <></>}
+            <Breadcrumb signpostData={datas} urlQuery={urlQuery} />
+            {datas?.length === 1 && datas.map((data) =>
+                <NoFound data={data} />)}
             <div className={style.hotSpotStackContainer}>
                 {datas?.length > 1 ?
                     (Array.from(datas).map((data) =>

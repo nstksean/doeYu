@@ -1,6 +1,6 @@
-import style from "./trailandtitle.module.css"
+import style from "./breadcrumb.module.css"
 
-export default function TrailAndTitle({ signpostData, urlQuery }) {
+export default function Breadcrumb({ signpostData, urlQuery }) {
 
 
     const data = Array.from(signpostData).at(0)

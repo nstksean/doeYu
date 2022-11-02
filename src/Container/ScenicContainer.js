@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 
 import { getScenicSpotUrl } from '../api/apiClient'
 
-import TrailAndTitle from "../components/TrailAndTitle/TrailAndTitle";
 import ScenicCard from "../components/ScenicCard/ScenicCard";
 import style from "../components/ScenicCard/sceniccard.module.css"
 import NoFound from "../components/Nofound/NoFound";
+import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 
 export default function ScenicContainer({ urlQuery, pageType }) {
 
@@ -103,7 +103,7 @@ export default function ScenicContainer({ urlQuery, pageType }) {
     return (
         <div className={style.hotSpotGroup}>
 
-            <TrailAndTitle signpostData={datas} urlQuery={urlQuery} />
+            <Breadcrumb signpostData={datas} urlQuery={urlQuery} />
             {datas?.message != undefined ?
                 (<NoFound data={datas} />)
                 : ('')}
