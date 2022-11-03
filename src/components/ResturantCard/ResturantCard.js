@@ -1,10 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image'
 import foodholder from '../../../public/images/placeholders/food.png'
-import style from "./resturantcard.module.css"
-
+import style from './resturantcard.module.css'
 
 export default function ResturantCard({ data }) {
-
     return (
         <div className={style.hotSpotStackItem}>
             <div className={style.ItemPhoto}>
@@ -17,14 +15,8 @@ export default function ResturantCard({ data }) {
                     blurDataURL={foodholder}
                 />
             </div>
-            <div
-                className={style.spotTitle}>
-                {data?.RestaurantName}
-            </div>
-            <div className={style.spotCity}>
-                {data?.Class}
-            </div>
+            <div className={style.spotTitle}>{data?.RestaurantName}</div>
+            <div className={style.spotCity}>{data?.Class}</div>
         </div>
-    );
-
+    )
 }

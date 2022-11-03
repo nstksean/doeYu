@@ -1,6 +1,5 @@
-import queryString from "query-string";
+import queryString from 'query-string'
 const baseUrl = 'https://tdx.transportdata.tw/api/basic/'
-
 
 /**
  * 觀光景點資料
@@ -15,10 +14,7 @@ export const getScenicSpotUrl = (city, query) => {
         return `${scenicSpot}/${city}?${queryString.stringify(query)}`
     // 取得所有觀光景點資料
     else return `${scenicSpot}?${queryString.stringify(query)}`
-
 }
-
-
 
 /**
  * 觀光餐廳資料
@@ -48,5 +44,4 @@ export const getHotelUrl = (city, query) => {
         return `${hotelSpot}/${city}?${queryString.stringify(query)}`
     //取得所有觀光旅館資料
     else return `${hotelSpot}?${queryString.stringify(query)}`
-
 }

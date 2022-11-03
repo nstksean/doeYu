@@ -1,14 +1,13 @@
 /* HotSpot part*/
 
 .hotSpotGroup {
-
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 90px;
     margin-left: 0rem;
-    margin: 0
+    margin: 0;
 }
 
 .title {
@@ -16,10 +15,9 @@
     font-weight: 700;
     font-size: 26px;
 
-    color: #392A93;
+    color: #392a93;
     margin: 2.78vw 0 2.78vw 8.333vw;
 }
-
 
 .hotSpotStackContainer {
     width: calc(100vw - 8.333vw);
@@ -28,7 +26,6 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 2.778vw;
     margin-left: 8.333vw;
-
 }
 
 .hotSpotStackItem {
@@ -36,15 +33,14 @@
     flex-direction: column;
     /* Neutrals/White */
     align-items: center;
-    background: #FEFEFE;
+    background: #fefefe;
     /* Neutrals/LIght grey */
     height: 20.83vw;
     width: 18.75vw;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #eaeaea;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 30px;
     overflow: hidden;
-
 }
 
 .ItemPhoto {
@@ -66,13 +62,12 @@
 
     /* Primary/Dark purple */
 
-    color: #392A93;
+    color: #392a93;
     margin-bottom: 10px;
     max-width: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
 }
 
 .spotCity {
@@ -84,14 +79,13 @@
 
     /* Neutrals/Grey */
 
-    color: #CFCFCF;
+    color: #cfcfcf;
     margin-bottom: 20px;
     display: flex;
     max-width: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
 }
 
 .signpost {
@@ -114,24 +108,17 @@
 
     /* Complementary/Baby blue */
 
-    color: #A9D3FF;
-
+    color: #a9d3ff;
 }
-
 
 .morethan svg {
     width: 1vw;
     height: 0.7vw;
-
 }
 
-
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .hotSpotGroup {
         margin: 0;
-
     }
 
     .hotSpotStackContainer {
@@ -141,19 +128,16 @@
         grid-template-rows: repeat(6, 1fr);
         gap: 5.2vw;
         margin-left: 8.07vw;
-
     }
 
     .hotSpotStackItem {
-
         /* Neutrals/LIght grey */
         width: 39.0625vw;
-        height: 34.50vw;
-        border: 1px solid #EAEAEA;
+        height: 34.5vw;
+        border: 1px solid #eaeaea;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
         overflow: hidden;
-
     }
 
     .ItemPhoto {
@@ -176,12 +160,10 @@
     .morethan svg {
         width: 1.823vw;
         height: 1.3vw;
-
     }
 
     .title {
         margin: 0 0 5.2vw 15.9vw;
-
     }
 
     .spotTitle {
@@ -189,7 +171,7 @@
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .hotSpotGroup {
         margin: 0;
     }
@@ -200,19 +182,16 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
         gap: 5.067vw;
-
     }
 
     .hotSpotStackItem {
-
         /* Neutrals/LIght grey */
         width: 39.467vw;
         height: 56.2vw;
-        border: 1px solid #EAEAEA;
+        border: 1px solid #eaeaea;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
         overflow: hidden;
-
     }
 
     .ItemPhoto {
@@ -226,7 +205,6 @@
     .signpost {
         display: flex;
         margin: 7.2vw 0 5.333vw 8vw;
-
     }
 
     .signpost div {
@@ -241,7 +219,6 @@
     .morethan svg {
         width: 3.733vw;
         height: 2.66vw;
-
     }
 
     .title {
@@ -251,7 +228,6 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
-
     }
 
     .spotTitle {

@@ -1,54 +1,48 @@
-
 import { createContext, useReducer, useEffect } from 'react'
 // import { getrustUrl } from '../api/apiClient';
-import { getScenicSpotUrl } from "../api/apiClient"
+import { getScenicSpotUrl } from '../api/apiClient'
 
 const initialState = {
     rustAPI: {
         data: null,
         isLoaded: false,
-        error: null
+        error: null,
     },
     rustAPI_data: null,
     rustAPI_isLoaded: false,
-    rustAPI_error: null
+    rustAPI_error: null,
+}
 
-};
-
-
-// action type 
+// action type
 export const rust_DATA = 'rust_DATA'
 export const rust_LOAD = 'rust_LOAD'
 export const rust_ERROR = 'rust_ERROR'
-
 
 // reducer
 function reducer(state, action) {
     switch (action.type) {
         case rust_DATA:
-            return { ...state, rustAPI_data: action.payload };
+            return { ...state, rustAPI_data: action.payload }
         case rust_LOAD:
-            return { ...state, rustAPI_isLoaded: action.payload, };
+            return { ...state, rustAPI_isLoaded: action.payload }
         case rust_ERROR:
-            return { ...state, rustAPI_error: action.payload };
+            return { ...state, rustAPI_error: action.payload }
         default:
-            return state;
+            return state
     }
 }
 
-
-export const RootContext = createContext(initialState);
+export const RootContext = createContext(initialState)
 RootContext.displayName = 'RootContext'
 
 export function RootContextProvider({ children }) {
+    const [state, dispatch] = useReducer(reducer, initialState)
 
-    const [state, dispatch] = useReducer(reducer, initialState);
-
-    const query = ({
+    const query = {
         // $filter: `contains(Address,'三重')`,
         $top: '12',
-        $format: 'JSON'
-    })
+        $format: 'JSON',
+    }
     const rustUrl = getScenicSpotUrl('Taipei', query)
 
     // Note: the empty deps array [] means
@@ -56,7 +50,7 @@ export function RootContextProvider({ children }) {
     // similar to componentDidMount()
     useEffect(() => {
         fetch(rustUrl)
-            .then(res => res.json())
+            .then((res) => res.json())
             .then(
                 (result) => {
                     // setIsLoaded(true);
@@ -74,14 +68,11 @@ export function RootContextProvider({ children }) {
                     dispatch({ type: rust_ERROR, payload: error })
                 }
             )
-
     }, [])
 
     return (
         <RootContext.Provider value={{ state, dispatch }}>
             {children}
         </RootContext.Provider>
-
     )
 }
-

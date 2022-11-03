@@ -1,15 +1,14 @@
-import Head from "next/head"
-import Link from "next/link"
-import React from "react";
-import SlideItem from "../../components/SlideItem/SlideItem";
-import { RootContextProvider } from "../../context/rustContext";
+import Head from 'next/head'
+import Link from 'next/link'
+import React from 'react'
+import SlideItem from '../../components/SlideItem/SlideItem'
+import { RootContextProvider } from '../../context/rustContext'
 import style from '../../styles/Home.module.css'
-
 
 export default function location() {
     return (
         <>
-            <RootContextProvider  >
+            <RootContextProvider>
                 <div className={style.container}>
                     <Head>
                         <title>Location</title>
@@ -17,8 +16,6 @@ export default function location() {
                     <SlideItem />
                 </div>
             </RootContextProvider>
-        </ >
-
-
+        </>
     )
 }

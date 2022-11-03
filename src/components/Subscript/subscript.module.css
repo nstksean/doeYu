@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #FA7E5F;
+    background: #fa7e5f;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
 }
@@ -30,7 +30,7 @@
 
     /* Primary/Dark purple */
 
-    color: #392A93;
+    color: #392a93;
 }
 
 .subTitle {
@@ -42,8 +42,7 @@
 
     /* Neutrals/White */
 
-    color: #FEFEFE;
-
+    color: #fefefe;
 }
 
 .inputer {
@@ -62,18 +61,16 @@
     line-height: 29px;
     /* identical to box height */
 
-
     /* Primary/Light purple */
 
-    color: #9086CC;
-
+    color: #9086cc;
 
     /* Neutrals/White */
 
-    background: #FEFEFE;
+    background: #fefefe;
     /* Neutrals/LIght grey */
 
-    border: 2px solid #EAEAEA;
+    border: 2px solid #eaeaea;
     border-radius: 12px;
     margin-right: 1vw;
     padding: 0px 0px 0px 1.388vw;
@@ -81,7 +78,6 @@
     width: 27.77vw;
     height: 3.472vw;
     box-sizing: border-box;
-
 }
 
 .inputer button {
@@ -89,14 +85,14 @@
 
     /* Primary/Dark purple */
 
-    background: #392A93;
+    background: #392a93;
     border-radius: 12px;
     font-size: 20px;
-    color: #FEFEFE;
+    color: #fefefe;
     padding: 10px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .subscriptGruop {
         width: 100%;
         border-radius: 0;
@@ -116,7 +112,6 @@
         margin-top: 1.3vw;
     }
 
-
     .inputer {
         width: 100%;
         display: flex;
@@ -126,10 +121,8 @@
     }
 
     .inputer input {
-
         width: 52.07vw;
         height: 6.51vw;
-
 
         border-radius: 12px;
         margin-right: 1.875vw;
@@ -139,12 +132,11 @@
     .inputer button {
         height: 6.51vw;
 
-
-        padding: 14px 10PX 10PX 10PX
+        padding: 14px 10px 10px 10px;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .subscriptGruop {
         width: 100%;
         border-radius: 0;
@@ -177,7 +169,6 @@
         margin-top: 1.6vw;
     }
 
-
     .inputer {
         width: 100%;
         display: flex;
@@ -187,10 +178,8 @@
     }
 
     .inputer input {
-
         width: 84vw;
         height: 10.666vw;
-
 
         border-radius: 12px;
         margin-right: 0px;

@@ -1,12 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
-import style from "./foodcard.module.css"
-
-
+import style from './foodcard.module.css'
 
 export default function FoodCard({ food }) {
-
     return (
         <Link href={`/posts/restaurants/${food?.inEnglish}`}>
             <div className={style.foodStackItem}>
@@ -20,11 +17,9 @@ export default function FoodCard({ food }) {
                     />
                 </div>
                 <div className={style.wordArt}>
-                    <p className={style.foodType}>
-                        {food?.name}
-                    </p>
+                    <p className={style.foodType}>{food?.name}</p>
                 </div>
             </div>
         </Link>
-    );
+    )
 }
