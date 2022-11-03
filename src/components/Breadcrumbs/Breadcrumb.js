@@ -1,6 +1,7 @@
-import style from "./trailandtitle.module.css"
+import style from "./breadcrumb.module.css"
 
-export default function TrailAndTitle({ signpostData }) {
+export default function Breadcrumb({ signpostData, urlQuery }) {
+
 
     const data = Array.from(signpostData).at(0)
 
@@ -28,7 +29,8 @@ export default function TrailAndTitle({ signpostData }) {
         </div>
 
         <div className={style.title}>
-            {data?.RestaurantID ? '美食餐廳' : '旅行景點'}
+            {data?.RestaurantID ? '美食餐廳' : ''}{data?.ScenicSpotName ? '旅行景點' : ''}
+            {!(data?.RestaurantID) && !(data?.ScenicSpotName) ? "找不到你輸入的內容：" + `${urlQuery}` : ''}
         </div>
     </>
     );

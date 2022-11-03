@@ -6,7 +6,6 @@ import FoodCard from "../components/FoodCard/FoodCard";
 
 
 export default function GoodFoodContainer() {
-
     return (
         <div className={style.hotFoodGroup}>
             <div className={style.title}>

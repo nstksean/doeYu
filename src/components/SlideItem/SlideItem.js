@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import style from './slideitem.module.css'
-import { fakeSlide } from '../../data/mockAPI';
 import Image from 'next/image';
 
 

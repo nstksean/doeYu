@@ -1,20 +1,22 @@
 import Image from "next/image";
-import foodholder from '../../../public/images/placeholders/food.png'
+import foodholder from '../../../public/images/placeholders/foodBig.png'
 import style from "./resturantcard.module.css"
 
 
 export default function ResturantCard({ data }) {
 
-    return (
+    return (<>
+
         <div className={style.hotSpotStackItem}>
             <div className={style.ItemPhoto}>
                 <Image
-                    src={data?.Picture.PictureUrl1}
+                    src={data?.Picture?.PictureUrl1 ? data?.Picture?.PictureUrl1 : foodholder}
                     alt={data?.RestaurantName}
                     width={330}
                     height={230}
-                    layout="responsive"
                     blurDataURL={foodholder}
+                    layout='intrinsic'
+                    objectFit='cover'
                 />
             </div>
             <div
@@ -22,9 +24,13 @@ export default function ResturantCard({ data }) {
                 {data?.RestaurantName}
             </div>
             <div className={style.spotCity}>
-                {data?.Class}
+                {data?.Class ? data?.Class : '沒有分類'}
             </div>
         </div>
+
+
+
+    </>
     );
 
 }
