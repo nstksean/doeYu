@@ -1,0 +1,73 @@
+.noFoundGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nofound {
+    width: 80%;
+    align-self: center;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    color: #cfcfcf;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.none {
+    display: none;
+}
+
+.logoContainer {
+    width: 10.208vw;
+    height: 6.8vw;
+}
+
+.logoContainer svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .logoContainer {
+        margin: 0;
+        width: 19.14vw;
+        height: 12.76vw;
+    }
+
+    .logoContainer svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nofound {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.12em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logoContainer {
+        margin: 0;
+        width: 16.8vw;
+        height: 11.2vw;
+    }
+
+    .nofound {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.12em;
+        margin-bottom: 3.733vw;
+    }
+}

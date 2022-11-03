@@ -3,7 +3,7 @@ import React from 'react'
 
 import style from '../styles/Home.module.css'
 
-import { RootContextProvider } from '../context/rustContext'
+import { RustContextProvider } from '../context/rustContext'
 import SlideContainer from '../Container/SlideContainer'
 import TravelSpotContainer from '../Container/TravelSpotContainer'
 import GoodFoodContainer from '../Container/GoodFoodContainer'
@@ -12,7 +12,7 @@ import CityStack from '../components/CityStacks/CityStack'
 
 export default function Home() {
     return (
-        <RootContextProvider>
+        <RustContextProvider>
             {/* <TryContextDemo /> */}
             <div className={style.container}>
                 <Head>
@@ -26,6 +26,6 @@ export default function Home() {
                 <GoodFoodContainer />
                 <Subscript />
             </div>
-        </RootContextProvider>
+        </RustContextProvider>
     )
 }

@@ -32,10 +32,10 @@ function reducer(state, action) {
     }
 }
 
-export const RootContext = createContext(initialState)
-RootContext.displayName = 'RootContext'
+export const RustContext = createContext(initialState)
+RustContext.displayName = 'RustContext'
 
-export function RootContextProvider({ children }) {
+export function RustContextProvider({ children }) {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const query = {
@@ -71,8 +71,8 @@ export function RootContextProvider({ children }) {
     }, [])
 
     return (
-        <RootContext.Provider value={{ state, dispatch }}>
+        <RustContext.Provider value={{ state, dispatch }}>
             {children}
-        </RootContext.Provider>
+        </RustContext.Provider>
     )
 }
