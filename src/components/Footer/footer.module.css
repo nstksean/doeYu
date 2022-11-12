@@ -3,7 +3,7 @@
 .footer {
     width: 100%;
     height: 23.4vw;
-    background-color: #392A93;
+    background-color: #392a93;
     border-top: 1px solid #eaeaea;
     display: flex;
 
@@ -22,9 +22,6 @@
     height: 100%;
 }
 
-
-
-
 .footerList li {
     margin-bottom: 10px;
     font-family: 'Noto Sans TC';
@@ -36,7 +33,7 @@
 }
 
 .footerList {
-    color: #FEFEFE;
+    color: #fefefe;
     margin: 5.5vw 5.1vw 0px 0px;
     font-family: 'Noto Sans TC';
     font-style: normal;
@@ -50,31 +47,22 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .logoContainer {
     margin: 6.875vw 27.26vw 0 19.65vw;
 }
 
-
 .footer .listContainer {
-
     flex-direction: row;
     display: flex;
-
 }
 
 .line375 {
     display: none;
 }
 
-
-
-
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -107,9 +95,8 @@
     }
 
     .footerList {
-        color: #FEFEFE;
+        color: #fefefe;
         margin: 0px 4.94vw;
-
     }
 
     .footerList li {
@@ -133,12 +120,10 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
     .footer {
-
         margin-top: 8vw;
         height: auto;
-
     }
 
     .logoContainer {
@@ -153,7 +138,6 @@
         height: 100%;
     }
 
-
     .footer .listContainer {
         flex-direction: column;
         justify-content: center;
@@ -163,13 +147,10 @@
 
         margin-top: 10.66vw;
         margin-left: 13vw;
-
     }
 
     .footerList {
-
         margin: 0px 0 0 0;
-
     }
 
     .line375 {
@@ -177,7 +158,7 @@
         width: 51.73vw;
         margin-bottom: 3vw;
         height: 0px;
-        border: 1px solid #9086CC;
+        border: 1px solid #9086cc;
     }
 
     .footerList li {
@@ -194,6 +175,5 @@
     .listContainer ul {
         margin-top: 0vw;
         padding-inline-start: 0px;
-
     }
 }

@@ -14,7 +14,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 23px;
-    color: #CFCFCF;
+    color: #cfcfcf;
     margin: auto;
     margin-top: 20px;
 }
@@ -26,7 +26,6 @@
 .logoContainer {
     width: 10.208vw;
     height: 6.8vw;
-
 }
 
 .logoContainer svg {
@@ -34,12 +33,11 @@
     height: 100%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .logoContainer {
         margin: 0;
         width: 19.14vw;
         height: 12.76vw;
-
     }
 
     .logoContainer svg {
@@ -57,12 +55,11 @@
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .logoContainer {
         margin: 0;
         width: 16.8vw;
         height: 11.2vw;
-
     }
 
     .nofound {

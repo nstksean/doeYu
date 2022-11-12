@@ -15,7 +15,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 23px;
-    color: #FA7E5F;
+    color: #fa7e5f;
 }
 
 .none {
@@ -33,14 +33,12 @@
 
     /* Complementary/Baby blue */
 
-    color: #A9D3FF;
-
+    color: #a9d3ff;
 }
 
 .morethan svg {
     width: 1vw;
     height: 0.7vw;
-
 }
 
 .title {
@@ -48,16 +46,15 @@
     font-weight: 700;
     font-size: 26px;
 
-    color: #392A93;
+    color: #392a93;
     margin: 2.78vw 0 2.78vw 8.333vw;
 }
 
 .title {
     margin: 1.2vw 0 5.2vw 15.9vw;
-
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .signpost {
         display: flex;
         margin: 5.5vw 0 6.1vw 15.9vw;
@@ -70,21 +67,17 @@
     .morethan svg {
         width: 1.823vw;
         height: 1.3vw;
-
     }
 
     .title {
         margin: 1.2vw 0 5.2vw 15.9vw;
-
     }
-
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .signpost {
         display: flex;
         margin: 7.2vw 0 5.333vw 8vw;
-
     }
 
     .signpost div {
@@ -99,7 +92,6 @@
     .morethan svg {
         width: 3.733vw;
         height: 2.66vw;
-
     }
 
     .title {
@@ -109,7 +101,5 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
-
     }
-
 }

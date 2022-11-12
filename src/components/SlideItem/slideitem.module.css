@@ -18,16 +18,14 @@
 
     /* Neutrals/Grey */
 
-    color: #CFCFCF;
+    color: #cfcfcf;
     margin-bottom: 20px;
     display: flex;
-
 }
 
 .signpost {
     display: flex;
     margin-bottom: 4rem;
-
 }
 
 .signpost div {
@@ -45,38 +43,31 @@
 
     /* Complementary/Baby blue */
 
-    color: #A9D3FF;
-
+    color: #a9d3ff;
 }
 
 .morethan svg {
     width: 1vw;
     height: 0.7vw;
-
 }
 
 .secnicCard {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .secnicCardPhoto {
-
     width: 42vw;
     height: 27.77vw;
     margin-right: 2.36vw;
     border-radius: 2rem;
     overflow: hidden;
-
 }
 
 .secnicWordsGroup {
     display: flex;
     flex-direction: column;
-
 }
 
 .secnicSpotCity {
@@ -88,26 +79,23 @@
 
     /* Complementary/Orange */
 
-    color: #FA7E5F;
+    color: #fa7e5f;
     margin-bottom: 2rem;
-
 }
 
 .secnicSpotFeatures {
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
-
 }
 
 .secnicSpotFeatures div {
     margin-right: 1.875vw;
-
 }
 
 .secnicSpotFeaturesTag {
     padding: 8px;
-    background: #9086CC;
+    background: #9086cc;
     border-radius: 12px;
     font-family: 'Noto Sans TC';
     font-style: normal;
@@ -117,8 +105,7 @@
 
     /* Neutrals/White */
 
-    color: #FEFEFE;
-
+    color: #fefefe;
 }
 
 .secnicSpotTitle {
@@ -129,10 +116,9 @@
     line-height: 38px;
     /* identical to box height */
 
-
     /* Primary/Dark purple */
 
-    color: #392A93;
+    color: #392a93;
     margin-bottom: 4rem;
 }
 
@@ -151,7 +137,7 @@
 
     /* Neutrals/Black */
 
-    color: #1D1D1D;
+    color: #1d1d1d;
     margin-bottom: 2rem;
 }
 
@@ -173,21 +159,20 @@
 
     /* Neutrals/Black */
 
-    color: #1D1D1D;
+    color: #1d1d1d;
 }
 
 .none {
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .slideItem {
         width: 83.33vw;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         margin-top: 0vw;
-
     }
 
     .spotCity {
@@ -199,10 +184,9 @@
 
         /* Neutrals/Grey */
 
-        color: #CFCFCF;
+        color: #cfcfcf;
         margin-bottom: 20px;
         display: flex;
-
     }
 
     .signpost {
@@ -227,38 +211,31 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 23px;
-
     }
 
     .morethan svg {
         width: 1.302vw;
         height: 1.82vw;
-
     }
 
     .secnicCard {
         width: 100%;
         display: flex;
         flex-direction: column;
-
-
     }
 
     .secnicCardPhoto {
-
         width: 84vw;
         height: 52.34vw;
         margin-right: 0;
         border-radius: 2rem;
         overflow: hidden;
-
     }
 
     .secnicWordsGroup {
         display: flex;
         flex-direction: column;
         margin-top: 0;
-
     }
 
     .secnicSpotCity {
@@ -268,13 +245,10 @@
         font-size: 16px;
         line-height: 23px;
 
-
         /* Complementary/Orange */
 
-        color: #FA7E5F;
+        color: #fa7e5f;
         margin: 2.6vw 0;
-
-
     }
 
     .secnicSpotFeatures {
@@ -283,17 +257,15 @@
         margin-bottom: 0rem;
         font-family: 'Noto Sans TC';
         font-style: normal;
-
     }
 
     .secnicSpotFeatures div {
         margin-right: 3.516vw;
-
     }
 
     .secnicSpotFeaturesTag {
         padding: 8px;
-        background: #9086CC;
+        background: #9086cc;
         border-radius: 12px;
         font-family: 'Noto Sans TC';
         font-style: normal;
@@ -303,8 +275,7 @@
 
         /* Neutrals/White */
 
-        color: #FEFEFE;
-
+        color: #fefefe;
     }
 
     .secnicSpotTitle {
@@ -315,13 +286,11 @@
         line-height: 38px;
         /* identical to box height */
 
-
         /* Primary/Dark purple */
 
-        color: #392A93;
+        color: #392a93;
         margin-bottom: 1rem;
         margin: 2.6vw 0;
-
     }
 
     .secnicSpotOpen,
@@ -338,7 +307,7 @@
         letter-spacing: 0.02em;
         /* Neutrals/Black */
 
-        color: #1D1D1D;
+        color: #1d1d1d;
         margin-bottom: 0;
         padding: 1.3vw 0;
     }
@@ -364,18 +333,17 @@
 
         /* Neutrals/Black */
 
-        color: #1D1D1D;
+        color: #1d1d1d;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .slideItem {
         width: 84vw;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         margin-top: 6.66vw;
-
     }
 
     .spotCity {
@@ -387,10 +355,9 @@
 
         /* Neutrals/Grey */
 
-        color: #CFCFCF;
+        color: #cfcfcf;
         margin-bottom: 20px;
         display: flex;
-
     }
 
     .signpost {
@@ -415,38 +382,31 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-
     }
 
     .morethan svg {
         width: 2.506vw;
         height: 3.733vw;
-
     }
 
     .secnicCard {
         width: 100%;
         display: flex;
         flex-direction: column;
-
-
     }
 
     .secnicCardPhoto {
-
         width: 84vw;
         height: 58.133vw;
         margin-right: 0;
         border-radius: 2rem;
         overflow: hidden;
-
     }
 
     .secnicWordsGroup {
         display: flex;
         flex-direction: column;
         margin-top: 3.2vw;
-
     }
 
     .secnicSpotCity {
@@ -458,9 +418,8 @@
 
         /* Complementary/Orange */
 
-        color: #FA7E5F;
+        color: #fa7e5f;
         margin-bottom: 1rem;
-
     }
 
     .secnicSpotFeatures {
@@ -472,18 +431,15 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-
-
     }
 
     .secnicSpotFeatures div {
         margin-right: 4.266vw;
-
     }
 
     .secnicSpotFeaturesTag {
         padding: 4px 8px;
-        background: #9086CC;
+        background: #9086cc;
         border-radius: 12px;
         font-family: 'Noto Sans TC';
         font-style: normal;
@@ -493,8 +449,7 @@
 
         /* Neutrals/White */
 
-        color: #FEFEFE;
-
+        color: #fefefe;
     }
 
     .secnicSpotTitle {
@@ -505,10 +460,9 @@
         line-height: 29px;
         /* identical to box height */
 
-
         /* Primary/Dark purple */
 
-        color: #392A93;
+        color: #392a93;
         margin-bottom: 1rem;
     }
 
@@ -527,7 +481,7 @@
 
         /* Neutrals/Black */
 
-        color: #1D1D1D;
+        color: #1d1d1d;
         margin-bottom: 0;
         padding: 1.6vw 0;
     }
@@ -554,6 +508,6 @@
 
         /* Neutrals/Black */
 
-        color: #1D1D1D;
+        color: #1d1d1d;
     }
 }

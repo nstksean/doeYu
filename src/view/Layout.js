@@ -1,6 +1,6 @@
-import style from "./layout.module.css"
-import Footer from "../components/Footer/Footer"
-import NavBar from "../components/NavBar/NavBar"
+import style from './layout.module.css'
+import Footer from '../components/Footer/Footer'
+import NavBar from '../components/NavBar/NavBar'
 
 const Layout = ({ children }) => {
     return (
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <div className={style.viewHight}>{children}</div>
             <Footer />
         </>
-    );
+    )
 }
 
-export default Layout;
+export default Layout

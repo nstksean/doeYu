@@ -32,8 +32,6 @@
     height: 100%;
 }
 
-
-
 .slideBtnNex {
     width: 7.22vw;
     height: 37.916vw;
@@ -45,17 +43,14 @@
     border-bottom-left-radius: 4rem;
     z-index: -1;
     cursor: pointer;
-
 }
-
 
 .slideBtnNex :hover,
 .slideBtnPre:hover,
 .slideBtnNex :focus,
 .slideBtnPre:focus {
-    cursor: pointer
+    cursor: pointer;
 }
-
 
 .slideBtnsContainer {
     box-sizing: border-box;
@@ -74,17 +69,14 @@
 }
 
 .slideItem {
-
     background-position: center;
     width: 72.916vw;
     height: 37.916vw;
     border-radius: 4rem;
     cursor: pointer;
-
 }
 
 .bgwrap {
-
     width: 72.916vw;
     height: 37.916vw;
     position: absolute;
@@ -106,7 +98,6 @@
     align-items: center;
     flex-direction: row;
     background: rgba(0, 0, 0, 0.5);
-
 }
 
 .title {
@@ -117,18 +108,17 @@
     line-height: 52px;
     margin-right: 6rem;
 
-
     /* Neutrals/White */
 
-    color: #FEFEFE;
+    color: #fefefe;
     max-width: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .city {
-    background: #FA7E5F;
+    background: #fa7e5f;
     border-radius: 12px;
     font-family: 'Noto Sans TC';
     font-style: normal;
@@ -138,19 +128,16 @@
     padding: 1rem 1.4rem;
     /* identical to box height */
 
-
     /* Neutrals/White */
 
-    color: #FEFEFE;
-
+    color: #fefefe;
 }
-
 
 /* mdn html input radio Styling radio inputs */
 .slideBtns {
     width: 0.972vw;
     height: 0.972vw;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     /* reset origin style */
     appearance: none;
     border-radius: 50%;
@@ -158,11 +145,10 @@
 }
 
 .slideBtns:checked {
-    background-color: #FA7E5F;
-
+    background-color: #fa7e5f;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .slideGroup {
         width: 100%;
         height: 65.625vw;
@@ -170,11 +156,9 @@
         justify-content: space-between;
         margin-bottom: 4rem;
         margin-top: 5.21vw;
-
     }
 
     .slideBtnPre {
-
         width: 5.46vw;
         height: 58.63vw;
         justify-content: center;
@@ -183,11 +167,9 @@
         display: block;
         overflow: hidden;
         margin-right: 5vw;
-
     }
 
     .slideBtnNex {
-
         width: 5.46vw;
         height: 58.63vw;
         justify-content: center;
@@ -196,12 +178,10 @@
         display: block;
         overflow: hidden;
         margin-left: 5vw;
-
     }
 
     .slideBtnPre svg {
         display: none;
-
     }
 
     .slideBtnNex svg {
@@ -218,7 +198,6 @@
     }
 
     .slideItem {
-
         width: 76.56vw;
         height: 58.63vw;
         border-radius: 3rem;
@@ -228,10 +207,7 @@
         width: 76.56vw;
         height: 58.63vw;
 
-
-
         border-radius: 3rem;
-
     }
 
     .wordArtcontainer {
@@ -243,7 +219,6 @@
         align-items: center;
         flex-direction: row;
         background: rgba(0, 0, 0, 0.2);
-
     }
 
     .title {
@@ -257,11 +232,10 @@
 
         /* Neutrals/White */
 
-        color: #FEFEFE;
+        color: #fefefe;
     }
 
     .city {
-
         border-radius: 12px;
         font-family: 'Noto Sans TC';
         font-style: normal;
@@ -272,11 +246,9 @@
         margin-bottom: 4px;
         /* identical to box height */
 
-
         /* Neutrals/White */
 
-        color: #FEFEFE;
-
+        color: #fefefe;
     }
 
     .slideBtnsContainer {
@@ -290,16 +262,14 @@
     .slideBtns {
         width: 1.82vw;
         height: 1.82vw;
-        background-color: #EAEAEA;
+        background-color: #eaeaea;
         /* reset origin style */
         appearance: none;
         border-radius: 50%;
     }
-
-
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .slideGroup {
         width: 100%;
         height: 78.4vw;
@@ -307,11 +277,9 @@
         justify-content: space-between;
         margin-bottom: 11.733vw;
         margin-top: 8vw;
-
     }
 
     .slideBtnPre {
-
         width: 8vw;
         height: 66.666vw;
         justify-content: center;
@@ -322,11 +290,9 @@
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
         margin-right: 4vw;
-
     }
 
     .slideBtnNex {
-
         width: 8vw;
         height: 66.666vw;
         justify-content: center;
@@ -337,12 +303,10 @@
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
         margin-left: 4vw;
-
     }
 
     .slideBtnPre svg {
         display: none;
-
     }
 
     .slideBtnNex svg {
@@ -359,7 +323,6 @@
     }
 
     .slideItem {
-
         width: 100%;
         height: 66.666vw;
         border-radius: 2rem;
@@ -369,7 +332,6 @@
         width: 76vw;
         height: 66.666vw;
         border-radius: 2rem;
-
     }
 
     .wordArtcontainer {
@@ -381,7 +343,6 @@
         align-items: center;
         flex-direction: row;
         background: rgba(0, 0, 0, 0.2);
-
     }
 
     .title {
@@ -392,15 +353,13 @@
         line-height: 38px;
         margin: 0 5.333vw 0 4.33vw;
 
-
         /* Neutrals/White */
 
-        color: #FEFEFE;
+        color: #fefefe;
         max-width: 60%;
     }
 
     .city {
-
         border-radius: 12px;
         font-family: 'Noto Sans TC';
         font-style: normal;
@@ -411,8 +370,7 @@
 
         /* Neutrals/White */
 
-        color: #FEFEFE;
-
+        color: #fefefe;
     }
 
     .slideBtnsContainer {
@@ -426,7 +384,7 @@
     .slideBtns {
         width: 2.66vw;
         height: 2.66vw;
-        background-color: #EAEAEA;
+        background-color: #eaeaea;
         /* reset origin style */
         appearance: none;
         border-radius: 50%;

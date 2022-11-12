@@ -1,0 +1,20 @@
+--ignore-path .gitignore
+
+# Ignore artifacts:
+build
+coverage
+
+# next 
+.next/static
+.next/server
+.next/
+
+# Readme
+README.md
+
+# config
+next.config.js
+package.json
+tsconfig.json
+typings.d.ts
+.prettierrc.json

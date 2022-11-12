@@ -1,10 +1,9 @@
 import { useContext } from 'react'
-import { RootContext } from '../../context/rustContext';
+import { RootContext } from '../../context/rustContext'
 import style from './tryContextDemo.module.css'
 
-
 const TryContextDemo = () => {
-    const rootContextValue = useContext(RootContext);
+    const rootContextValue = useContext(RootContext)
     console.log(rootContextValue)
 
     return (
