@@ -269,7 +269,6 @@
 
     .stackContainer {
         width: 89.33%;
-        height: 157.33vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
